@@ -45,15 +45,15 @@ h1 em{font-style:italic;color:var(--tc)}
 .ol{font-weight:600;display:block;font-size:13px}
 .od{font-size:11px;color:var(--lt);display:block;margin-top:1px;line-height:1.4}
 .pg{display:grid;gap:9px;margin-bottom:7px}
-.pc{border:2px solid var(--sand);border-radius:13px;padding:13px 12px;cursor:pointer;background:var(--warm);position:relative;transition:all .18s;min-height:70px}
+.pc{border:2px solid var(--sand);border-radius:13px;padding:13px 36px 13px 12px;cursor:pointer;background:var(--warm);position:relative;transition:all .18s;min-height:70px}
 .pc:hover{border-color:var(--tcl);background:#FEF8F4}
 .pc.sn{border-color:var(--tc);background:#FEF3EC;box-shadow:0 0 0 2px rgba(196,113,74,.15)}
 .pc.sc{border-color:var(--gr);background:#EFF7F2;box-shadow:0 0 0 2px rgba(61,107,79,.15)}
 .pc.su{border-color:var(--bl);background:var(--bll);box-shadow:0 0 0 2px rgba(74,108,184,.15)}
-.pck{position:absolute;top:9px;right:9px;width:16px;height:16px;border-radius:50%;display:none;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;line-height:1}
-.pc.sn .pck{display:flex;background:var(--tc)}
-.pc.sc .pck{display:flex;background:var(--gr)}
-.pc.su .pck{display:flex;background:var(--bl)}
+.pck{position:absolute;top:9px;right:9px;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;line-height:1;opacity:0;transition:opacity .2s}
+.pc.sn .pck{opacity:1;background:var(--tc)}
+.pc.sc .pck{opacity:1;background:var(--gr)}
+.pc.su .pck{opacity:1;background:var(--bl)}
 .pi{font-size:20px;margin-bottom:5px;line-height:1}
 .pc h3{font-family:'Fraunces',serif;font-size:14px;font-weight:400;margin-bottom:2px;line-height:1.3}
 .pc p{font-size:11px;color:var(--mid);line-height:1.45}
@@ -138,6 +138,9 @@ h1 em{font-style:italic;color:var(--tc)}
 .cvb{margin-top:10px;background:var(--bll);border:1.5px solid #C8D7F5;border-radius:12px;padding:11px 14px;display:flex;gap:9px;align-items:center}
 .cvb strong{display:block;font-size:12px;font-weight:700;color:var(--bl);margin-bottom:2px}
 .cvb p{font-size:11px;color:#6B80B8;line-height:1.4}
+.more-btn{display:block;width:100%;margin:12px 0 4px;background:none;border:1.5px solid var(--tc);border-radius:50px;padding:10px;font-size:13px;color:var(--tc);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:all .2s;font-weight:500}
+.more-btn:hover{background:var(--tc);color:#fff}
+.more-btn:disabled{opacity:.4;cursor:not-allowed;border-color:var(--sand);color:var(--lt)}
 .brs{display:block;width:100%;margin-top:10px;background:none;border:1.5px solid var(--sand);border-radius:50px;padding:10px;font-size:13px;color:var(--mid);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:border-color .2s,color .2s}
 .brs:hover{border-color:var(--tc);color:var(--tc)}
 .leg{margin-top:12px;background:var(--warm);border:1px solid var(--sand);border-radius:10px;padding:10px 13px}
@@ -335,7 +338,7 @@ function getBranchQ(enjoys,challenge,noticed){
 function mkBranchA1(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Tech and digital',q:'You seem drawn to tech and digital things &mdash; which of these feels closest?',os:[{v:'build_t',e:'&#x1F4BB;',l:'Building things',d:'Apps, websites, software, games'},{v:'fix_t',e:'&#x1F527;',l:'Fixing and supporting',d:'IT support, hardware, networks'},{v:'data_t',e:'&#x1F4CA;',l:'Data and analysis',d:'Making sense of numbers and information'},{v:'design_t',e:'&#x1F3A8;',l:'Digital design',d:'How things look and feel (UX, graphics)'},{v:'security_t',e:'&#x1F510;',l:'Security and systems',d:'Keeping things safe and running'},{v:'emerging_t',e:'&#x1F916;',l:'AI and emerging tech',d:'What&rsquo;s coming next'}]};}
 function mkBranchA2(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Business and commerce',q:'You seem drawn to how organisations and the commercial world work &mdash; which feels most interesting?',os:[{v:'marketing',e:'&#x1F4E3;',l:'Marketing and brand',d:'How businesses connect with people'},{v:'finance',e:'&#x1F4B0;',l:'Finance and investment',d:'Money, numbers, how value is created'},{v:'strategy',e:'&#x1F3AF;',l:'Strategy and consulting',d:'Making organisations work better'},{v:'sales',e:'&#x1F91D;',l:'Sales and business development',d:'Building relationships and growing things'},{v:'ops',e:'&#x1F4E6;',l:'Operations and logistics',d:'How things get made and delivered'},{v:'startup',e:'&#x1F680;',l:'Startups and entrepreneurship',d:'Building something from nothing'}]};}
 function mkBranchB(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Creative and performing',q:'The creative side &mdash; which of these feels most like you?',os:[{v:'visual',e:'&#x1F3A8;',l:'Visual art or design',d:'Illustration, graphics, photography'},{v:'music_b',e:'&#x1F3B5;',l:'Music',d:'Playing, singing, producing, teaching'},{v:'writing_b',e:'&#x270D;&#xFE0F;',l:'Writing',d:'Stories, content, journalism, copywriting'},{v:'perform_b',e:'&#x1F3AD;',l:'Performance and presenting',d:'Acting, public speaking, drama'},{v:'film_b',e:'&#x1F3AC;',l:'Film and media',d:'Filming, editing, producing content'},{v:'fashion_b',e:'&#x1F457;',l:'Fashion and style',d:'Clothing, beauty, aesthetics'},{v:'teaching_b',e:'&#x1F3EB;',l:'Teaching or sharing what I know',d:'Education, coaching, mentoring others'}]};}
-function mkBranchC(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Helping people',q:'Helping people &mdash; who do you feel most drawn to support?',os:[{v:'babies',e:'&#x1F476;',l:'Babies and very young children',d:'Early childhood, nursery, family support'},{v:'kids',e:'&#x1F467;',l:'Kids and young people',d:'Schools, youth work, children&rsquo;s services'},{v:'elderly',e:'&#x1F474;',l:'Older people',d:'Aged care, companionship, independence support'},{v:'health_c',e:'&#x1F3E5;',l:'People with health challenges',d:'Nursing, allied health, medical support'},{v:'mental_c',e:'&#x1F9E0;',l:'People with mental health difficulties',d:'Counselling, psychology, social work'},{v:'animals_c',e:'&#x1F43E;',l:'Animals',d:'Vet nursing, shelters, wildlife care'},{v:'community_c',e:'&#x1F30D;',l:'Communities broadly',d:'Social services, policy, community development'},{v:'learning_c',e:'&#x1F3EB;',l:'Anyone who needs help learning',d:'Teaching, tutoring, training, coaching'}]};}
+function mkBranchC(){return{id:'branch',ph:'p2',type:'multi',cols:2,max:2,lbl:'Helping people',q:'Helping people &mdash; who do you feel most drawn to support?',hint:'Pick up to 2 &mdash; it’s OK to care about more than one group.',os:[{v:'babies',e:'&#x1F476;',l:'Babies and very young children',d:'Early childhood, nursery, family support'},{v:'kids',e:'&#x1F467;',l:'Kids and young people',d:'Schools, youth work, children&rsquo;s services'},{v:'elderly',e:'&#x1F474;',l:'Older people',d:'Aged care, companionship, independence support'},{v:'health_c',e:'&#x1F3E5;',l:'People with health challenges',d:'Nursing, allied health, medical support'},{v:'mental_c',e:'&#x1F9E0;',l:'People with mental health difficulties',d:'Counselling, psychology, social work'},{v:'animals_c',e:'&#x1F43E;',l:'Animals',d:'Vet nursing, shelters, wildlife care'},{v:'community_c',e:'&#x1F30D;',l:'Communities broadly',d:'Social services, policy, community development'},{v:'learning_c',e:'&#x1F3EB;',l:'Anyone who needs help learning',d:'Teaching, tutoring, training, coaching'}]};}
 function mkBranchD(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Hands-on work',q:'Working with your hands &mdash; which area sounds most interesting?',os:[{v:'elec',e:'&#x26A1;',l:'Electrical',d:'Power, wiring, solar, data cabling'},{v:'plumb',e:'&#x1F527;',l:'Plumbing',d:'Pipes, hot water, drainage'},{v:'carpentry',e:'&#x1FAA8;',l:'Carpentry and building',d:'Wood, construction, joinery, fit-out'},{v:'mechanic',e:'&#x1F697;',l:'Mechanics and engines',d:'Cars, motorbikes, trucks, machinery'},{v:'landscape_d',e:'&#x1F33F;',l:'Landscaping and outdoor spaces',d:'Gardens, lawns, earthworks, grounds'},{v:'construct',e:'&#x1F3D7;&#xFE0F;',l:'Construction and building projects',d:'Seeing something go from nothing to finished'},{v:'spray',e:'&#x1F58C;&#xFE0F;',l:'Signwriting or vehicle customisation',d:'Spray painting, signage, custom work'},{v:'fabrication',e:'&#x1F529;',l:'Metal or manufacturing',d:'Fabrication, welding, production'}]};}
 function mkBranchE(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Nature and outdoors',q:'Nature and the outdoors &mdash; which direction draws you most?',os:[{v:'farm',e:'&#x1F33E;',l:'Farming and agriculture',d:'Crops, livestock, rural life'},{v:'conservation',e:'&#x1F3DE;&#xFE0F;',l:'Conservation and wildlife',d:'Protecting natural environments'},{v:'hort',e:'&#x1F33F;',l:'Horticulture and land management',d:'Plants, gardens, parks, green spaces'},{v:'marine',e:'&#x1F30A;',l:'Marine and water',d:'Fishing, aquaculture, maritime work'},{v:'env_sci',e:'&#x1F52C;',l:'Environmental science',d:'Testing, research, sustainability'},{v:'animals_e',e:'&#x1F43E;',l:'Animal care',d:'Domestic, farm, wildlife or veterinary'},{v:'sport_e',e:'&#x1F3C3;',l:'Sport and outdoor recreation',d:'Coaching, outdoor education, community sport'}]};}
 function mkBranchG(){return{id:'branch',ph:'p2',type:'opts',cols:1,lbl:"Let's explore",q:"That&rsquo;s completely OK &mdash; a lot of people feel exactly the same way. Which of these sounds like somewhere you could imagine yourself?",hint:"There&rsquo;s no pressure. Just pick the one that feels least uncomfortable.",os:[{v:'people_g',e:'&#x1F91D;',l:"Somewhere I&rsquo;m around people and helping them in some way",d:'Support, care, service &mdash; making someone&rsquo;s day better'},{v:'outside_g',e:'&#x1F33F;',l:'Somewhere outside, or working with animals or plants',d:'Physical, outdoors, practical and calm'},{v:'screen_g',e:'&#x1F5A5;&#xFE0F;',l:'Something indoors, calm and with a clear routine',d:'Quiet, structured, predictable &mdash; computer or desk based'},{v:'routine_g',e:'&#x1F4E6;',l:'Something with clear tasks that are the same each day',d:'Predictable, consistent, no surprises &mdash; I know what I&rsquo;m doing'},{v:'make_g',e:'&#x1F3A8;',l:'Somewhere I get to make or create things',d:'Any kind of making &mdash; practical or creative'},{v:'animals_g',e:'&#x1F43E;',l:'Working with animals in any way',d:'Care, feeding, grooming, walking, assisting a vet'},{v:'safe_g',e:'&#x1F60C;',l:'Honestly &mdash; I just want somewhere safe, kind and supportive to start',d:'Somewhere patient and low-pressure where I can find my feet'}]};}
@@ -697,7 +700,7 @@ function genR(){
   fetch('/api/chat',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1600,system:sys,messages:[{role:'user',content:um}]})
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1800,system:sys,messages:[{role:'user',content:um}]})
   })
   .then(function(r){
     if(!r.ok)return r.json().then(function(e){throw new Error((e.error&&e.error.message)||('HTTP '+r.status));});
@@ -746,10 +749,14 @@ function sRes(){
   if(R.wN&&R.nowJobs&&R.nowJobs.length){
     h+='<div class="sh"><span>&#x1F4B5;</span><h3 class="sh3">Jobs you can start now</h3><span class="sbdg sbn">Start now</span></div>';
     R.nowJobs.forEach(function(j,i){h+=jcard(j,i+1,'now');});
+    h+='<div id="moreContainernow"></div>';
+    h+='<button class="more-btn" id="moreBtnnow" onclick="loadMore(\"now\")">&#x2B; Show me more job suggestions</button>';
   }
   if(R.wC&&R.careerJobs&&R.careerJobs.length){
     h+='<div class="sh" style="margin-top:18px"><span>&#x1F680;</span><h3 class="sh3">Future career paths</h3><span class="sbdg sbc">Career path</span></div>';
     R.careerJobs.forEach(function(j,i){h+=jcard(j,i+1,'career');});
+    h+='<div id="moreContainercareer"></div>';
+    h+='<button class="more-btn" id="moreBtncareer" onclick="loadMore(\"career\")">&#x2B; Show me more career suggestions</button>';
   }
   if(R.tips&&R.tips.length){
     h+='<div class="ns"><h4 class="nsh4">&#x2726; Your next steps</h4>';
@@ -786,6 +793,35 @@ function sendFeedback(v){
   }catch(e){}
   var fb=document.querySelector('.fb-btn');
   if(fb)fb.innerHTML='<span style="font-size:12px;color:var(--gr)">&#x2713; Thanks &mdash; this helps us improve.</span>';
+}
+
+function loadMore(type){
+  var btn=document.getElementById('moreBtn'+type);
+  if(btn){btn.disabled=true;btn.textContent='Finding more matches…';}
+  var wN=type==='now';var wC=type==='career';
+  var sys2='You are a career advisor for young Australians 15-25. The Explorer has already been shown some matches. Suggest 2 NEW and DIFFERENT roles not already shown. Same profile rules apply.
+Return ONLY valid JSON: {"extraJobs":[2 job objects]}
+Job: {"title":"","desc":"2 sentences","whyYou":"You’d be great here because —","pathway":["Now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"specific Australian action","envFit":"why this environment suits them"}
+Already shown: '+JSON.stringify((wN?RS.nowJobs:RS.careerJobs)||[])+'
+All profile rules from original match still apply.';
+  fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:900,system:sys2,messages:[{role:'user',content:'Same Explorer profile: '+JSON.stringify(A)+'. Wants '+(wN?'part-time jobs now':'career paths')+'. Give 2 new different suggestions.'}]})
+  })
+  .then(function(r){return r.json();})
+  .then(function(d){
+    var raw=d.content.map(function(b){return b.text||'';}).join('').replace(/```json\s*/g,'').replace(/```/g,'').trim();
+    var res=JSON.parse(raw);
+    var container=document.getElementById('moreContainer'+type);
+    if(container&&res.extraJobs){
+      var html='';
+      res.extraJobs.forEach(function(j,i){html+=jcard(j,i+3,type);});
+      container.innerHTML=html;
+    }
+    if(btn){btn.style.display='none';}
+  })
+  .catch(function(){
+    if(btn){btn.disabled=false;btn.textContent='↻ Try again';}
+  });
 }
 
 function sErr(){
