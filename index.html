@@ -796,31 +796,39 @@ function sendFeedback(v){
 }
 
 function loadMore(type){
-  var btn=document.getElementById('moreBtn'+type);
-  if(btn){btn.disabled=true;btn.textContent='Finding more matches…';}
-  var wN=type==='now';var wC=type==='career';
-  var sys2='You are a career advisor for young Australians 15-25. The Explorer has already been shown some matches. Suggest 2 NEW and DIFFERENT roles not already shown. Same profile rules apply.
-Return ONLY valid JSON: {"extraJobs":[2 job objects]}
-Job: {"title":"","desc":"2 sentences","whyYou":"You’d be great here because —","pathway":["Now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"specific Australian action","envFit":"why this environment suits them"}
-Already shown: '+JSON.stringify((wN?RS.nowJobs:RS.careerJobs)||[])+'
-All profile rules from original match still apply.';
-  fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:900,system:sys2,messages:[{role:'user',content:'Same Explorer profile: '+JSON.stringify(A)+'. Wants '+(wN?'part-time jobs now':'career paths')+'. Give 2 new different suggestions.'}]})
+  var btn=document.getElementById("moreBtn"+type);
+  if(btn){btn.disabled=true;btn.textContent="Finding more matches\u2026";}
+  var wN=type==="now";
+  var alreadyShown=JSON.stringify((wN?RS.nowJobs:RS.careerJobs)||[]);
+  var sysMsg=[
+    "You are a career advisor for young Australians 15-25.",
+    "The Explorer has already been shown some matches.",
+    "Suggest 2 NEW and DIFFERENT roles not already shown. Same profile rules apply.",
+    "Return ONLY valid JSON: {\"extraJobs\":[2 job objects]}",
+    "Job schema: {\"title\":\"\",\"desc\":\"2 sentences\",\"whyYou\":\"You would be great here because\",\"pathway\":[\"Now\",\"3 months\",\"1 year\",\"3-5 years\"],\"tags\":[\"\",\"\",\"\"],\"matchLevel\":\"strong match|good match|worth exploring\",\"matchPips\":3-5,\"thisWeek\":\"specific Australian action\",\"envFit\":\"why this environment suits them\"}",
+    "Already shown titles: "+alreadyShown,
+    "All profile sensitivity and environment rules from original match still apply."
+  ].join("\n");
+  var userMsg="Same Explorer: "+JSON.stringify(A)+". Wants "+(wN?"part-time jobs now":"career paths")+". Give 2 new different suggestions.";
+  fetch("/api/chat",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:900,system:sysMsg,messages:[{role:"user",content:userMsg}]})
   })
   .then(function(r){return r.json();})
   .then(function(d){
-    var raw=d.content.map(function(b){return b.text||'';}).join('').replace(/```json\s*/g,'').replace(/```/g,'').trim();
+    var raw=d.content.map(function(b){return b.text||"";}).join("").replace(/```json\s*/g,"").replace(/```/g,"").trim();
     var res=JSON.parse(raw);
-    var container=document.getElementById('moreContainer'+type);
+    var container=document.getElementById("moreContainer"+type);
     if(container&&res.extraJobs){
-      var html='';
+      var html="";
       res.extraJobs.forEach(function(j,i){html+=jcard(j,i+3,type);});
       container.innerHTML=html;
     }
-    if(btn){btn.style.display='none';}
+    if(btn){btn.style.display="none";}
   })
   .catch(function(){
-    if(btn){btn.disabled=false;btn.textContent='↻ Try again';}
+    if(btn){btn.disabled=false;btn.textContent="\u21BB Try again";}
   });
 }
 
