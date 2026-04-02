@@ -9,7 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--cream:#FAF7F2;--warm:#FDF9F4;--sand:#E8DFD0;--tc:#C4714A;--tcl:#D98B65;--gr:#3D6B4F;--grl:#5A8F6E;--bl:#4A6CB8;--bll:#EEF2FC;--pu:#7C4DBC;--pul:#F0EBFA;--ch:#2C2C2C;--mid:#6B6560;--lt:#A09890}
+:root{
+  --cream:#FAF7F2;--warm:#FDF9F4;--sand:#E8DFD0;
+  --tc:#C4714A;--tcl:#D98B65;--gr:#3D6B4F;--grl:#5A8F6E;
+  --bl:#4A6CB8;--bll:#EEF2FC;--pu:#7C4DBC;--pul:#F0EBFA;
+  --ch:#2C2C2C;--mid:#6B6560;--lt:#8A8078;
+}
 body{font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;background:var(--cream);color:var(--ch);min-height:100vh;display:flex;flex-direction:column;align-items:center}
 header{width:100%;text-align:center;padding:28px 20px 14px}
 .logo{display:inline-flex;align-items:center;gap:9px;margin-bottom:8px}
@@ -20,25 +25,35 @@ h1{font-family:'Fraunces',serif;font-size:clamp(24px,5vw,44px);font-weight:300;l
 h1 em{font-style:italic;color:var(--tc)}
 .sub{font-size:13px;color:var(--mid);max-width:360px;margin:0 auto;line-height:1.65;font-style:italic}
 .wrap{width:100%;max-width:620px;padding:0 14px 50px}
-.card{background:#fff;border-radius:20px;padding:24px 26px;box-shadow:0 4px 20px rgba(44,44,44,.08);position:relative;overflow:hidden}
+.card{background:#fff;border-radius:20px;padding:24px 28px;box-shadow:0 4px 20px rgba(44,44,44,.08);position:relative;overflow:hidden}
 .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--tc),var(--grl))}
 .plbl{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--lt);margin-bottom:4px;font-weight:500}
 .ptrack{height:7px;background:var(--sand);border-radius:7px;overflow:hidden;margin-bottom:4px}
 .pfill{height:100%;background:linear-gradient(90deg,var(--tc),var(--tcl));border-radius:7px;width:0%;transition:width .5s ease}
-.pstep{text-align:center;font-size:11px;color:var(--lt);margin-bottom:18px}
+.pstep{text-align:center;font-size:12px;color:var(--lt);margin-bottom:18px}
 .pstep strong{color:var(--mid);font-weight:600}
-.qt{font-family:'Fraunces',serif;font-size:clamp(16px,2.5vw,21px);font-weight:400;line-height:1.4;margin-bottom:5px}
-.qh{font-size:12px;color:var(--lt);margin-bottom:14px;font-style:italic;line-height:1.55}
-.qn{font-size:11px;color:var(--lt);margin-bottom:9px;font-style:italic}
-.og{display:grid;gap:7px;margin-bottom:18px}
+.qt{font-family:'Fraunces',serif;font-size:clamp(18px,2.8vw,24px);font-weight:400;line-height:1.4;margin-bottom:5px}
+.qh{font-size:13px;color:var(--lt);margin-bottom:14px;font-style:italic;line-height:1.6}
+.qn{font-size:12px;color:var(--lt);margin-bottom:10px;font-style:italic}
+.og{display:grid;gap:8px;margin-bottom:18px}
 .og.two{grid-template-columns:1fr 1fr}
-.ob{background:var(--warm);border:2px solid var(--sand);border-radius:11px;padding:10px 12px;text-align:left;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ch);line-height:1.4;position:relative;transition:border-color .15s,background .15s,box-shadow .15s;min-height:50px;width:100%}
+.ob{background:var(--warm);border:2px solid var(--sand);border-radius:11px;padding:11px 13px;text-align:left;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:15px;color:var(--ch);line-height:1.6;position:relative;transition:border-color .15s,background .15s,box-shadow .15s;min-height:60px;width:100%}
 .ob:hover{border-color:var(--tcl);background:#FEF8F4}
 .ob.sel{border-color:var(--tc);background:#FEF3EC;box-shadow:0 0 0 2px rgba(196,113,74,.15)}
-.ob.sel::after{content:'\2713';position:absolute;top:7px;right:8px;width:16px;height:16px;background:var(--tc);color:#fff;border-radius:50%;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
-.oe{font-size:16px;display:block;margin-bottom:2px;line-height:1}
-.ol{font-weight:600;display:block;font-size:13px}
-.od{font-size:11px;color:var(--lt);display:block;margin-top:1px;line-height:1.4}
+.ob.sel::after{content:'\2713';position:absolute;top:8px;right:9px;width:18px;height:18px;background:var(--tc);color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
+.oe{font-size:22px;display:block;margin-bottom:3px;line-height:1}
+.ol{font-weight:600;display:block;font-size:15px}
+.od{font-size:13px;color:var(--lt);display:block;margin-top:2px;line-height:1.5}
+/* Forced-choice pair styling */
+.fc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
+.fc-opt{background:var(--warm);border:2px solid var(--sand);border-radius:11px;padding:14px 13px;text-align:center;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ch);line-height:1.5;position:relative;transition:all .15s;min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.fc-opt:hover{border-color:var(--tcl);background:#FEF8F4}
+.fc-opt.sel{border-color:var(--tc);background:#FEF3EC;box-shadow:0 0 0 2px rgba(196,113,74,.15)}
+.fc-opt.sel::after{content:'\2713';position:absolute;top:7px;right:8px;width:16px;height:16px;background:var(--tc);color:#fff;border-radius:50%;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.fc-icon{font-size:22px;line-height:1}
+.fc-label{font-weight:600;font-size:13px}
+.fc-vs{text-align:center;font-size:11px;color:var(--lt);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;font-style:italic}
+/* Path cards */
 .pg{display:grid;gap:9px;margin-bottom:7px}
 .pc{border:2px solid var(--sand);border-radius:13px;padding:13px 36px 13px 12px;cursor:pointer;background:var(--warm);position:relative;transition:all .18s;min-height:70px}
 .pc:hover{border-color:var(--tcl);background:#FEF8F4}
@@ -49,109 +64,115 @@ h1 em{font-style:italic;color:var(--tc)}
 .pc.sn .pck{opacity:1;background:var(--tc)}
 .pc.sc .pck{opacity:1;background:var(--gr)}
 .pc.su .pck{opacity:1;background:var(--bl)}
-.pi{font-size:20px;margin-bottom:5px;line-height:1}
-.pc h3{font-family:'Fraunces',serif;font-size:14px;font-weight:400;margin-bottom:2px;line-height:1.3}
-.pc p{font-size:11px;color:var(--mid);line-height:1.45}
-.pmsg{text-align:center;font-size:12px;color:var(--gr);min-height:16px;margin-bottom:12px;font-style:italic;font-weight:500}
-.ti{width:100%;background:var(--warm);border:2px solid var(--sand);border-radius:11px;padding:10px 13px;font-size:14px;color:var(--ch);outline:none;font-family:'DM Sans',sans-serif;margin-bottom:14px;height:48px;transition:border-color .2s}
+.pi{font-size:22px;margin-bottom:5px;line-height:1}
+.pc h3{font-family:'Fraunces',serif;font-size:15px;font-weight:400;margin-bottom:2px;line-height:1.3}
+.pc p{font-size:12px;color:var(--mid);line-height:1.45}
+.pmsg{text-align:center;font-size:13px;color:var(--gr);min-height:16px;margin-bottom:12px;font-style:italic;font-weight:500}
+/* Text input */
+.ti{width:100%;background:var(--warm);border:2px solid var(--sand);border-radius:11px;padding:11px 14px;font-size:15px;color:var(--ch);outline:none;font-family:'DM Sans',sans-serif;margin-bottom:14px;height:52px;transition:border-color .2s}
 .ti:focus{border-color:var(--tc);background:#FEF8F4}
+/* Buttons */
 .br{display:flex;gap:10px;align-items:center;justify-content:flex-end;margin-top:4px}
-.bbk{background:none;border:none;font-size:13px;color:var(--lt);cursor:pointer;padding:7px 9px;font-family:'DM Sans',sans-serif;transition:color .2s}
+.bbk{background:none;border:none;font-size:14px;color:var(--lt);cursor:pointer;padding:8px 10px;font-family:'DM Sans',sans-serif;transition:color .2s}
 .bbk:hover{color:var(--mid)}
-.bnx{background:var(--tc);color:#fff;border:none;border-radius:50px;padding:11px 26px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,transform .15s;min-height:44px}
+.bnx{background:var(--tc);color:#fff;border:none;border-radius:50px;padding:13px 28px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s,transform .15s;min-height:52px}
 .bnx:disabled{background:var(--sand);color:var(--lt);cursor:not-allowed}
 .bnx:not(:disabled):hover{background:var(--tcl);transform:translateY(-1px)}
 .ptag{display:inline-flex;align-items:center;gap:5px;background:var(--warm);border:1.5px solid var(--sand);border-radius:20px;padding:3px 11px;margin-bottom:13px;font-size:11px;color:var(--mid);font-weight:500}
+/* Safe screen */
 .sico{font-size:40px;text-align:center;margin-bottom:11px}
-.sh2{font-family:'Fraunces',serif;font-size:clamp(16px,3vw,23px);font-weight:400;margin-bottom:7px;text-align:center}
+.sh2{font-family:'Fraunces',serif;font-size:clamp(17px,3vw,24px);font-weight:400;margin-bottom:7px;text-align:center}
 .stag{font-size:13px;color:var(--mid);line-height:1.65;max-width:360px;margin:0 auto 14px;text-align:center}
 .pprev{display:flex;gap:7px;justify-content:center;margin-bottom:16px}
 .ppip{flex:1;max-width:140px;background:var(--warm);border:1.5px solid var(--sand);border-radius:10px;padding:9px 7px;text-align:center}
-.ppip-i{font-size:18px;margin-bottom:3px}
+.ppip-i{font-size:20px;margin-bottom:3px}
 .ppip-n{font-size:9px;font-weight:700;color:var(--mid);margin-bottom:2px;letter-spacing:.05em;text-transform:uppercase}
-.ppip-l{font-size:10px;color:var(--lt);line-height:1.3}
-.spill{display:flex;align-items:flex-start;gap:9px;background:var(--warm);border:1.5px solid var(--sand);border-radius:10px;padding:8px 11px;margin-bottom:7px}
-.spi{font-size:14px;flex-shrink:0;margin-top:1px}
-.sps{display:block;font-size:12px;font-weight:600;margin-bottom:1px}
-.spt{font-size:10px;color:var(--mid);line-height:1.45}
-.bstart{display:block;width:100%;max-width:240px;margin:16px auto 0;background:var(--tc);color:#fff;border:none;border-radius:50px;padding:12px 26px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:background .2s}
+.ppip-l{font-size:11px;color:var(--lt);line-height:1.3}
+.spill{display:flex;align-items:flex-start;gap:9px;background:var(--warm);border:1.5px solid var(--sand);border-radius:10px;padding:9px 12px;margin-bottom:7px}
+.spi{font-size:15px;flex-shrink:0;margin-top:1px}
+.sps{display:block;font-size:13px;font-weight:600;margin-bottom:1px}
+.spt{font-size:11px;color:var(--mid);line-height:1.45}
+.bstart{display:block;width:100%;max-width:260px;margin:16px auto 0;background:var(--tc);color:#fff;border:none;border-radius:50px;padding:14px 28px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:background .2s}
 .bstart:hover{background:var(--tcl)}
+/* Celebration */
 .cw{text-align:center;padding:6px 0 14px}
-.ci{font-size:46px;margin-bottom:11px}
-.ch2{font-family:'Fraunces',serif;font-size:clamp(17px,3vw,24px);font-weight:400;margin-bottom:8px}
-.cp{font-size:13px;color:var(--mid);line-height:1.65;max-width:320px;margin:0 auto 16px}
+.ci{font-size:48px;margin-bottom:11px}
+.ch2{font-family:'Fraunces',serif;font-size:clamp(18px,3vw,26px);font-weight:400;margin-bottom:8px}
+.cp{font-size:14px;color:var(--mid);line-height:1.65;max-width:340px;margin:0 auto 16px}
 .npb{background:var(--warm);border:1.5px solid var(--sand);border-radius:13px;padding:13px 15px;max-width:320px;margin:0 auto 18px;text-align:left}
 .npl{font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--lt);margin-bottom:5px}
-.npi{font-size:20px;margin-bottom:4px}
+.npi{font-size:22px;margin-bottom:4px}
 .npt{font-family:'Fraunces',serif;font-size:16px;font-weight:400;margin-bottom:3px}
-.npd{font-size:12px;color:var(--mid);line-height:1.5}
-.tw{text-align:center;padding:18px 14px}
-.ds{display:flex;justify-content:center;gap:6px;margin-bottom:13px}
-.d{width:8px;height:8px;border-radius:50%;animation:bn 1.2s ease-in-out infinite}
+.npd{font-size:13px;color:var(--mid);line-height:1.5}
+/* Thinking */
+.tw{text-align:center;padding:20px 14px}
+.ds{display:flex;justify-content:center;gap:6px;margin-bottom:14px}
+.d{width:9px;height:9px;border-radius:50%;animation:bn 1.2s ease-in-out infinite}
 .d1{background:var(--tc)}.d2{background:var(--tcl);animation-delay:.2s}.d3{background:var(--grl);animation-delay:.4s}
 @keyframes bn{0%,80%,100%{transform:scale(.65);opacity:.5}40%{transform:scale(1.05);opacity:1}}
-.tp{font-family:'Fraunces',serif;font-size:17px;font-weight:300;color:var(--mid);font-style:italic;line-height:1.4}
-.tsm{display:block;margin-top:7px;font-size:11px;color:var(--lt)}
+.tp{font-family:'Fraunces',serif;font-size:18px;font-weight:300;color:var(--mid);font-style:italic;line-height:1.4}
+.tsm{display:block;margin-top:8px;font-size:12px;color:var(--lt)}
+/* Results */
 .rh{text-align:center;margin-bottom:14px}
-.rh2{font-family:'Fraunces',serif;font-size:clamp(18px,3.5vw,25px);font-weight:300;margin-bottom:3px;line-height:1.2}
-.rp{font-size:13px;color:var(--mid);line-height:1.5}
-.enc{background:linear-gradient(135deg,#FEF8EC,#FEF3E6);border:1.5px solid #F5DDB8;border-radius:12px;padding:13px 15px;margin-bottom:14px;display:flex;gap:9px;align-items:flex-start}
-.encp{font-size:13px;color:#7A5C35;line-height:1.65;font-style:italic}
+.rh2{font-family:'Fraunces',serif;font-size:clamp(19px,3.5vw,26px);font-weight:300;margin-bottom:4px;line-height:1.2}
+.rp{font-size:14px;color:var(--mid);line-height:1.5}
+.enc{background:linear-gradient(135deg,#FEF8EC,#FEF3E6);border:1.5px solid #F5DDB8;border-radius:12px;padding:14px 16px;margin-bottom:14px;display:flex;gap:10px;align-items:flex-start}
+.encp{font-size:14px;color:#7A5C35;line-height:1.65;font-style:italic}
 .sh{display:flex;align-items:center;gap:7px;margin:16px 0 9px;padding-bottom:7px;border-bottom:1.5px solid var(--sand)}
-.sh3{font-family:'Fraunces',serif;font-size:16px;font-weight:400}
-.sbdg{margin-left:auto;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:20px}
+.sh3{font-family:'Fraunces',serif;font-size:17px;font-weight:400}
+.sbdg{margin-left:auto;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:20px}
 .sbn{background:#EFF7F2;color:var(--gr)}.sbc{background:#FEF3EC;color:var(--tc)}
-.jc{background:var(--warm);border:1.5px solid var(--sand);border-radius:13px;padding:14px 16px;margin-bottom:9px;position:relative}
-.jr{position:absolute;top:9px;right:13px;font-family:'Fraunces',serif;font-size:22px;font-weight:300;color:var(--sand);line-height:1}
-.jh4{font-family:'Fraunces',serif;font-size:16px;font-weight:400;margin-bottom:4px;padding-right:24px;line-height:1.3}
-.jd{font-size:13px;color:var(--mid);line-height:1.6;margin-bottom:6px}
-.wy{font-size:12px;color:var(--gr);background:#EFF7F2;border-radius:6px;padding:5px 9px;margin-bottom:6px;line-height:1.5;font-style:italic}
-.ef{font-size:12px;color:var(--bl);background:var(--bll);border-radius:6px;padding:5px 9px;margin-bottom:6px;line-height:1.5}
-.pw{margin:6px 0;padding:9px 11px;background:#fff;border:1px solid var(--sand);border-radius:8px}
-.pwl{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lt);margin-bottom:6px}
-.pws div{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--mid);line-height:1.45;margin-bottom:4px}
-.snum{width:15px;height:15px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;color:#fff;margin-top:1px}
+.jc{background:var(--warm);border:1.5px solid var(--sand);border-radius:13px;padding:15px 17px;margin-bottom:10px;position:relative}
+.jr{position:absolute;top:10px;right:14px;font-family:'Fraunces',serif;font-size:24px;font-weight:300;color:var(--sand);line-height:1}
+.jh4{font-family:'Fraunces',serif;font-size:17px;font-weight:400;margin-bottom:5px;padding-right:26px;line-height:1.3}
+.jd{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:7px}
+.wy{font-size:13px;color:var(--gr);background:#EFF7F2;border-radius:6px;padding:6px 10px;margin-bottom:7px;line-height:1.5;font-style:italic}
+.ef{font-size:13px;color:var(--bl);background:var(--bll);border-radius:6px;padding:6px 10px;margin-bottom:7px;line-height:1.5}
+.pw{margin:7px 0;padding:10px 12px;background:#fff;border:1px solid var(--sand);border-radius:8px}
+.pwl{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lt);margin-bottom:7px}
+.pws div{display:flex;align-items:flex-start;gap:7px;font-size:13px;color:var(--mid);line-height:1.5;margin-bottom:5px}
+.snum{width:16px;height:16px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;margin-top:1px}
 .snum-n{background:var(--gr)}.snum-c{background:var(--tc)}
-.jt{display:flex;flex-wrap:wrap;gap:4px;margin:5px 0}
-.jt span{font-size:10px;background:var(--sand);color:var(--mid);padding:2px 7px;border-radius:20px}
-.mr{display:flex;align-items:center;gap:7px;margin-top:6px}
+.jt{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
+.jt span{font-size:11px;background:var(--sand);color:var(--mid);padding:2px 8px;border-radius:20px}
+.mr{display:flex;align-items:center;gap:8px;margin-top:7px}
 .pips{display:flex;gap:3px}
-.pip{width:14px;height:4px;border-radius:3px;background:var(--sand)}
+.pip{width:15px;height:5px;border-radius:3px;background:var(--sand)}
 .pip-n{background:var(--gr)}.pip-c{background:var(--tc)}
-.mw{font-size:11px;font-weight:700}
+.mw{font-size:12px;font-weight:700}
 .mw-n{color:var(--gr)}.mw-c{color:var(--tc)}
-.thiswk{margin-top:7px;font-size:12px;color:var(--mid);border-top:1px solid var(--sand);padding-top:6px;line-height:1.5}
+.thiswk{margin-top:8px;font-size:13px;color:var(--mid);border-top:1px solid var(--sand);padding-top:7px;line-height:1.5}
 .thiswk strong{color:var(--tc)}
-.ns{margin-top:14px;background:linear-gradient(135deg,#F8F4EF,#EFF6F2);border-radius:12px;padding:13px 15px}
-.nsh4{font-family:'Fraunces',serif;font-size:13px;font-weight:400;margin-bottom:7px}
-.nsli{font-size:13px;color:var(--mid);padding-left:14px;position:relative;line-height:1.5;margin-bottom:4px}
+.ns{margin-top:14px;background:linear-gradient(135deg,#F8F4EF,#EFF6F2);border-radius:12px;padding:14px 16px}
+.nsh4{font-family:'Fraunces',serif;font-size:14px;font-weight:400;margin-bottom:8px}
+.nsli{font-size:14px;color:var(--mid);padding-left:15px;position:relative;line-height:1.5;margin-bottom:5px}
 .nsli::before{content:'\2192';position:absolute;left:0;color:var(--tc)}
-.more-btn{display:block;width:100%;margin:10px 0 4px;background:none;border:1.5px solid var(--tc);border-radius:50px;padding:10px;font-size:13px;color:var(--tc);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:all .2s;font-weight:500}
+.more-btn{display:block;width:100%;margin:10px 0 4px;background:none;border:1.5px solid var(--tc);border-radius:50px;padding:11px;font-size:14px;color:var(--tc);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:all .2s;font-weight:500}
 .more-btn:hover{background:var(--tc);color:#fff}
 .more-btn:disabled{opacity:.4;cursor:not-allowed;border-color:var(--sand);color:var(--lt)}
-.p4{margin-top:12px;background:linear-gradient(135deg,var(--pul),#EFF7F2);border:1.5px solid #C9B8E8;border-radius:12px;padding:12px 14px}
+.p4{margin-top:12px;background:linear-gradient(135deg,var(--pul),#EFF7F2);border:1.5px solid #C9B8E8;border-radius:12px;padding:13px 15px}
 .p4t{display:flex;align-items:center;gap:7px;margin-bottom:5px}
-.p4t strong{font-size:12px;font-weight:700;color:var(--pu)}
-.p4p{font-size:12px;color:#6B5A8A;line-height:1.5}
-.cvb{margin-top:10px;background:var(--bll);border:1.5px solid #C8D7F5;border-radius:12px;padding:11px 14px;display:flex;gap:9px;align-items:center}
-.cvb strong{display:block;font-size:12px;font-weight:700;color:var(--bl);margin-bottom:2px}
-.cvb p{font-size:11px;color:#6B80B8;line-height:1.4}
-.fb-row{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:11px;color:var(--lt)}
-.thumb{background:none;border:1px solid var(--sand);border-radius:20px;padding:3px 10px;font-size:11px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
+.p4t strong{font-size:13px;font-weight:700;color:var(--pu)}
+.p4p{font-size:13px;color:#6B5A8A;line-height:1.5}
+.cvb{margin-top:10px;background:var(--bll);border:1.5px solid #C8D7F5;border-radius:12px;padding:12px 15px;display:flex;gap:10px;align-items:center}
+.cvb strong{display:block;font-size:13px;font-weight:700;color:var(--bl);margin-bottom:2px}
+.cvb p{font-size:12px;color:#6B80B8;line-height:1.4}
+.fb-row{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:12px;color:var(--lt)}
+.thumb{background:none;border:1px solid var(--sand);border-radius:20px;padding:3px 10px;font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s}
 .thumb:hover{border-color:var(--tc);color:var(--tc)}
-.brs{display:block;width:100%;margin-top:10px;background:none;border:1.5px solid var(--sand);border-radius:50px;padding:10px;font-size:13px;color:var(--mid);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:border-color .2s,color .2s}
+.brs{display:block;width:100%;margin-top:11px;background:none;border:1.5px solid var(--sand);border-radius:50px;padding:11px;font-size:14px;color:var(--mid);cursor:pointer;font-family:'DM Sans',sans-serif;text-align:center;transition:border-color .2s,color .2s}
 .brs:hover{border-color:var(--tc);color:var(--tc)}
-.leg{margin-top:12px;background:var(--warm);border:1px solid var(--sand);border-radius:10px;padding:10px 13px}
-.lp{font-size:10px;color:var(--lt);line-height:1.6;margin-bottom:2px}
-.eb{text-align:center;padding:18px 7px}
-.ei{font-size:28px;margin-bottom:9px}
-.eh3{font-family:'Fraunces',serif;font-size:17px;font-weight:400;margin-bottom:5px}
-.ep{font-size:13px;color:var(--mid);line-height:1.6;margin-bottom:11px}
-.ed{background:#FFF5F5;border:1px solid #FFCDD2;border-radius:7px;padding:7px 10px;font-size:10px;color:#B04040;text-align:left;margin-bottom:11px;font-family:monospace;word-break:break-all}
+.leg{margin-top:13px;background:var(--warm);border:1px solid var(--sand);border-radius:10px;padding:11px 14px}
+.lp{font-size:11px;color:var(--lt);line-height:1.6;margin-bottom:2px}
+.eb{text-align:center;padding:20px 8px}
+.ei{font-size:30px;margin-bottom:10px}
+.eh3{font-family:'Fraunces',serif;font-size:18px;font-weight:400;margin-bottom:6px}
+.ep{font-size:14px;color:var(--mid);line-height:1.6;margin-bottom:12px}
+.ed{background:#FFF5F5;border:1px solid #FFCDD2;border-radius:7px;padding:8px 11px;font-size:11px;color:#B04040;text-align:left;margin-bottom:12px;font-family:monospace;word-break:break-all}
 footer{width:100%;max-width:620px;padding:0 14px 32px}
-.fb{background:var(--warm);border:1px solid var(--sand);border-radius:10px;padding:10px 13px}
-.fp{font-size:10px;color:var(--lt);line-height:1.6;margin-bottom:2px}
-@media(max-width:480px){.card{padding:20px 15px}.og.two{grid-template-columns:1fr}.pprev{gap:4px}}
+.fb{background:var(--warm);border:1px solid var(--sand);border-radius:10px;padding:11px 14px}
+.fp{font-size:11px;color:var(--lt);line-height:1.6;margin-bottom:2px}
+@media(max-width:480px){.card{padding:20px 16px}.og.two{grid-template-columns:1fr}.pprev{gap:4px}.fc-wrap{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -169,65 +190,87 @@ footer{width:100%;max-width:620px;padding:0 14px 32px}
   </div>
 </div>
 <footer><div class="fb">
-  <p class="fp">&#9888; <strong>For guidance only.</strong> Not a substitute for professional career counselling.</p>
+  <p class="fp">&#9888; <strong>For guidance only.</strong> Not a substitute for professional career counselling. Results are AI-generated suggestions.</p>
   <p class="fp">&#128274; <strong>Privacy:</strong> Answers not stored after your session. Anonymised feedback may improve results over time.</p>
   <p class="fp">&#128100; <strong>Under 15?</strong> Please let a parent or guardian know you&rsquo;re using this tool.</p>
 </div></footer>
 <script>
+// ── PHASES ──
 var PHS=[
-  {id:'p1',lbl:'Who you are',em:'&#x1F9ED;',cel:'You&rsquo;ve told us who you are, {name}. That took honesty &mdash; especially the parts you were unsure about.',nxt:'Now let&rsquo;s find out what actually drives you.'},
-  {id:'p2',lbl:'What drives you',em:'&#x1F4A1;',cel:'{name}, you&rsquo;ve shared things most people are never asked. That&rsquo;s what makes your results genuinely yours.',nxt:'One last phase &mdash; and it might be the most important one.'},
+  {id:'p1',lbl:'Who you are',em:'&#x1F9ED;',
+   cel:'You&rsquo;ve told us who you are, {name}. That took honesty &mdash; especially the parts you were unsure about.',
+   nxt:'Now let&rsquo;s find out what actually drives you.'},
+  {id:'p2',lbl:'What drives you',em:'&#x1F4A1;',
+   cel:'{name}, you&rsquo;ve shared things most people are never asked. That&rsquo;s what makes your results genuinely yours.',
+   nxt:'One last phase &mdash; and it might be the most important one.'},
   {id:'p3',lbl:'How you work best',em:'&#x26A1;',cel:'',nxt:''}
 ];
 
-// ── PHASE 1 (8 Qs) ──
+// ── CAREER PATH: PHASE 1 (9 Qs, everyone) ──
 var P1=[
-  {id:'name',ph:'p1',type:'text',lbl:"Let's begin",q:"What&rsquo;s your first name?",hint:"We&rsquo;ll use it throughout &mdash; this is your journey.",pl:'Type your name here\u2026'},
+  {id:'name',ph:'p1',type:'text',lbl:"Let's begin",
+   q:"What&rsquo;s your first name?",hint:"We&rsquo;ll use it throughout &mdash; this is your journey.",pl:'Type your name here\u2026'},
+
   {id:'age',ph:'p1',type:'opts',cols:2,lbl:'About you',q:'How old are you?',
    os:[{v:'15_17',e:'&#x1F392;',l:'15&ndash;17',d:'Still at school'},
        {v:'18_20',e:'&#x1F331;',l:'18&ndash;20',d:'Just finished or figuring it out'},
-       {v:'21_25',e:'&#x1F680;',l:'21&ndash;25',d:'Work or study, early days'}]},
-  {id:'study',ph:'p1',type:'multi',cols:1,lbl:'Right now',q:'What are you doing at the moment?',hint:'Pick all that apply.',
+       {v:'21_25',e:'&#x1F680;',l:'21&ndash;25',d:'Early days of work or study'}]},
+
+  {id:'study',ph:'p1',type:'multi',cols:1,lbl:'Right now',
+   q:'What are you doing at the moment?',hint:'Pick all that apply.',
    os:[{v:'highschool',e:'&#x1F392;',l:'High school',d:'VCE, VCE VM, VCAL or similar'},
        {v:'tafe',e:'&#x1F527;',l:'TAFE or vocational training',d:'Certificate, diploma or trade'},
        {v:'uni',e:'&#x1F4DA;',l:'University',d:'Degree or diploma'},
-       {v:'working',e:'&#x1F4BC;',l:'I have a job',d:'Part-time, casual or full-time'},
-       {v:'gap',e:'&#x1F30F;',l:'Gap year or break',d:'Travelling or time out'},
+       {v:'working',e:'&#x1F4BC;',l:'I already have a job',d:'Part-time, casual or full-time'},
+       {v:'gap',e:'&#x1F30F;',l:'Gap year or taking a break',d:'Travelling or time out'},
        {v:'none',e:'&#x1F50D;',l:'Not studying or working yet',d:'Looking for my next step'}]},
-  {id:'goal',ph:'p1',type:'path',lbl:'Your goal',q:'What do you want help with today?',hint:'You can pick more than one.'},
-  {id:'place',ph:'p1',type:'multi',cols:2,lbl:'Your ideal workplace',q:'Where would you enjoy spending your day?',hint:'Pick all that feel right.',
+
+  {id:'goal',ph:'p1',type:'path',lbl:'Your goal',
+   q:'What do you want help with today?',hint:'You can pick more than one.'},
+
+  {id:'place',ph:'p1',type:'multi',cols:2,lbl:'Your ideal workplace',
+   q:'Where would you enjoy spending most of your day?',hint:'Pick all that feel right.',
    os:[{v:'outdoors',e:'&#x1F33F;',l:'Outside',d:'Fresh air, on the move'},
        {v:'indoor',e:'&#x1F3E2;',l:'Inside',d:'Calm, structured, indoors'},
-       {v:'travel',e:'&#x1F697;',l:'On the move',d:'Driving, visiting places'},
-       {v:'home',e:'&#x1F3E1;',l:'From home',d:'Quiet, flexible, screen-based'},
-       {v:'care_place',e:'&#x1F3E5;',l:'Helping-people place',d:'Clinic, school, aged care, community'},
-       {v:'nature_place',e:'&#x1F43E;',l:'With animals or nature',d:'Outdoors, wildlife, gardens, farms'},
-       {v:'dynamic',e:'&#x1F3D9;',l:'Fast-moving environment',d:'Busy, dynamic, always something on'}]},
-  {id:'subjects',ph:'p1',type:'multi',cols:2,lbl:'School subjects',q:'Which subjects did you enjoy or do well in at school?',hint:'Pick all that apply &mdash; even if you&rsquo;re not sure why.',
+       {v:'travel',e:'&#x1F697;',l:'On the move',d:'Driving, visiting different places'},
+       {v:'home',e:'&#x1F3E1;',l:'From home',d:'Quiet, flexible, computer-based'},
+       {v:'care_place',e:'&#x1F3E5;',l:'Somewhere that helps people',d:'Clinic, school, aged care, community'},
+       {v:'nature_place',e:'&#x1F43E;',l:'With animals or in nature',d:'Wildlife, gardens, farms, outdoors'},
+       {v:'dynamic',e:'&#x1F3D9;',l:'A fast-moving environment',d:'Busy, dynamic, always something on'}]},
+
+  {id:'subjects',ph:'p1',type:'multi',cols:2,lbl:'School subjects',
+   q:'Which subjects did you enjoy OR feel confident in at school?',
+   hint:'Pick all that apply &mdash; enjoyment and confidence both count.',
    os:[{v:'english',e:'&#x270D;&#xFE0F;',l:'English',d:'Reading, writing, discussion'},
        {v:'maths',e:'&#x2795;',l:'Maths',d:'Numbers, logic, problem solving'},
        {v:'science',e:'&#x1F52C;',l:'Science',d:'Biology, chemistry, physics'},
-       {v:'art',e:'&#x1F3A8;',l:'Art &amp; Design',d:'Visual arts, graphics, photography'},
+       {v:'art',e:'&#x1F3A8;',l:'Art and Design',d:'Visual arts, graphics, photography'},
        {v:'music',e:'&#x1F3B5;',l:'Music',d:'Performance, theory, production'},
-       {v:'pe',e:'&#x1F3C3;',l:'PE &amp; Sport',d:'Physical education, sport, fitness'},
-       {v:'tech',e:'&#x1F4BB;',l:'Technology &amp; Computing',d:'IT, digital, coding'},
-       {v:'health',e:'&#x2764;&#xFE0F;',l:'Health &amp; Human Development',d:'Care, wellbeing, community'},
-       {v:'humanities',e:'&#x1F30D;',l:'Humanities &amp; SOSE',d:'Geography, history, society'},
-       {v:'trade',e:'&#x1F528;',l:'Trade or vocational subjects',d:'Workshop, hospitality, construction'},
-       {v:'none_sub',e:'&#x1F937;',l:'None I really liked',d:'That&rsquo;s OK &mdash; good to know'}]},
-  {id:'enjoys',ph:'p1',type:'multi',cols:2,lbl:'What you enjoy',q:'Outside school &mdash; what do you enjoy or wish you could do more of?',hint:'Pick up to 3.',max:3,
-   os:[{v:'tech',e:'&#x1F4BB;',l:'Tech and digital things',d:'Computers, apps, gaming'},
-       {v:'making',e:'&#x1F3A8;',l:'Making things',d:'Art, music, craft, design'},
-       {v:'nature',e:'&#x1F331;',l:'Being outside',d:'Nature, animals, sport'},
-       {v:'helping',e:'&#x2764;&#xFE0F;',l:'Helping people',d:'Listening, caring, supporting'},
-       {v:'building',e:'&#x1F528;',l:'Fixing or building',d:'Hands-on, practical work'},
-       {v:'commerce',e:'&#x1F4C8;',l:'How things work',d:'Business, money, strategy'},
-       {v:'learning',e:'&#x1F4DA;',l:'Learning and ideas',d:'Reading, research, thinking'},
-       {v:'perform',e:'&#x1F3AD;',l:'Performing or connecting',d:'Music, sport, drama, people'}]},
-  {id:'noticed',ph:'p1',type:'opts',cols:2,lbl:'Your superpower',q:'What would someone who knows you well say you&rsquo;re naturally good at?',hint:'Or &mdash; what do you believe is true about yourself?',
-   os:[{v:'hands',e:'&#x1F528;',l:'Good with my hands',d:'Practical, building, fixing'},
+       {v:'pe',e:'&#x1F3C3;',l:'PE and Sport',d:'Physical education, fitness'},
+       {v:'tech',e:'&#x1F4BB;',l:'Technology and Computing',d:'IT, digital, coding'},
+       {v:'health',e:'&#x2764;&#xFE0F;',l:'Health and Human Development',d:'Care, wellbeing, community'},
+       {v:'humanities',e:'&#x1F30D;',l:'Humanities',d:'Geography, history, society'},
+       {v:'trade',e:'&#x1F528;',l:'Trade or vocational subjects',d:'Workshop, construction, hospitality'},
+       {v:'none_sub',e:'&#x1F937;',l:'None I particularly enjoyed or felt confident in',d:'That&rsquo;s OK &mdash; good to know'}]},
+
+  {id:'enjoys',ph:'p1',type:'multi',cols:2,lbl:'What you enjoy',
+   q:'Outside school &mdash; what do you actually enjoy or find yourself doing?',
+   hint:'Pick up to 3. Real answers only &mdash; not what sounds good.',max:3,
+   os:[{v:'tech',e:'&#x1F4BB;',l:'Tech and digital things',d:'Computers, apps, gaming, online'},
+       {v:'making',e:'&#x1F3A8;',l:'Making things',d:'Art, music, craft, design, building'},
+       {v:'nature',e:'&#x1F331;',l:'Being outside',d:'As a hobby or lifestyle &mdash; not necessarily as a job'},
+       {v:'helping',e:'&#x2764;&#xFE0F;',l:'Helping people',d:'Listening, supporting, caring for others'},
+       {v:'building',e:'&#x1F528;',l:'Fixing or building things',d:'Hands-on, practical work'},
+       {v:'commerce',e:'&#x1F4C8;',l:'How things work',d:'Business, money, strategy, organisations'},
+       {v:'learning',e:'&#x1F4DA;',l:'Learning and ideas',d:'Reading, research, understanding things'},
+       {v:'perform',e:'&#x1F3AD;',l:'Performing or connecting',d:'Music, sport, drama, talking to people'}]},
+
+  {id:'noticed',ph:'p1',type:'opts',cols:2,lbl:'Your superpower',
+   q:'What would a close friend, family member, or someone who knows you well say you&rsquo;re naturally good at? Or &mdash; what do you believe is true about yourself, even if no one has said it out loud?',
+   hint:'First instinct is usually right.',
+   os:[{v:'hands',e:'&#x1F528;',l:'Practical with my hands',d:'I figure things out physically'},
        {v:'caring',e:'&#x1F91D;',l:'Caring and trustworthy',d:'People feel safe around me'},
-       {v:'creative',e:'&#x1F4A1;',l:'Creative and imaginative',d:'Ideas others don&rsquo;t think of'},
+       {v:'creative',e:'&#x1F4A1;',l:'Creative and imaginative',d:'I see things differently'},
        {v:'detail',e:'&#x1F50D;',l:'Careful and thorough',d:'I notice things others miss'},
        {v:'physical',e:'&#x1F4AA;',l:'Physical and active',d:'I like moving and doing'},
        {v:'reliable',e:'&#x1F60A;',l:'Reliable and steady',d:'People know they can count on me'},
@@ -235,102 +278,168 @@ var P1=[
        {v:'calm',e:'&#x1F33F;',l:'Calm and patient',d:'I help others feel settled'},
        {v:'driven',e:'&#x1F3AF;',l:'Driven and determined',d:'When I commit, I follow through'},
        {v:'connector',e:'&#x1F517;',l:'I make things happen',d:'I connect people and get things moving'}]},
+
   {id:'challenge',ph:'p1',type:'opts',cols:1,lbl:'Your work style',q:'Which feels most like you?',
-   os:[{v:'simple',e:'&#x1F30A;',l:'I like things clear and simple',d:'I want to know exactly what I&rsquo;m doing'},
+   os:[{v:'simple',e:'&#x1F30A;',l:'I like things clear and simple',d:'I want to know exactly what I&rsquo;m doing each day'},
        {v:'moderate',e:'&#x26A1;',l:'I like some challenge',d:'Grow, but not feel overwhelmed'},
-       {v:'complex',e:'&#x1F52C;',l:'I love hard problems',d:'The harder, the better'}]}
+       {v:'complex',e:'&#x1F52C;',l:'I love complexity and hard problems',d:'The harder the better'}]}
 ];
 
 // ── PHASE 2 COMMON A ──
 var P2A=[
-  {id:'proud',ph:'p2',type:'opts',cols:1,lbl:'What drives you',q:'When have you felt most satisfied with yourself &mdash; at school, at home, anywhere?',
-   os:[{v:'helped',e:'&#x1F917;',l:'I helped someone',d:'They were better off because of me'},
-       {v:'made',e:'&#x1F528;',l:'I made or fixed something',d:'A real result I created myself'},
-       {v:'learned',e:'&#x1F9E0;',l:'I learned something new',d:'Growing, discovering, understanding'},
-       {v:'earned',e:'&#x1F4B5;',l:'I earned recognition or reward',d:'Acknowledged for my effort'},
-       {v:'together',e:'&#x1F91D;',l:'We achieved something together',d:'Shared success with others'},
-       {v:'quiet',e:'&#x1F60C;',l:'I did what needed doing, quietly',d:'No fuss &mdash; just got it right'}]},
+  {id:'proud',ph:'p2',type:'opts',cols:1,lbl:'What drives you',
+   q:'Think of a moment &mdash; at school, at home, anywhere &mdash; when you felt genuinely satisfied with yourself. What had you done?',
+   os:[{v:'helped',e:'&#x1F917;',l:'I&rsquo;d helped someone and it made a real difference',d:'They were better off because of me'},
+       {v:'made',e:'&#x1F528;',l:'I&rsquo;d made or fixed something I could see',d:'A real result from my own effort'},
+       {v:'learned',e:'&#x1F9E0;',l:'I&rsquo;d figured something out or learned something new',d:'Growing, discovering, understanding better'},
+       {v:'earned',e:'&#x1F4B5;',l:'I&rsquo;d earned recognition or reward',d:'Acknowledged for my effort'},
+       {v:'together',e:'&#x1F91D;',l:'We&rsquo;d achieved something together',d:'Shared success with others'},
+       {v:'quiet',e:'&#x1F60C;',l:'I&rsquo;d done what needed doing, quietly and well',d:'No fuss &mdash; just got it right'}]},
+
   {id:'flow',ph:'p2',type:'opts',cols:2,lbl:'In the zone',q:'What makes time fly for you?',
    os:[{v:'making',e:'&#x1F3A8;',l:'Making something',d:'Creating or building anything'},
-       {v:'helping_f',e:'&#x1F4AC;',l:'Talking to people',d:'Helping or connecting with someone'},
-       {v:'hands_f',e:'&#x1F527;',l:'Hands-on tasks',d:'Practical work I can touch'},
-       {v:'learning_f',e:'&#x1F4D6;',l:'Learning something new',d:'When it actually clicks'},
+       {v:'helping_f',e:'&#x1F4AC;',l:'Talking to or helping someone',d:'Connection or support'},
+       {v:'hands_f',e:'&#x1F527;',l:'Hands-on practical tasks',d:'Work I can touch and complete'},
+       {v:'learning_f',e:'&#x1F4D6;',l:'Learning something that clicks',d:'New knowledge or skills'},
        {v:'active',e:'&#x1F3C3;',l:'Being active',d:'Sport, movement, outdoors'},
        {v:'perform_f',e:'&#x1F3B5;',l:'Music or performing',d:'Any creative performance'},
-       {v:'outside_f',e:'&#x1F33F;',l:'Being outside',d:'Nature, animals, fresh air'},
-       {v:'planning',e:'&#x1F4CA;',l:'Solving a problem',d:'Figuring out how to improve something'}]}
+       {v:'outside_f',e:'&#x1F33F;',l:'Being outside or with animals',d:'Nature, animals, fresh air'},
+       {v:'planning',e:'&#x1F4CA;',l:'Working on a problem or plan',d:'Figuring out how to improve something'}]},
+
+  {id:'money',ph:'p2',type:'opts',cols:1,lbl:'Money and work',
+   q:'When you think about money and work &mdash; which feels most true for you?',
+   os:[{v:'security',e:'&#x1F4B0;',l:'Financial security matters a lot to me',d:'I want to earn well &mdash; money is a real priority'},
+       {v:'comfortable',e:'&#x1F3E0;',l:'Enough to live comfortably &mdash; money isn&rsquo;t my main motivator',d:'I want stability, not necessarily wealth'},
+       {v:'later',e:'&#x1F680;',l:'Happy to earn less now for better opportunities later',d:'I&rsquo;m patient and thinking long-term'},
+       {v:'build',e:'&#x1F3AF;',l:'Building toward earning well over time',d:'Progression matters more than starting pay'},
+       {v:'meaning',e:'&#x1F60C;',l:'Work I care about matters more than money',d:'Meaning first, money second'},
+       {v:'unsure_m',e:'&#x1F937;',l:'I honestly haven&rsquo;t thought about it much yet',d:'Still figuring this out &mdash; completely OK'}]}
 ];
 
 // ── VISION Q (age-adapted) ──
 function getVisionQ(age){
   if(age==='15_17'){
-    return {id:'vision',ph:'p2',type:'opts',cols:1,lbl:'The future',q:'If things went well for you, what would feel good in the future?',hint:'No pressure &mdash; just go with what feels true.',
-      os:[{v:'enjoy',e:'&#x1F60A;',l:'A job I enjoy with good people',d:'Doing something I like in a kind place'},
-          {v:'stable',e:'&#x1F3E0;',l:'A stable income and a good life',d:'Security and balance'},
-          {v:'difference',e:'&#x1F30D;',l:'Making a difference somehow',d:'Work that matters'},
-          {v:'creative_v',e:'&#x1F3A8;',l:'Something creative',d:'Art, music, design, writing'},
-          {v:'active_v',e:'&#x1F3C3;',l:'Something active and outdoors',d:'Keeping moving'},
-          {v:'unsure',e:'&#x1F937;',l:'Honestly, no idea yet',d:'Completely fine &mdash; that&rsquo;s what this is for'}]};
+    return {id:'vision',ph:'p2',type:'opts',cols:1,lbl:'The future',
+      q:'If things went really well for you &mdash; what kind of life would feel good?',
+      hint:'No pressure. Just go with what feels true.',
+      os:[{v:'enjoy',e:'&#x1F60A;',l:'A job I enjoy with good people around me',d:'Doing something I like in a kind place'},
+          {v:'stable',e:'&#x1F3E0;',l:'A stable income and a life I can rely on',d:'Security, balance, contentment'},
+          {v:'difference',e:'&#x1F30D;',l:'Making a difference to people or the world',d:'Work that contributes to something bigger'},
+          {v:'creative_v',e:'&#x1F3A8;',l:'Doing something creative or expressive',d:'Art, music, design, writing, performance'},
+          {v:'active_v',e:'&#x1F3C3;',l:'Staying active &mdash; sport, outdoors or physical work',d:'A life that keeps me moving'},
+          {v:'unsure',e:'&#x1F937;',l:'Honestly, no idea yet &mdash; and that&rsquo;s completely fine',d:'That&rsquo;s what this is for'}]};
   }
-  return {id:'vision',ph:'p2',type:'opts',cols:1,lbl:'The future',q:'Where do you want your work life to take you?',hint:'Go with your gut.',
-    os:[{v:'own',e:'&#x1F3EA;',l:'Running something of my own',d:'A business, practice or project'},
-        {v:'expert',e:'&#x1F3C6;',l:'Becoming really skilled in something I care about',d:'The go-to person in my field'},
-        {v:'stable',e:'&#x1F3E0;',l:'A good job I enjoy and a life outside work',d:'Balance, security, contentment'},
-        {v:'impact',e:'&#x1F30D;',l:'Work that contributes to something bigger',d:'Meaningful, real-world impact'},
-        {v:'lead',e:'&#x1F9ED;',l:'Leading or mentoring others',d:'Being someone people look to'},
-        {v:'senior',e:'&#x1F4CA;',l:'Senior level &mdash; strategy and decisions',d:'Real responsibility in an organisation'},
-        {v:'unsure',e:'&#x1F937;',l:'I don&rsquo;t know yet',d:'Still figuring it out &mdash; OK'}]};
+  return {id:'vision',ph:'p2',type:'opts',cols:1,lbl:'The future',
+    q:'Where would you like your work life to take you?',hint:'Go with your gut.',
+    os:[{v:'own',e:'&#x1F3EA;',l:'Building or running something of my own',d:'A business, practice or project that&rsquo;s mine'},
+        {v:'expert',e:'&#x1F3C6;',l:'Becoming genuinely skilled and recognised in something I love',d:'The go-to person in my field'},
+        {v:'stable',e:'&#x1F3E0;',l:'A good job I enjoy and a fulfilling life outside work',d:'Balance, security, contentment'},
+        {v:'impact',e:'&#x1F30D;',l:'Work that contributes to something bigger than me',d:'Meaningful, real-world impact'},
+        {v:'lead',e:'&#x1F9ED;',l:'Leading or mentoring others',d:'Being someone people look to and trust'},
+        {v:'senior',e:'&#x1F4CA;',l:'Senior level &mdash; strategy, decisions, real impact',d:'Growing into real responsibility'},
+        {v:'unsure',e:'&#x1F937;',l:'I genuinely don&rsquo;t know yet',d:'Still figuring it out &mdash; completely OK'}]};
 }
 
 // ── PHASE 2 COMMON B ──
 var P2B=[
-  {id:'grouprole',ph:'p2',type:'opts',cols:2,lbl:'In a group',q:'In a group, what role do you naturally end up in?',
-   os:[{v:'leads',e:'&#x1F9ED;',l:'Organising or leading',d:'I usually run things'},
-       {v:'carer',e:'&#x1F91D;',l:'Making sure everyone&rsquo;s OK',d:'I check in and keep the peace'},
+  {id:'conscientious',ph:'p2',type:'opts',cols:1,lbl:'Getting things done',
+   q:'When you have something important to finish but you&rsquo;d rather be doing something else &mdash; what usually happens?',
+   os:[{v:'pushthrough',e:'&#x2705;',l:'I push through and get it done',d:'I don&rsquo;t like leaving things unfinished'},
+       {v:'eventually',e:'&#x1F504;',l:'I do it eventually &mdash; I need to get motivated first',d:'Takes me a while to get started'},
+       {v:'smallsteps',e:'&#x1F4CB;',l:'I do better when I break it into small steps',d:'Chunk it down and tackle it piece by piece'},
+       {v:'struggles',e:'&#x1F62C;',l:'I find it really hard &mdash; I often leave things too late',d:'Deadlines and follow-through are a genuine challenge'},
+       {v:'needsupport',e:'&#x1F91D;',l:'I do much better when someone checks in or helps me stay on track',d:'Accountability makes a big difference for me'}]},
+
+  {id:'adaptable',ph:'p2',type:'opts',cols:1,lbl:'Handling change',
+   q:'When plans change unexpectedly &mdash; how do you usually feel?',
+   os:[{v:'enjoys',e:'&#x1F604;',l:'Fine &mdash; I actually quite like it when things change',d:'Variety and surprise energise me'},
+       {v:'adjusts',e:'&#x1F610;',l:'A bit unsettled at first, but I adjust pretty quickly',d:'I need a moment, then I&rsquo;m OK'},
+       {v:'bothered',e:'&#x1F615;',l:'It bothers me &mdash; I prefer to know what&rsquo;s coming',d:'I work better with predictability'},
+       {v:'stressed',e:'&#x1F630;',l:'It&rsquo;s genuinely hard &mdash; unexpected change is stressful for me',d:'I need stability to do my best'}]},
+
+  {id:'social',ph:'p2',type:'opts',cols:1,lbl:'Social confidence',
+   q:'Which of these feels most comfortable to you?',
+   os:[{v:'known',e:'&#x1F465;',l:'Talking to people I already know well',d:'Comfortable with familiars, less so with strangers'},
+       {v:'onebyone',e:'&#x1F91D;',l:'Meeting new people one at a time',d:'One-on-one is fine &mdash; crowds less so'},
+       {v:'mostly_alone',e:'&#x1F3A7;',l:'Mostly on my own with occasional interaction',d:'I prefer limited social contact at work'},
+       {v:'small_group',e:'&#x1F465;',l:'Part of a group where everyone knows each other',d:'Team environment where I&rsquo;m familiar with people'},
+       {v:'anyone',e:'&#x1F310;',l:'Meeting and talking to lots of different people',d:'The more the better &mdash; I&rsquo;m energised by people'},
+       {v:'minimal',e:'&#x1F60C;',l:'As little social interaction as possible',d:'I prefer to work with minimal contact'}]},
+
+  {id:'grouprole',ph:'p2',type:'opts',cols:2,lbl:'In a group',
+   q:'In a group &mdash; what role do you naturally end up in?',
+   os:[{v:'leads',e:'&#x1F9ED;',l:'Organising or leading',d:'I usually end up running things'},
+       {v:'carer',e:'&#x1F91D;',l:'Making sure everyone&rsquo;s OK',d:'I keep the peace and check in on people'},
        {v:'doer',e:'&#x1F3AF;',l:'Focused on my own part',d:'I do my bit really well'},
        {v:'ideas_g',e:'&#x1F4A1;',l:'Coming up with ideas',d:'I&rsquo;m usually the one suggesting things'},
-       {v:'supporter',e:'&#x1F60A;',l:'Supporting whoever&rsquo;s leading',d:'I&rsquo;m a great number two'},
+       {v:'supporter',e:'&#x1F60A;',l:'Supporting whoever&rsquo;s leading',d:'I&rsquo;m a great number two &mdash; don&rsquo;t need to be in charge'},
        {v:'planner',e:'&#x1F50D;',l:'Thinking ahead',d:'I spot problems before they happen'}]},
-  {id:'values',ph:'p2',type:'multi',cols:2,lbl:'What matters most',q:'What matters most to you in a job? Pick your top 3.',max:3,
-   os:[{v:'money',e:'&#x1F4B0;',l:'Good pay',d:'Earning well, financial security'},
-       {v:'meaning',e:'&#x1F30D;',l:'Meaningful work',d:'Makes a real difference'},
-       {v:'growth',e:'&#x1F4C8;',l:'Learning and growing',d:'New skills, getting better'},
-       {v:'flex',e:'&#x1F550;',l:'Flexibility',d:'Control of my time'},
+
+  {id:'values',ph:'p2',type:'multi',cols:2,lbl:'What matters most',
+   q:'What matters most to you in a job? Pick your top 3 &mdash; the things you genuinely couldn&rsquo;t do without.',max:3,
+   os:[{v:'meaning',e:'&#x1F30D;',l:'Meaningful work',d:'Makes a real difference'},
+       {v:'growth',e:'&#x1F4C8;',l:'Learning and growing',d:'Getting better, new skills'},
+       {v:'flex',e:'&#x1F550;',l:'Flexibility',d:'Control of my own time'},
        {v:'create',e:'&#x1F3A8;',l:'Being creative',d:'Making and expressing things'},
        {v:'secure',e:'&#x1F3E0;',l:'Job security',d:'Stable, reliable position'},
        {v:'people_v',e:'&#x1F91D;',l:'Great people around me',d:'Kind, supportive team'},
        {v:'variety',e:'&#x1F504;',l:'Variety',d:'No two days the same'},
-       {v:'support_v',e:'&#x1F60A;',l:'Supportive culture',d:'People look out for each other'},
+       {v:'support_v',e:'&#x1F60A;',l:'Supportive culture',d:'People genuinely look out for each other'},
        {v:'active_v',e:'&#x1F3C3;',l:'Staying active',d:'Physical work, not desk-bound'},
-       {v:'recognition',e:'&#x1F3C6;',l:'Recognition',d:'Acknowledged for great work'},
+       {v:'recognition',e:'&#x1F3C6;',l:'Recognition',d:'Acknowledged for excellent work'},
        {v:'progress',e:'&#x1F680;',l:'Progression',d:'Moving up, more responsibility'}]},
-  {id:'hardday',ph:'p2',type:'opts',cols:2,lbl:'Hard days',q:'When a day is really hard &mdash; what helps you feel better?',
+
+  {id:'hardday',ph:'p2',type:'opts',cols:2,lbl:'Hard days',
+   q:'When a day is really hard &mdash; at school, at home, anywhere &mdash; what usually helps?',
    os:[{v:'talk',e:'&#x1F4AC;',l:'Talking it through',d:'With someone I trust'},
        {v:'alone',e:'&#x1F3A7;',l:'Alone and quiet',d:'Space to reset'},
        {v:'move',e:'&#x1F3C3;',l:'Getting physical',d:'Sport, moving, outdoors'},
        {v:'sleep',e:'&#x1F634;',l:'Sleep and start fresh',d:'Tomorrow is a new day'},
        {v:'switch',e:'&#x1F3AE;',l:'Switching off',d:'Total break from it'},
        {v:'carry',e:'&#x1F614;',l:'I carry it for a while',d:'Takes time &mdash; I don&rsquo;t shake things off easily'}]},
-  {id:'learns',ph:'p2',type:'opts',cols:2,lbl:'How you learn',q:'How do you pick up new skills best?',
+
+  {id:'emotion',ph:'p2',type:'opts',cols:1,lbl:'When frustrated',
+   q:'When something at school or work frustrates you &mdash; what do you usually do first?',
+   os:[{v:'talk_e',e:'&#x1F4AC;',l:'Talk to someone about it straight away',d:'I process out loud'},
+       {v:'stepaway',e:'&#x1F6B6;',l:'Step away and give myself time to cool down',d:'Space before I respond'},
+       {v:'fix',e:'&#x1F4CB;',l:'Try to understand why and fix it',d:'Problem-solve rather than react'},
+       {v:'inside',e:'&#x1F3A7;',l:'Keep it to myself and push through',d:'Internalize and continue'},
+       {v:'stuck',e:'&#x1F630;',l:'Find it hard to move past &mdash; it affects the rest of my day',d:'Frustration lingers and impacts me'},
+       {v:'react',e:'&#x1F624;',l:'I can react strongly but recover quickly',d:'Strong in the moment, fast to bounce back'}]},
+
+  {id:'learns',ph:'p2',type:'opts',cols:2,lbl:'How you learn',
+   q:'When you&rsquo;ve picked up a new skill &mdash; what worked best?',
    os:[{v:'watch',e:'&#x1F440;',l:'Watch first, then try',d:'See it before I attempt it'},
-       {v:'do',e:'&#x1F528;',l:'Jump in and figure it out',d:'Learn by doing'},
-       {v:'read',e:'&#x1F4D6;',l:'Read or watch videos',d:'Study before I try'},
-       {v:'ask',e:'&#x1F4AC;',l:'Someone walks me through it',d:'Patient explanation, step by step'},
-       {v:'list',e:'&#x1F4CB;',l:'Follow a checklist',d:'Clear steps to refer back to'}]},
-  {id:'collab',ph:'p2',type:'multi',cols:2,lbl:'Working with others',q:'How do you work best with others?',hint:'Pick all that feel natural.',
-   os:[{v:'solo',e:'&#x1F3A7;',l:'Mostly on my own',d:'Better with space and quiet'},
+       {v:'do',e:'&#x1F528;',l:'Jump in and figure it out',d:'Trial and error &mdash; learning by doing'},
+       {v:'read',e:'&#x1F4D6;',l:'Read or watch videos first',d:'Study before I try'},
+       {v:'ask',e:'&#x1F4AC;',l:'Patient step-by-step explanation',d:'Questions and conversation help most'},
+       {v:'list',e:'&#x1F4CB;',l:'Follow a clear checklist',d:'Written steps I can refer back to'}]},
+
+  {id:'grit',ph:'p2',type:'opts',cols:1,lbl:'When things get hard',
+   q:'When something you&rsquo;re working on gets really difficult &mdash; what do you usually do?',
+   os:[{v:'persist',e:'&#x1F4AA;',l:'Keep going &mdash; I don&rsquo;t like giving up',d:'Persistence is a strength of mine'},
+       {v:'break',e:'&#x1F504;',l:'Take a break and come back to it',d:'Step away then return refreshed'},
+       {v:'help_g',e:'&#x1F4AC;',l:'Ask someone for help',d:'I know when to reach out'},
+       {v:'chunks',e:'&#x1F4CB;',l:'Break it into smaller pieces',d:'Tackle one step at a time'},
+       {v:'beaten',e:'&#x1F614;',l:'Struggle to continue &mdash; hard things often beat me',d:'I need extra support to push through'},
+       {v:'depends',e:'&#x1F937;',l:'Depends how much I care about what I&rsquo;m doing',d:'Motivation determines my persistence'}]},
+
+  {id:'collab',ph:'p2',type:'multi',cols:2,lbl:'Working with others',
+   q:'How do you work best with others?',hint:'Pick all that feel natural.',
+   os:[{v:'solo',e:'&#x1F3A7;',l:'Mostly on my own',d:'Focus better with space'},
        {v:'team',e:'&#x1F91D;',l:'In a team',d:'Like having people around'},
        {v:'lead_c',e:'&#x1F9ED;',l:'Leading or organising',d:'Like pulling things together'},
-       {v:'help_c',e:'&#x1F4AC;',l:'One-on-one helping',d:'Direct personal contact'}]}
+       {v:'help_c',e:'&#x1F4AC;',l:'Helping people one-on-one',d:'Direct personal contact'}]}
 ];
 
 // ── BRANCHES ──
 function getBranch(enjoys,challenge,noticed,subjects){
   enjoys=enjoys||[];subjects=subjects||[];
-  var isSimple=challenge==='simple';
-  var fewInterests=enjoys.length<=1;
+  var isSimple=(challenge==='simple');
+  var fewInterests=(enjoys.length<=1);
   if(isSimple&&fewInterests) return mkBG();
   if(enjoys.indexOf('building')>=0) return mkBD();
+  if(enjoys.indexOf('nature')>=0&&subjects.indexOf('pe')>=0) return mkBF();
   if(enjoys.indexOf('nature')>=0) return mkBE();
   if(enjoys.indexOf('helping')>=0) return mkBC();
   if(enjoys.indexOf('making')>=0||enjoys.indexOf('perform')>=0||subjects.indexOf('art')>=0||subjects.indexOf('music')>=0) return mkBB();
@@ -341,66 +450,202 @@ function getBranch(enjoys,challenge,noticed,subjects){
   if(subjects.indexOf('pe')>=0) return mkBF();
   return mkBG();
 }
-function mkBA1(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Tech and digital',q:'Which sounds most interesting?',os:[{v:'build_t',e:'&#x1F4BB;',l:'Building apps or websites',d:'Software, games, coding'},{v:'fix_t',e:'&#x1F527;',l:'IT support',d:'Hardware, networks, fixing devices'},{v:'data_t',e:'&#x1F4CA;',l:'Data and analysis',d:'Making sense of numbers'},{v:'design_t',e:'&#x1F3A8;',l:'Digital design',d:'UX, graphics, how things look'},{v:'security_t',e:'&#x1F510;',l:'Cybersecurity',d:'Keeping systems safe'},{v:'emerging_t',e:'&#x1F916;',l:'AI and emerging tech',d:'What&rsquo;s coming next'}]};}
-function mkBA2(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Business and commerce',q:'Which sounds most interesting?',os:[{v:'marketing',e:'&#x1F4E3;',l:'Marketing and brand',d:'How businesses connect with people'},{v:'finance',e:'&#x1F4B0;',l:'Finance and money',d:'Numbers, investment, value'},{v:'strategy',e:'&#x1F3AF;',l:'Strategy and consulting',d:'Making organisations work better'},{v:'sales',e:'&#x1F91D;',l:'Sales and relationships',d:'Building connections and growing things'},{v:'ops',e:'&#x1F4E6;',l:'Operations and logistics',d:'How things get made and delivered'},{v:'startup',e:'&#x1F680;',l:'Startups and entrepreneurship',d:'Building something from nothing'}]};}
-function mkBB(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Creative and performing',q:'Which feels most like you?',os:[{v:'visual',e:'&#x1F3A8;',l:'Visual art or design',d:'Illustration, graphics, photography'},{v:'music_b',e:'&#x1F3B5;',l:'Music',d:'Playing, singing, producing, teaching'},{v:'writing_b',e:'&#x270D;&#xFE0F;',l:'Writing',d:'Stories, content, copywriting'},{v:'perform_b',e:'&#x1F3AD;',l:'Performance',d:'Acting, presenting, drama'},{v:'film_b',e:'&#x1F3AC;',l:'Film and media',d:'Filming, editing, content'},{v:'fashion_b',e:'&#x1F457;',l:'Fashion and style',d:'Clothing, beauty, aesthetics'},{v:'teaching_b',e:'&#x1F3EB;',l:'Teaching what I know',d:'Coaching, educating, mentoring'}]};}
-function mkBC(){return{id:'branch',ph:'p2',type:'multi',cols:2,max:2,lbl:'Helping people',q:'Who do you feel most drawn to help?',hint:'Pick up to 2 &mdash; it&rsquo;s OK to care about more than one group.',os:[{v:'babies',e:'&#x1F476;',l:'Very young children',d:'Early childhood, nursery'},{v:'kids',e:'&#x1F467;',l:'Kids and young people',d:'Schools, youth work'},{v:'elderly',e:'&#x1F474;',l:'Older people',d:'Aged care, companionship'},{v:'health_c',e:'&#x1F3E5;',l:'People with health challenges',d:'Nursing, allied health'},{v:'mental_c',e:'&#x1F9E0;',l:'People with mental health difficulties',d:'Counselling, social work'},{v:'animals_c',e:'&#x1F43E;',l:'Animals',d:'Vet nursing, shelters, wildlife'},{v:'community_c',e:'&#x1F30D;',l:'Communities broadly',d:'Social services, community development'},{v:'learning_c',e:'&#x1F3EB;',l:'People who need help learning',d:'Teaching, tutoring, coaching'}]};}
-function mkBD(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Hands-on work',q:'Which area sounds most interesting?',os:[{v:'elec',e:'&#x26A1;',l:'Electrical',d:'Power, wiring, solar'},{v:'plumb',e:'&#x1F527;',l:'Plumbing',d:'Pipes, drainage, hot water'},{v:'carpentry',e:'&#x1FAA8;',l:'Carpentry and building',d:'Wood, construction, joinery'},{v:'mechanic',e:'&#x1F697;',l:'Mechanics and engines',d:'Cars, trucks, machinery'},{v:'landscape_d',e:'&#x1F33F;',l:'Landscaping',d:'Gardens, lawns, outdoor spaces'},{v:'construct',e:'&#x1F3D7;&#xFE0F;',l:'Construction projects',d:'Building things from scratch'},{v:'spray',e:'&#x1F58C;&#xFE0F;',l:'Signwriting or spray painting',d:'Custom finishes, signage'},{v:'fabrication',e:'&#x1F529;',l:'Metal and manufacturing',d:'Fabrication, welding, production'}]};}
-function mkBE(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Nature and outdoors',q:'Which direction draws you most?',os:[{v:'farm',e:'&#x1F33E;',l:'Farming and agriculture',d:'Crops, livestock, rural work'},{v:'conservation',e:'&#x1F3DE;&#xFE0F;',l:'Conservation and wildlife',d:'Protecting natural environments'},{v:'hort',e:'&#x1F33F;',l:'Horticulture',d:'Plants, gardens, parks'},{v:'marine',e:'&#x1F30A;',l:'Marine and water',d:'Fishing, aquaculture, maritime'},{v:'env_sci',e:'&#x1F52C;',l:'Environmental science',d:'Research, sustainability'},{v:'animals_e',e:'&#x1F43E;',l:'Animal care',d:'Farm, wildlife, veterinary'},{v:'sport_e',e:'&#x1F3C3;',l:'Sport and outdoor recreation',d:'Coaching, outdoor education'}]};}
-function mkBF(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Sport and activity',q:'Which sounds most interesting?',os:[{v:'coach',e:'&#x26BD;',l:'Coaching sport',d:'Training and developing players'},{v:'fitness',e:'&#x1F3CB;&#xFE0F;',l:'Fitness and personal training',d:'Helping people get healthy'},{v:'outdoor_ed',e:'&#x1F3D5;&#xFE0F;',l:'Outdoor education',d:'Camps, adventure activities'},{v:'pe_teach',e:'&#x1F3EB;',l:'PE teaching',d:'Physical education in schools'},{v:'sports_sci',e:'&#x1F9EA;',l:'Sports science',d:'Performance, physiology, research'},{v:'therapy',e:'&#x1F4C8;',l:'Massage or remedial therapy',d:'Physical wellbeing, recovery'}]};}
-function mkBG(){return{id:'branch',ph:'p2',type:'opts',cols:1,lbl:"Let's explore",q:"Which of these sounds OK to you?",hint:"There&rsquo;s no pressure. Just pick the one that feels least uncomfortable.",os:[{v:'people_g',e:'&#x1F91D;',l:'Helping people in some way',d:'Care, support, making someone&rsquo;s day better'},{v:'outside_g',e:'&#x1F33F;',l:'Outside or with animals',d:'Practical, outdoors, calm'},{v:'screen_g',e:'&#x1F5A5;&#xFE0F;',l:'Indoors with a clear routine',d:'Quiet, structured, predictable'},{v:'routine_g',e:'&#x1F4E6;',l:'Clear tasks, same each day',d:'Consistent, no surprises'},{v:'make_g',e:'&#x1F3A8;',l:'Making or creating things',d:'Practical or creative making'},{v:'animals_g',e:'&#x1F43E;',l:'Working with animals',d:'Care, feeding, walking, assisting'},{v:'safe_g',e:'&#x1F60C;',l:'Somewhere safe and kind to start',d:'Supportive, patient, low-pressure'}]};}
+function mkBA1(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Tech and digital',q:'Which sounds most interesting?',os:[{v:'build_t',e:'&#x1F4BB;',l:'Building apps or websites',d:'Software, games, coding'},{v:'fix_t',e:'&#x1F527;',l:'IT support and fixing devices',d:'Hardware, networks, troubleshooting'},{v:'data_t',e:'&#x1F4CA;',l:'Data and analysis',d:'Making sense of numbers'},{v:'design_t',e:'&#x1F3A8;',l:'Digital design',d:'UX, graphics, how things look'},{v:'security_t',e:'&#x1F510;',l:'Cybersecurity',d:'Keeping systems safe'},{v:'emerging_t',e:'&#x1F916;',l:'AI and emerging tech',d:'What&rsquo;s coming next'}]};}
+function mkBA2(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Business and commerce',q:'Which sounds most interesting?',os:[{v:'marketing',e:'&#x1F4E3;',l:'Marketing and brand',d:'How businesses connect with people'},{v:'finance',e:'&#x1F4B0;',l:'Finance and investment',d:'Money, numbers, value creation'},{v:'strategy',e:'&#x1F3AF;',l:'Strategy and consulting',d:'Making organisations work better'},{v:'sales',e:'&#x1F91D;',l:'Sales and business development',d:'Building relationships, growing things'},{v:'ops',e:'&#x1F4E6;',l:'Operations and logistics',d:'How things get made and delivered'},{v:'startup',e:'&#x1F680;',l:'Startups and entrepreneurship',d:'Building something from nothing'}]};}
+function mkBB(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Creative and performing',q:'Which feels most like you?',os:[{v:'visual',e:'&#x1F3A8;',l:'Visual art or design',d:'Illustration, graphics, photography'},{v:'music_b',e:'&#x1F3B5;',l:'Music',d:'Playing, singing, producing, teaching'},{v:'writing_b',e:'&#x270D;&#xFE0F;',l:'Writing',d:'Stories, content, copywriting'},{v:'perform_b',e:'&#x1F3AD;',l:'Performance and presenting',d:'Acting, public speaking, drama'},{v:'film_b',e:'&#x1F3AC;',l:'Film and media',d:'Filming, editing, content creation'},{v:'fashion_b',e:'&#x1F457;',l:'Fashion and style',d:'Clothing, beauty, aesthetics'},{v:'teaching_b',e:'&#x1F3EB;',l:'Teaching what I know',d:'Coaching, educating, mentoring others'}]};}
+function mkBC(){return{id:'branch',ph:'p2',type:'multi',cols:2,max:2,lbl:'Helping people',q:'Who do you feel most drawn to help?',hint:'Pick up to 2 &mdash; it&rsquo;s OK to care about more than one group.',os:[{v:'babies',e:'&#x1F476;',l:'Very young children',d:'Early childhood, nursery, family support'},{v:'kids',e:'&#x1F467;',l:'Kids and young people',d:'Schools, youth work, children&rsquo;s services'},{v:'elderly',e:'&#x1F474;',l:'Older people',d:'Aged care, companionship, independence support'},{v:'health_c',e:'&#x1F3E5;',l:'People with health challenges',d:'Nursing, allied health, medical support'},{v:'mental_c',e:'&#x1F9E0;',l:'People with mental health difficulties',d:'Counselling, psychology, social work'},{v:'animals_c',e:'&#x1F43E;',l:'Animals',d:'Vet nursing, shelters, wildlife care'},{v:'community_c',e:'&#x1F30D;',l:'Communities broadly',d:'Social services, community development'},{v:'learning_c',e:'&#x1F3EB;',l:'People who need help learning',d:'Teaching, tutoring, training, coaching'}]};}
+function mkBD(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Hands-on work',q:'Which area sounds most interesting?',os:[{v:'elec',e:'&#x26A1;',l:'Electrical',d:'Power, wiring, solar, data cabling'},{v:'plumb',e:'&#x1F527;',l:'Plumbing',d:'Pipes, hot water, drainage'},{v:'carpentry',e:'&#x1FAA8;',l:'Carpentry and building',d:'Wood, construction, joinery'},{v:'mechanic',e:'&#x1F697;',l:'Mechanics and engines',d:'Cars, trucks, motorbikes, machinery'},{v:'landscape_d',e:'&#x1F33F;',l:'Landscaping',d:'Gardens, lawns, outdoor spaces'},{v:'construct',e:'&#x1F3D7;&#xFE0F;',l:'Construction projects',d:'Seeing something go from nothing to finished'},{v:'spray',e:'&#x1F58C;&#xFE0F;',l:'Signwriting or spray painting',d:'Custom finishes, signage, vehicle customisation'},{v:'fabrication',e:'&#x1F529;',l:'Metal and manufacturing',d:'Fabrication, welding, production'}]};}
+function mkBE(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Nature and outdoors',q:'Which direction draws you most?',os:[{v:'farm',e:'&#x1F33E;',l:'Farming and agriculture',d:'Crops, livestock, rural work'},{v:'conservation',e:'&#x1F3DE;&#xFE0F;',l:'Conservation and wildlife',d:'Protecting natural environments'},{v:'hort',e:'&#x1F33F;',l:'Horticulture',d:'Plants, gardens, parks, green spaces'},{v:'marine',e:'&#x1F30A;',l:'Marine and water',d:'Fishing, aquaculture, maritime'},{v:'env_sci',e:'&#x1F52C;',l:'Environmental science',d:'Research, testing, sustainability'},{v:'animals_e',e:'&#x1F43E;',l:'Animal care',d:'Farm, wildlife, veterinary, shelters'},{v:'sport_e',e:'&#x1F3C3;',l:'Sport and outdoor recreation',d:'Coaching, outdoor education, community sport'}]};}
+function mkBF(){return{id:'branch',ph:'p2',type:'opts',cols:2,lbl:'Sport and activity',q:'Which sounds most interesting?',os:[{v:'coach',e:'&#x26BD;',l:'Coaching sport',d:'Training and developing players'},{v:'fitness',e:'&#x1F3CB;&#xFE0F;',l:'Fitness and personal training',d:'Helping people get healthy'},{v:'outdoor_ed',e:'&#x1F3D5;&#xFE0F;',l:'Outdoor education',d:'Camps, adventure activities, leadership'},{v:'pe_teach',e:'&#x1F3EB;',l:'PE teaching',d:'Physical education in schools'},{v:'sports_sci',e:'&#x1F9EA;',l:'Sports science',d:'Performance, physiology, research'},{v:'therapy',e:'&#x1F4C8;',l:'Massage or remedial therapy',d:'Physical wellbeing and recovery'}]};}
+function mkBG(){return{id:'branch',ph:'p2',type:'opts',cols:1,lbl:"Let's explore",q:"Which of these sounds most OK to you?",hint:"There&rsquo;s no pressure. Just pick the one that feels least uncomfortable.",os:[{v:'people_g',e:'&#x1F91D;',l:'Helping people in some way',d:'Care, support, making someone&rsquo;s day better'},{v:'outside_g',e:'&#x1F33F;',l:'Outside or with animals',d:'Practical, outdoors, calm'},{v:'screen_g',e:'&#x1F5A5;&#xFE0F;',l:'Indoors with a clear routine',d:'Quiet, structured, predictable'},{v:'routine_g',e:'&#x1F4E6;',l:'Clear tasks, same each day',d:'Consistent, no surprises &mdash; I know what I&rsquo;m doing'},{v:'make_g',e:'&#x1F3A8;',l:'Making or creating things',d:'Any kind of making &mdash; practical or creative'},{v:'animals_g',e:'&#x1F43E;',l:'Working with animals',d:'Care, feeding, walking, grooming, assisting'},{v:'safe_g',e:'&#x1F60C;',l:'Somewhere safe, kind and supportive to start',d:'Patient, low-pressure, I can find my feet'}]};}
 
-// ── PHASE 3 (6 Qs) ──
+// ── PHASE 3 (8 Qs including 6 aversion Qs) ──
 var P3=[
-  {id:'feedback',ph:'p3',type:'opts',cols:1,lbl:'Feedback style',q:'When someone points out a mistake you made &mdash; how does it land?',hint:'Be honest &mdash; this helps us find the right environment.',
-   os:[{v:'sensitive',e:'&#x1F331;',l:'It stays with me &mdash; I need to hear it gently',d:'Harsh feedback knocks my confidence'},
-       {v:'depends',e:'&#x2696;&#xFE0F;',l:'Depends how they say it',d:'Kind and private is fine &mdash; harsh isn&rsquo;t'},
-       {v:'direct',e:'&#x1F3AF;',l:'Just tell me straight',d:'I can handle honesty'},
+  {id:'feedback',ph:'p3',type:'opts',cols:1,lbl:'Feedback style',
+   q:'When someone points out a mistake you&rsquo;ve made &mdash; how does it usually land?',
+   hint:'Be honest &mdash; this helps us find the right environment for you.',
+   os:[{v:'sensitive',e:'&#x1F331;',l:'It really stays with me &mdash; I need to hear it gently',d:'Harsh feedback knocks my confidence'},
+       {v:'depends',e:'&#x2696;&#xFE0F;',l:'Depends how they say it',d:'Kind and private is fine &mdash; harsh or public isn&rsquo;t'},
+       {v:'direct',e:'&#x1F3AF;',l:'Just tell me straight &mdash; I can handle honesty',d:'Sugar-coating frustrates me'},
        {v:'self',e:'&#x1F50D;',l:'I&rsquo;d rather notice my own mistakes',d:'I prefer figuring it out myself'}]},
-  {id:'supervision',ph:'p3',type:'opts',cols:1,lbl:'How much guidance',q:'When doing something new &mdash; what helps you feel confident?',
-   os:[{v:'lots',e:'&#x1F5FA;&#xFE0F;',l:'Clear instructions and regular check-ins',d:'I like knowing I&rsquo;m on track'},
-       {v:'some',e:'&#x1F4CB;',l:'Tell me the goal, then let me get there',d:'Direction first, then space'},
-       {v:'min',e:'&#x1F985;',l:'Trust me and leave me to it',d:'Full independence'}]},
-  {id:'noise',ph:'p3',type:'opts',cols:1,lbl:'Your environment',q:'In a loud, busy place &mdash; how do you feel?',
-   os:[{v:'low',e:'&#x1F630;',l:'Overwhelmed &mdash; I need calm to do my best',d:'Noise and chaos affect me significantly'},
-       {v:'mid',e:'&#x1F610;',l:'OK for a while, but I need quiet time',d:'Can handle it, but need to recover'},
+
+  {id:'supervision',ph:'p3',type:'opts',cols:1,lbl:'How much guidance',
+   q:'When doing something new &mdash; what helps you feel most confident?',
+   os:[{v:'lots',e:'&#x1F5FA;&#xFE0F;',l:'Clear instructions and regular check-ins',d:'I like knowing I&rsquo;m on track and can ask questions'},
+       {v:'some',e:'&#x1F4CB;',l:'Tell me the goal, then let me get there',d:'Direction first, then space to figure it out'},
+       {v:'min',e:'&#x1F985;',l:'Trust me and leave me to it',d:'I work best with full independence'}]},
+
+  {id:'noise',ph:'p3',type:'opts',cols:1,lbl:'Your environment',
+   q:'In a loud, busy place &mdash; how do you feel?',
+   os:[{v:'low',e:'&#x1F630;',l:'Overwhelmed &mdash; I need calm to do my best',d:'Noise and chaos affect my performance significantly'},
+       {v:'mid',e:'&#x1F610;',l:'OK for a while, but I need quiet time to recover',d:'Can handle it, but it takes something out of me'},
        {v:'high',e:'&#x1F604;',l:'Energised &mdash; I work better with activity around me',d:'Noise and energy motivate me'}]},
-  {id:'culture',ph:'p3',type:'opts',cols:2,lbl:'Workplace culture',q:'Which workplace sounds most like you&rsquo;d fit?',
-   os:[{v:'calm_c',e:'&#x1F33F;',l:'Small, calm and close-knit',d:'People look out for each other'},
+
+  {id:'culture',ph:'p3',type:'opts',cols:2,lbl:'Workplace culture',
+   q:'Which workplace sounds most like somewhere you&rsquo;d genuinely fit?',
+   os:[{v:'calm_c',e:'&#x1F33F;',l:'Small, calm and close-knit',d:'People genuinely look out for each other'},
        {v:'busy_c',e:'&#x1F389;',l:'Busy and friendly',d:'Fast-paced but warm and fun'},
-       {v:'quiet_c',e:'&#x1F3A7;',l:'Quiet and independent',d:'Mostly on my own'},
-       {v:'high_c',e:'&#x1F3C6;',l:'High-achieving and ambitious',d:'Driven people, big goals'},
-       {v:'structured_c',e:'&#x1F3EB;',l:'Structured and purposeful',d:'Clear roles, shared mission'},
+       {v:'quiet_c',e:'&#x1F3A7;',l:'Quiet and independent',d:'Mostly on my own, minimal interruption'},
+       {v:'high_c',e:'&#x1F3C6;',l:'High-achieving and ambitious',d:'Driven people, big goals, high standards'},
+       {v:'structured_c',e:'&#x1F3EB;',l:'Structured and purposeful',d:'Clear roles, shared mission, stable routine'},
        {v:'startup_c',e:'&#x1F680;',l:'Fast-moving and entrepreneurial',d:'Innovative, scrappy, building something new'}]},
-  {id:'need',ph:'p3',type:'opts',cols:1,lbl:'The one thing',q:'If you could guarantee one thing about your first job &mdash; what would it be?',
-   os:[{v:'kind_mgr',e:'&#x1F60A;',l:'A kind, patient manager',d:'Supportive &mdash; won&rsquo;t make me feel stupid for asking'},
-       {v:'clear_exp',e:'&#x1F4CB;',l:'Clear expectations every day',d:'No guessing, no surprises'},
-       {v:'safe_exp',e:'&#x1F6E1;&#xFE0F;',l:'Safe to make mistakes and learn',d:'No public embarrassment'},
-       {v:'move',e:'&#x1F6B6;',l:'Ability to move around',d:'Not stuck at a desk'},
+
+  {id:'need',ph:'p3',type:'opts',cols:1,lbl:'The one thing',
+   q:'If you could guarantee one thing about your first job &mdash; what would it be?',
+   os:[{v:'kind_mgr',e:'&#x1F60A;',l:'A kind, patient manager who supports me',d:'Won&rsquo;t make me feel stupid for asking questions'},
+       {v:'clear_exp',e:'&#x1F4CB;',l:'Knowing exactly what&rsquo;s expected every day',d:'No guessing, no surprises &mdash; clear structure'},
+       {v:'safe_exp',e:'&#x1F6E1;&#xFE0F;',l:'A safe place to make mistakes and learn',d:'No public embarrassment &mdash; learning without fear'},
+       {v:'move',e:'&#x1F6B6;',l:'Being able to move around',d:'Not stuck at a desk all day'},
        {v:'freedom',e:'&#x1F985;',l:'Freedom to do it my way',d:'Independence and autonomy'},
        {v:'kind_team',e:'&#x1F91D;',l:'Genuinely kind colleagues',d:'Supportive team &mdash; not harsh or competitive'},
-       {v:'creative_exp',e:'&#x1F3B5;',l:'A workplace that values creativity',d:'My creative contributions are genuinely valued'}]},
-  {id:'dealbreaker',ph:'p3',type:'opts',cols:1,lbl:'The dealbreaker',q:'Which of these would make a job hardest to show up to?',hint:'Pick the one that would really get to you.',
-   os:[{v:'compete',e:'&#x1F3C6;',l:'Constant competition with colleagues',d:'Always being ranked or compared'},
-       {v:'criticise',e:'&#x1F4AC;',l:'Harsh or public criticism',d:'Corrected or embarrassed in front of others'},
-       {v:'chaos',e:'&#x1F300;',l:'Unpredictable, chaotic days',d:'Never knowing what&rsquo;s coming'},
-       {v:'alone',e:'&#x1F6AA;',l:'Complete isolation &mdash; no contact',d:'No teammates, no conversation'},
-       {v:'pressure',e:'&#x23F1;&#xFE0F;',l:'Relentless deadlines and pressure',d:'Always rushing, constant stress'},
-       {v:'loud',e:'&#x1F50A;',l:'Loud, overwhelming environment',d:'Noise and chaos that drain me'}]}
+       {v:'creative_exp',e:'&#x1F3B5;',l:'A workplace that values creativity',d:'My creative contributions are genuinely valued'}]}
 ];
 
+// ── AVERSION SECTION ──
+// Rendered as a block after P3 questions
+var AVERSION_INTRO='These next questions have no good answer &mdash; just pick whichever feels less uncomfortable to you.';
+
+var DRAIN_Q={id:'drain',ph:'p3',type:'opts',cols:1,lbl:'Energy drain',
+  q:'After a long day doing each of these &mdash; which would leave you feeling most drained or flat?',
+  os:[{v:'people_d',e:'&#x1F4AC;',l:'Talking to lots of different people all day',d:'High social contact, constant interaction'},
+      {v:'desk_d',e:'&#x1F5A5;&#xFE0F;',l:'Sitting focused on one task at a desk for hours',d:'Sedentary, screen-based, solitary'},
+      {v:'physical_d',e:'&#x1F4AA;',l:'Physical work on my feet all day',d:'Active but demanding on the body'},
+      {v:'decisions_d',e:'&#x1F4CB;',l:'Managing lots of tasks and decisions at once',d:'High cognitive load, juggling priorities'},
+      {v:'alone_d',e:'&#x1F6AA;',l:'Working completely alone with no one to check in with',d:'No colleagues, no conversation all day'},
+      {v:'chaos_d',e:'&#x1F300;',l:'A busy, unpredictable environment with no routine',d:'Constant change, nothing predictable'}]};
+
+// 6 forced-choice pairs
+var FC_PAIRS=[
+  {id:'fc1',ph:'p3',lbl:'Tradeoff 1',
+   q:'Which would bother you more at work?',
+   a:{v:'fc1a',e:'&#x1F4AC;',l:'Being criticised or corrected in front of others'},
+   b:{v:'fc1b',e:'&#x1F300;',l:'Never quite knowing what&rsquo;s expected of you'}},
+  {id:'fc2',ph:'p3',lbl:'Tradeoff 2',
+   q:'Which would bother you more?',
+   a:{v:'fc2a',e:'&#x1F6AA;',l:'Working completely alone all day'},
+   b:{v:'fc2b',e:'&#x1F50A;',l:'A loud, chaotic environment with no quiet time'}},
+  {id:'fc3',ph:'p3',lbl:'Tradeoff 3',
+   q:'Which would bother you more?',
+   a:{v:'fc3a',e:'&#x23F1;&#xFE0F;',l:'Constant pressure and relentless deadlines'},
+   b:{v:'fc3b',e:'&#x1F504;',l:'A job with no variety &mdash; identical routine forever'}},
+  {id:'fc4',ph:'p3',lbl:'Tradeoff 4',
+   q:'Which would bother you more?',
+   a:{v:'fc4a',e:'&#x1F52C;',l:'A manager who watches everything you do'},
+   b:{v:'fc4b',e:'&#x1F937;',l:'A manager who is never available when you need help'}},
+  {id:'fc5',ph:'p3',lbl:'Tradeoff 5',
+   q:'Which would bother you more?',
+   a:{v:'fc5a',e:'&#x1F3AD;',l:'Having to present or perform in front of others regularly'},
+   b:{v:'fc5b',e:'&#x1F6AA;',l:'Never having any meaningful conversation or connection at work'}},
+  {id:'fc6',ph:'p3',lbl:'Tradeoff 6',
+   q:'Which would bother you more?',
+   a:{v:'fc6a',e:'&#x1F300;',l:'Everything changes constantly &mdash; no predictability ever'},
+   b:{v:'fc6b',e:'&#x1F504;',l:'Nothing ever changes &mdash; same everything, forever'}}
+];
+
+var QUIT_Q={id:'quit',ph:'p3',type:'opts',cols:1,lbl:'Imagine quitting',
+  q:'Imagine you started a job and left after two weeks because it just wasn&rsquo;t right. What would most likely have been the reason?',
+  os:[{v:'loud_q',e:'&#x1F50A;',l:'The environment was too loud or overwhelming',d:'Noise, chaos, sensory overload'},
+      {v:'unsupported_q',e:'&#x1F614;',l:'I didn&rsquo;t feel supported or welcomed',d:'No warmth, no one looking out for me'},
+      {v:'unclear_q',e:'&#x1F300;',l:'I had no idea what was expected of me',d:'No structure, no clarity, confusing'},
+      {v:'repetitive_q',e:'&#x1F634;',l:'It was too repetitive &mdash; no variety at all',d:'Same thing every single day, no stimulation'},
+      {v:'pressure_q',e:'&#x23F1;&#xFE0F;',l:'The pressure was too much too quickly',d:'Overwhelming expectations too soon'},
+      {v:'wrong_q',e:'&#x1F494;',l:'I just didn&rsquo;t connect with the work at all',d:'Wrong type of work entirely for who I am'}]};
+
+// ── PART-TIME PATH ──
+var PT_QS=[
+  {id:'pt_firstjob',ph:'pt',type:'opts',cols:1,lbl:'Your experience',
+   q:'Have you had a paid job before?',
+   os:[{v:'first',e:'&#x1F331;',l:'No &mdash; this would be my first job',d:'Brand new to paid work'},
+       {v:'some',e:'&#x1F4BC;',l:'Yes &mdash; I&rsquo;ve had casual or part-time work before',d:'Some experience already'},
+       {v:'volunteer',e:'&#x1F91D;',l:'Volunteer work or work experience, but not paid',d:'Unpaid experience counts too'}]},
+  {id:'pt_hours',ph:'pt',type:'opts',cols:1,lbl:'Availability',
+   q:'How many hours a week are you realistically available?',
+   os:[{v:'few',e:'&#x1F4C5;',l:'Up to 8 hours',d:'One day or a few evenings'},
+       {v:'part',e:'&#x1F4C5;',l:'8&ndash;15 hours',d:'Two days or evenings and weekends'},
+       {v:'more',e:'&#x1F4C5;',l:'15&ndash;25 hours',d:'Three or more days &mdash; flexible'},
+       {v:'full',e:'&#x1F4C5;',l:'Full-time or close to it',d:'Ready to work most of the week'}]},
+  {id:'pt_transport',ph:'pt',type:'opts',cols:2,lbl:'Getting there',
+   q:'How would you get to work?',
+   os:[{v:'public',e:'&#x1F68C;',l:'Public transport',d:'Bus, train or tram'},
+       {v:'driven',e:'&#x1F697;',l:'Someone would drive me',d:'Parent, friend or family'},
+       {v:'walk',e:'&#x1F6B6;',l:'Walk, ride or scoot',d:'Close enough to my own power'},
+       {v:'self_drive',e:'&#x1F697;',l:'I can drive myself',d:'Own licence and car'},
+       {v:'near_home',e:'&#x1F3E1;',l:'Needs to be close to home',d:'Limited travel options'}]},
+  {id:'pt_env',ph:'pt',type:'opts',cols:1,lbl:'Environment readiness',
+   q:'Which of these environments could you handle on a busy day &mdash; right now?',
+   hint:'Be honest &mdash; not what sounds good, what&rsquo;s actually true for you right now.',
+   os:[{v:'retail_pt',e:'&#x1F6D2;',l:'A busy retail shop or supermarket',d:'Serving customers, registers, busy floor'},
+       {v:'food_pt',e:'&#x1F355;',l:'A caf&eacute;, bakery or food place',d:'Food service, counter, kitchen hand'},
+       {v:'physical_pt',e:'&#x1F4E6;',l:'A warehouse, stockroom or physical role',d:'Labouring, packing, delivery'},
+       {v:'outdoor_pt',e:'&#x1F33F;',l:'An outdoor or physical role',d:'Grounds, gardens, markets, car wash'},
+       {v:'animals_pt',e:'&#x1F43E;',l:'An animal shelter, vet clinic or pet shop',d:'Animal care, assisting, feeding'},
+       {v:'quiet_pt',e:'&#x1F3E2;',l:'A small quiet office or reception',d:'Admin, phones, front desk'},
+       {v:'care_pt',e:'&#x1F91D;',l:'A care environment',d:'Childcare assistant, aged care, disability support'},
+       {v:'notready_pt',e:'&#x1F60C;',l:'Something low-contact and calm &mdash; I&rsquo;m not ready for busy yet',d:'I need a gentle start'}]},
+  {id:'pt_social',ph:'pt',type:'opts',cols:1,lbl:'Social readiness',
+   q:'Which feels most true for you right now?',
+   os:[{v:'comfortable',e:'&#x1F604;',l:'I&rsquo;m comfortable talking to strangers and customers',d:'Happy to engage with anyone'},
+       {v:'manages',e:'&#x1F610;',l:'I can manage it but it takes energy',d:'Fine but it&rsquo;s not effortless'},
+       {v:'limited',e:'&#x1F615;',l:'I find it hard &mdash; I&rsquo;d prefer limited customer contact',d:'Behind-the-scenes suits me better'},
+       {v:'struggles',e:'&#x1F630;',l:'I really struggle with it &mdash; I need a behind-the-scenes role',d:'Direct customer contact is too much right now'}]},
+  {id:'pt_values',ph:'pt',type:'multi',cols:2,lbl:'What matters',
+   q:'What matters most to you in a part-time job? Pick your top 2.',max:2,
+   os:[{v:'pay_pt',e:'&#x1F4B0;',l:'Good pay for my hours',d:'Worth my time financially'},
+       {v:'kind_pt',e:'&#x1F60A;',l:'A kind team and manager',d:'People who are patient and supportive'},
+       {v:'close_pt',e:'&#x1F4CD;',l:'Close to home or easy to get to',d:'Location and transport matter'},
+       {v:'flex_pt',e:'&#x1F4C5;',l:'Flexible hours',d:'Works around school or study'},
+       {v:'learn_pt',e:'&#x1F331;',l:'Learning something useful',d:'Gaining skills and experience'},
+       {v:'lowstress_pt',e:'&#x1F60C;',l:'Low stress and manageable',d:'Not overwhelming for a first job'},
+       {v:'care_about',e:'&#x1F33F;',l:'Work I actually care about',d:'Meaningful, not just any job'}]},
+  {id:'pt_safety',ph:'pt',type:'opts',cols:1,lbl:'Psychological safety',
+   q:'What would most likely make you leave a part-time job in the first few weeks?',
+   os:[{v:'harsh_pt',e:'&#x1F4AC;',l:'Being spoken to harshly or disrespectfully',d:'Unkind managers or colleagues'},
+       {v:'unclear_pt',e:'&#x1F300;',l:'Having no idea what I&rsquo;m supposed to be doing',d:'No structure, no guidance'},
+       {v:'loud_pt',e:'&#x1F50A;',l:'The environment being too loud or overwhelming',d:'Sensory overload or chaos'},
+       {v:'pressure_pt',e:'&#x23F1;&#xFE0F;',l:'Too much pressure too quickly',d:'Expectations I can&rsquo;t meet yet'},
+       {v:'alone_pt',e:'&#x1F6AA;',l:'Feeling completely alone with no support',d:'No one looking out for me'},
+       {v:'wrong_pt',e:'&#x1F494;',l:'The work feeling pointless or wrong for me',d:'No connection to the role at all'}]},
+  {id:'pt_motive',ph:'pt',type:'opts',cols:1,lbl:'Why a job',
+   q:'Why do you want a part-time job right now?',
+   os:[{v:'money_pt',e:'&#x1F4B0;',l:'I need to earn money',d:'Financial need or independence'},
+       {v:'skills_pt',e:'&#x1F331;',l:'I want to build skills and experience',d:'Developing myself for the future'},
+       {v:'people_pt',e:'&#x1F91D;',l:'I want to meet people and get out of the house',d:'Social connection and routine'},
+       {v:'explore_pt',e:'&#x1F3AF;',l:'I want to figure out what kind of work suits me',d:'Exploring my options'},
+       {v:'save_pt',e:'&#x1F4B3;',l:'Saving for something specific',d:'A goal I&rsquo;m working toward'},
+       {v:'reluctant_pt',e:'&#x1F937;',l:'Honestly, I&rsquo;m not totally sure I do',d:'Someone else wants me to &mdash; I&rsquo;m undecided'}]},
+  {id:'pt_type',ph:'pt',type:'opts',cols:2,lbl:'Job type',
+   q:'Which of these part-time jobs sounds most OK to you &mdash; even if it&rsquo;s not perfect?',
+   hint:'&ldquo;Most OK&rdquo; not most exciting &mdash; be honest with yourself.',
+   os:[{v:'retail_t',e:'&#x1F6D2;',l:'Retail',d:'Shelves, serving, registers'},
+       {v:'food_t',e:'&#x1F355;',l:'Food service',d:'Caf&eacute;, bakery, fast food, kitchen'},
+       {v:'physical_t',e:'&#x1F4E6;',l:'Physical and labouring',d:'Warehouse, delivery, markets'},
+       {v:'outdoor_t',e:'&#x1F33F;',l:'Outdoor work',d:'Grounds, gardening, car wash, sport events'},
+       {v:'animals_t',e:'&#x1F43E;',l:'Working with animals',d:'Pet shop, vet, shelter, grooming'},
+       {v:'quiet_t',e:'&#x1F3E2;',l:'Quiet and admin',d:'Reception, data entry, small office'},
+       {v:'care_t',e:'&#x1F91D;',l:'Care and support',d:'Childcare, aged care, disability support'},
+       {v:'creative_t',e:'&#x1F3A8;',l:'Creative',d:'Photography, design, social media for a local business'}]}
+];
+
+// ── BUILD QUESTION LIST ──
 function buildQL(enjoys,challenge,noticed,age,subjects){
-  return P1.concat(P2A).concat([getVisionQ(age)]).concat(P2B).concat([getBranch(enjoys,challenge,noticed,subjects)]).concat(P3);
+  var branch=getBranch(enjoys,challenge,noticed,subjects);
+  var visionQ=getVisionQ(age);
+  // Career path: P1 + P2A + visionQ + P2B + branch + P3 + drain + FC pairs + quit
+  var list=P1.concat(P2A).concat([visionQ]).concat(P2B).concat([branch]).concat(P3).concat([DRAIN_Q]);
+  FC_PAIRS.forEach(function(fc){list.push(fc);});
+  list.push(QUIT_Q);
+  return list;
 }
 
 // ── STATE ──
-var A={},QL=[],QI=0,PH='safe',CB=null,RS=null,EM='',TIV=null,TV='',MS={},SS=null,PS={};
+var A={},QL=[],QI=0,PH='safe',CB=null,RS=null,EM='',TIV=null,TV='',MS={},SS=null,PS={},FC_SEL={};
+var IS_PT=false; // part-time path flag
 
 function g(id){return document.getElementById(id);}
 function sc(){return g('S');}
 function scrollUp(){try{window.scrollTo({top:0,behavior:'instant'});}catch(e){window.scrollTo(0,0);}}
 function sp(p,l,s){g('PF').style.width=p+'%';g('PL').textContent=l;g('PS').innerHTML=s?'Step <strong>'+s+'</strong>':'';}
-function ri(){TV='';MS={};SS=null;PS={};}
+function ri(){TV='';MS={};SS=null;PS={};FC_SEL={};}
 function en(y){var b=g('BN');if(b)b.disabled=!y;}
 
 function oh(o,sel){
@@ -412,6 +657,7 @@ function brow(bk){
     '<button class="bnx" id="BN" onclick="GN()" disabled>Continue \u2192</button></div>';
 }
 
+// ── RENDER ──
 function rQ(q){
   var os=q.os||[],cols=q.cols||1;
   var ph=PHS.find(function(p){return p.id===q.ph;});
@@ -420,11 +666,28 @@ function rQ(q){
   h+='<p class="qt">'+q.q+'</p>';
   if(q.hint)h+='<p class="qh">'+q.hint+'</p>';
 
+  // Forced-choice pair
+  if(q.a&&q.b){
+    h+='<p class="fc-vs">Which would bother you more?</p>';
+    h+='<div class="fc-wrap">';
+    var selA=(FC_SEL[q.id]===q.a.v);
+    var selB=(FC_SEL[q.id]===q.b.v);
+    h+='<div class="fc-opt'+(selA?' sel':'')+'" onclick="FCClick(\''+q.id+'\',\''+q.a.v+'\')">' +
+      '<span class="fc-icon">'+q.a.e+'</span><span class="fc-label">'+q.a.l+'</span></div>';
+    h+='<div class="fc-opt'+(selB?' sel':'')+'" onclick="FCClick(\''+q.id+'\',\''+q.b.v+'\')">' +
+      '<span class="fc-icon">'+q.b.e+'</span><span class="fc-label">'+q.b.l+'</span></div>';
+    h+='</div>';
+    h+=brow(QI>0);
+    sc().innerHTML=h;
+    en(!!FC_SEL[q.id]);
+    return;
+  }
+
   if(q.type==='path'){
     var cs=[
-      {k:'now',c:'sn',i:'&#x1F4B5;',t:'A part-time job soon',d:'Start earning while I study or figure things out.'},
-      {k:'career',c:'sc',i:'&#x1F680;',t:'A career direction',d:'Understand where I could go and how to get there.'},
-      {k:'unsure',c:'su',i:'&#x1F937;',t:'Not sure &mdash; help me explore',d:'Show me both and help me figure it out.'}
+      {k:'now',c:'sn',i:'&#x1F4B5;',t:'A part-time job I can start soon',d:'Start earning while I study or figure things out.'},
+      {k:'career',c:'sc',i:'&#x1F680;',t:'A career direction to work toward',d:'Understand where I could go and how to get there.'},
+      {k:'unsure',c:'su',i:'&#x1F937;',t:'Not sure &mdash; help me explore both',d:'Show me options and help me figure it out.'}
     ];
     h+='<div class="pg">';
     cs.forEach(function(c){
@@ -458,6 +721,23 @@ function rQ(q){
   }
 }
 
+// Aversion intro screen (shown before drain Q)
+function showAversionIntro(onContinue){
+  PH='aversion_intro';
+  sp(Math.round((QI/QL.length)*88),'How you work best','');
+  sc().innerHTML=
+    '<div style="text-align:center;padding:8px 0 4px">'+
+    '<div style="font-size:36px;margin-bottom:12px">&#x2696;&#xFE0F;</div>'+
+    '<p class="qt" style="margin-bottom:10px">One more set of questions</p>'+
+    '<p class="qh" style="text-align:center;max-width:340px;margin:0 auto 20px">'+AVERSION_INTRO+'</p>'+
+    '<button class="bstart" onclick="aversionGo()">OK, let&rsquo;s go \u2192</button>'+
+    '<br><br><button class="bbk" onclick="GB()">\u2190 Back</button>'+
+    '</div>';
+}
+var aversionOnGo=null;
+function aversionGo(){if(aversionOnGo)aversionOnGo();}
+
+// ── CLICK HANDLERS ──
 function OC(btn){
   var v=btn.getAttribute('data-v'),q=QL[QI];
   if(q.type==='multi'){
@@ -471,7 +751,18 @@ function OC(btn){
     btn.classList.add('sel');SS=v;en(true);
   }
 }
-
+function FCClick(qid,val){
+  FC_SEL[qid]=val;
+  document.querySelectorAll('.fc-opt').forEach(function(el){el.classList.remove('sel');});
+  // Find and highlight the selected one
+  var opts=document.querySelectorAll('.fc-opt');
+  var q=QL[QI];
+  if(q&&q.a&&q.b){
+    if(val===q.a.v)opts[0].classList.add('sel');
+    else if(val===q.b.v)opts[1].classList.add('sel');
+  }
+  en(true);
+}
 function upm(){
   var m=g('PM');if(!m)return;
   var msg='';
@@ -479,50 +770,83 @@ function upm(){
   else if(PS.now&&PS.career)msg='\u2728 Great \u2014 we\u2019ll give you results for both!';
   m.textContent=msg;
 }
-
 function PC(k){
   if(k==='unsure'){var w=PS.unsure;PS={};if(!w)PS.unsure=true;}
   else{delete PS.unsure;if(PS[k])delete PS[k];else PS[k]=true;}
   var cm={now:'sn',career:'sc',unsure:'su'},ks=['now','career','unsure'];
-  document.querySelectorAll('.pc').forEach(function(c,i){c.className='pc'+(PS[ks[i]]?' '+cm[ks[i]]:'')+' ';});
-  en(Object.keys(PS).some(function(k){return PS[k];}));upm();
+  document.querySelectorAll('.pc').forEach(function(c,i){c.className='pc'+(PS[ks[i]]?' '+cm[ks[i]]:'');});
+  en(Object.keys(PS).some(function(k){return PS[k];}));
+  upm();
 }
-
 function TC(i){TV=i.value;en(!!i.value.trim());}
 function TK(e){if(e.key==='Enter'){var b=g('BN');if(b&&!b.disabled)GN();}}
 
+// ── NAVIGATION ──
 function GV(q){
   if(q.type==='text')return(TV||'').trim();
   if(q.type==='multi')return Object.keys(MS).filter(function(k){return MS[k];});
   if(q.type==='opts')return SS;
+  if(q.a&&q.b)return FC_SEL[q.id]||null;
   if(q.type==='path'){if(PS.unsure)return['now','career'];return Object.keys(PS).filter(function(k){return PS[k];});}
   return null;
 }
 
 function GN(){
-  var q=QL[QI],v=GV(q);
+  if(PH==='aversion_intro'){aversionGo();return;}
+  var q=QL[QI];
+  var v=GV(q);
   if(!v||(Array.isArray(v)&&v.length===0))return;
   A[q.id]=v;
+
+  // After goal Q — check if part-time only
+  if(q.id==='goal'){
+    var goals=Array.isArray(v)?v:[v];
+    IS_PT=(goals.indexOf('now')>=0&&goals.indexOf('career')<0&&!PS.unsure);
+    if(IS_PT){
+      // Switch to part-time path
+      QL=PT_QS;QI=0;ri();scrollUp();sQ();return;
+    }
+  }
+
+  // Rebuild with branch after challenge Q
   if(q.id==='challenge'){
     QL=buildQL(A.enjoys||[],A.challenge||'moderate',A.noticed||'',A.age||'15_17',A.subjects||[]);
   }
+
+  // Show aversion intro before drain Q
+  if(q.id==='need'){
+    scrollUp();
+    aversionOnGo=function(){
+      ri();QI++;scrollUp();sQ();
+    };
+    showAversionIntro();
+    return;
+  }
+
   var nx=QI+1;
   if(nx<QL.length){
     var cp=q.ph,np=QL[nx].ph;
-    if(cp&&np&&cp!==np){CB=cp;scrollUp();sC();return;}
+    if(cp&&np&&cp!==np&&cp!=='pt'&&np!=='pt'){CB=cp;scrollUp();sC();return;}
   }
   if(nx>=QL.length){genR();}
   else{ri();QI=nx;scrollUp();sQ();}
 }
 
 function GB(){
+  if(PH==='aversion_intro'){
+    // Go back to last regular question
+    PH='questions';scrollUp();sQ();return;
+  }
   if(PH==='celebration'){ri();QI--;PH='questions';scrollUp();sQ();return;}
   if(QI<=0){PH='safe';scrollUp();sSf();return;}
-  var pv=QI-1,pq=QL[pv],cq=QL[QI];
-  if(pq&&cq&&pq.ph!==cq.ph){CB=pq.ph;scrollUp();sC();return;}
+  var pv=QI-1;
+  if(pv>=0&&QL[pv]&&QL[QI]&&QL[pv].ph!==QL[QI].ph&&QL[pv].ph!=='pt'&&QL[QI].ph!=='pt'){
+    CB=QL[pv].ph;scrollUp();sC();return;
+  }
   ri();QI=pv;scrollUp();sQ();
 }
 
+// ── SCREENS ──
 function sSf(){
   PH='safe';sp(0,'Welcome','');
   sc().innerHTML=
@@ -539,18 +863,33 @@ function sSf(){
     ].map(function(r){
       return '<div class="spill"><span class="spi">'+r[0]+'</span><div><span class="sps">'+r[1]+'</span><span class="spt">'+r[2]+'</span></div></div>';
     }).join('')+
-    '<button class="bstart" onclick="stQ()">Begin Phase 1 &#x2192;</button>';
+    '<button class="bstart" onclick="stQ()">Begin Phase 1 \u2192</button>';
 }
 
 function stQ(){
-  A={};QL=buildQL([],null,null,'15_17',[]);
+  A={};IS_PT=false;
+  QL=buildQL([],null,null,'15_17',[]);
   QI=0;ri();PH='questions';scrollUp();sQ();
 }
 
 function sQ(){
   PH='questions';var q=QL[QI];if(!q){genR();return;}
-  sp(Math.round((QI/QL.length)*88),q.lbl,(QI+1)+' of '+QL.length);
-  rQ(q);
+  var total=QL.length;
+  var pct=Math.round((QI/total)*88);
+  // Chunked progress label
+  var ph=PHS.find(function(p){return p.id===q.ph;});
+  var phLabel=ph?ph.lbl:(IS_PT?'Part-time path':'');
+  var qInPhase=QI+1;
+  sp(pct,phLabel,qInPhase+' of '+total);
+
+  // 150ms fade transition
+  var s=sc();
+  s.style.opacity='0';
+  s.style.transition='opacity .15s ease';
+  setTimeout(function(){
+    rQ(q);
+    s.style.opacity='1';
+  },150);
 }
 
 function sC(){
@@ -565,8 +904,8 @@ function sC(){
     '<p class="cp">'+cel+'</p>';
   if(np){h+='<div class="npb"><div class="npl">Up next</div><div class="npi">'+np.em+'</div>'+
     '<div class="npt">'+np.lbl+'</div><div class="npd">'+ph.nxt+'</div></div>';}
-  h+='<button class="bstart" onclick="cC()">'+(np?'Let&rsquo;s explore '+np.lbl+' &#x2192;':'Get my results &#x2192;')+'</button>'+
-    '<br><br><button class="bbk" onclick="GB()">&#x2190; Back</button></div>';
+  h+='<button class="bstart" onclick="cC()">'+(np?'Let&rsquo;s explore '+np.lbl+' \u2192':'Get my results \u2192')+'</button>'+
+    '<br><br><button class="bbk" onclick="GB()">\u2190 Back</button></div>';
   sc().innerHTML=h;scrollUp();
 }
 
@@ -585,45 +924,90 @@ function sTh(){
   },5000);
 }
 
-// ── SYSTEM PROMPT BUILDER ──
-function buildSys(){
-  var isSensitive=(A.feedback==='sensitive'||A.noise==='low'||A.need==='kind_mgr'||A.need==='safe_exp'||A.dealbreaker==='criticise'||A.dealbreaker==='loud');
-  var isCommercial=(A.noticed==='driven'||A.noticed==='connector'||A.culture==='startup_c'||A.culture==='high_c'||(Array.isArray(A.values)&&(A.values.indexOf('recognition')>=0||A.values.indexOf('progress')>=0)));
+// ── SYSTEM PROMPT ──
+function buildSys(isPT){
+  var isSensitive=(A.feedback==='sensitive'||A.noise==='low'||A.need==='kind_mgr'||A.need==='safe_exp'||
+    A.fc1===A.fc1&&A.fc1==='fc1a'||A.quit==='unsupported_q'||A.quit==='loud_q'||
+    A.pt_safety==='harsh_pt'||A.pt_safety==='loud_pt');
+  var isCommercial=(A.noticed==='driven'||A.noticed==='connector'||A.culture==='startup_c'||A.culture==='high_c'||
+    (Array.isArray(A.values)&&(A.values.indexOf('recognition')>=0||A.values.indexOf('progress')>=0)));
   var isCreative=(A.branch&&['visual','music_b','writing_b','perform_b','film_b','fashion_b','teaching_b'].indexOf(A.branch)>=0);
   var isAcademic=(A.challenge==='complex'&&A.vision&&['expert','lead','senior','impact'].indexOf(A.vision)>=0);
-  var sim=A.challenge==='simple';
+  var sim=(A.challenge==='simple');
+  var needsSupport=(A.conscientious==='needsupport'||A.conscientious==='struggles'||A.grit==='beaten');
+  var reluctant=(A.pt_motive==='reluctant_pt');
 
-  return 'You are a warm, empathetic career advisor for young Australians aged 15-25. You call them Explorers. Philosophy: Honest Hope - realistic AND genuinely encouraging.\n\n'+
-    'PROFILE: sensitive='+isSensitive+' commercial='+isCommercial+' creative='+isCreative+' academic='+isAcademic+' simple='+sim+'\n\n'+
-    'ENVIRONMENT RULES - match role CHARACTERISTICS not a fixed list:\n'+
+  if(isPT){
+    return 'You are a warm, empathetic career advisor for young Australians 15-25. Call them Explorers. Philosophy: Honest Hope.\n'+
+      'This Explorer wants a PART-TIME JOB NOW &mdash; not a career path. Match to real, available part-time and casual roles.\n'+
+      'First job: '+(A.pt_firstjob==='first'?'YES &mdash; this is their first job ever. Be extra encouraging and suggest beginner-friendly roles.':'Has some experience.')+'\n'+
+      (reluctant?'RELUCTANT EXPLORER: They&rsquo;re not sure they want a job. Frame results gently. Suggest low-pressure entry points.\n':'')+
+      'Transport: '+(A.pt_transport||'unknown')+'. Environment readiness: '+(A.pt_env||'unknown')+'. Social readiness: '+(A.pt_social||'unknown')+'.\n'+
+      'Psychological safety threshold: '+(A.pt_safety||'unknown')+'. This is a HARD filter &mdash; do not suggest roles that would trigger this.\n'+
+      'SENSITIVE RULES: '+(isSensitive?'ONLY suggest calm, supportive, low-pressure roles. Never loud worksites, competitive environments or roles requiring confident customer-facing behaviour before they&rsquo;re ready.':'Standard matching.')+'\n'+
+      'Return ONLY valid JSON:\n'+
+      '{"encouragement":"2 warm sentences. For first job: celebrate the step, normalise nervousness.","summary":"1 sentence with their name.","nowJobs":[2 job objects],"tips":["tip1","tip2"]}\n'+
+      'Job: {"title":"","desc":"2 sentences","whyYou":"You&rsquo;d be great here because","pathway":["Apply this week","First week","After a month"],"tags":["",""],"matchLevel":"strong match|good match|worth trying","matchPips":3-5,"thisWeek":"specific Australian action &mdash; name a real website like seek.com.au or gumtree.com.au","envFit":"why this environment suits their readiness right now"}\n'+
+      'Include nowJobs only (2 jobs). No careerJobs.';
+  }
+
+  return 'You are a warm, empathetic career advisor for young Australians 15-25. Call them Explorers. Philosophy: Honest Hope &mdash; realistic AND genuinely encouraging.\n\n'+
+    'PROFILE: sensitive='+isSensitive+' commercial='+isCommercial+' creative='+isCreative+' academic='+isAcademic+' simple='+sim+' needsSupport='+needsSupport+'\n\n'+
+    'AVERSION PROFILE (critical for environment matching):\n'+
+    'Energy drain: '+(A.drain||'unknown')+'\n'+
+    'Forced-choice results: fc1='+(A.fc1||'?')+' fc2='+(A.fc2||'?')+' fc3='+(A.fc3||'?')+' fc4='+(A.fc4||'?')+' fc5='+(A.fc5||'?')+' fc6='+(A.fc6||'?')+'\n'+
+    'Projective quit reason: '+(A.quit||'unknown')+'\n'+
+    'Use aversion data to EXCLUDE environments &mdash; someone who picked fc1a (criticism) needs zero public correction culture.\n\n'+
+    'ENVIRONMENT RULES &mdash; match role CHARACTERISTICS not a fixed list:\n'+
     (isSensitive?
-      'SENSITIVE: ONLY roles with ALL of: clear repetitive daily tasks, small stable team under 15 people, calm low-noise environment, supportive senior colleague nearby, no rapid complex decisions, no client-facing pressure or KPIs, genuine job security. These characteristics exist across aged care, libraries, horticulture, animal care, archiving, school support, community services, NDIS, therapeutic animal programs, museum work, and any calm purposeful emerging role. NEVER: coordinator/analyst/manager/specialist in title, professional kitchens, worksites with banter culture, call centres, competitive sales, emergency services, fast-paced high-noise roles.\n':'')+
-    (isCommercial?'COMMERCIAL: prioritise roles with progression, recognition, commercial impact. Include startup roles, sales, marketing, graduate programs. Frame with 3-year arc.\n':'')+
+      'SENSITIVE EXPLORER (non-negotiable): ONLY roles with ALL of: clear repetitive daily tasks, small stable team under 15 people, calm low-noise environment, supportive senior colleague nearby, no rapid complex decisions, no client-facing pressure or KPIs, genuine job security. These characteristics exist across aged care, libraries, horticulture, animal care, archiving, school support, community services, NDIS, therapeutic programs, museum work. NEVER: banter culture worksites, call centres, competitive sales, emergency services, high-noise or high-pressure roles.\n':
+      '')+
+    (needsSupport?'NEEDS SUPPORT: This Explorer struggles with follow-through or hard tasks. Suggest roles with clear milestones, regular supervision, structured training programs and patient management.\n':'')+
+    (isCommercial?'COMMERCIAL: prioritise progression, recognition, commercial impact. Include startup roles, sales, marketing, grad programs. Frame with 3-5 year arc.\n':'')+
     (isCreative?'CREATIVE: never suggest marketing coordinator as a creative role. Suggest: graphic designer, illustrator, photographer, musician, arts administrator, UX designer, film editor, community arts worker, drama teacher.\n':'')+
-    (isAcademic?'ACADEMIC: include professional pathways with honest study requirements - do not hide degree length.\n':'')+
-    'ALWAYS: trades equal to professional paths. Aged care is a calling not a fallback. Arts/music/teaching/sport are real careers. Branch G Explorers: start somewhere safe is smart not settling. Never contradict challenge preference - simple means clear repetitive tasks only.\n\n'+
-    'OUTPUT: ONLY valid JSON, zero markdown:\n'+
-    '{"encouragement":"2 warm sentences referencing something specific they told us. For 15-17 normalise uncertainty.","summary":"1 sentence starting with their name.","nowJobs":[2 job objects],"careerJobs":[2 job objects],"tips":["tip1","tip2","tip3"]}\n'+
-    'Job: {"title":"","desc":"2 sentences about role and fit","whyYou":"You would be great here because - link to specific answer","pathway":["Do now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"one specific action naming a real Australian website or organisation","envFit":"why this environment suits their specific needs"}\n'+
+    (isAcademic?'ACADEMIC: include professional pathways with honest study timeframes. Do not hide degree length.\n':'')+
+    'ALWAYS: trades equal to professional paths. Aged care is a calling not a fallback. Arts/music/teaching/sport are real careers. Branch G: starting somewhere safe is smart not settling.\n'+
+    'Outdoor leisure (enjoys=nature) does NOT mean outdoor vocational preference unless Explorer also selected outdoor work environment in place question.\n\n'+
+    'Return ONLY valid JSON, zero markdown:\n'+
+    '{"encouragement":"2 warm sentences referencing something specific they told us. For 15-17 normalise uncertainty warmly.","summary":"1 sentence starting with their name.","nowJobs":[2 job objects],"careerJobs":[2 job objects],"tips":["tip1","tip2","tip3"]}\n'+
+    'Job: {"title":"","desc":"2 sentences about role and why it suits this Explorer","whyYou":"You would be great here because &mdash; link to a specific answer","pathway":["Do now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"one specific action naming a real Australian website or organisation","envFit":"why this environment suits their specific needs and aversions"}\n'+
     'Include nowJobs only if wantsNow=true. Include careerJobs only if wantsCareer=true.';
 }
 
-function buildUserMsg(wN,wC){
+function buildUserMsg(wN,wC,isPT){
+  if(isPT){
+    return 'Explorer: '+(A.name||'Explorer')+', age: '+(A.age||'15-25')+'\n'+
+      'First job: '+(A.pt_firstjob||'unknown')+'\n'+
+      'Hours available: '+(A.pt_hours||'unknown')+'\n'+
+      'Transport: '+(A.pt_transport||'unknown')+'\n'+
+      'Environment can handle now: '+(A.pt_env||'unknown')+'\n'+
+      'Social readiness: '+(A.pt_social||'unknown')+'\n'+
+      'What matters: '+JSON.stringify(A.pt_values)+'\n'+
+      'Psychological safety threshold: '+(A.pt_safety||'unknown')+'\n'+
+      'Motivation for wanting a job: '+(A.pt_motive||'unknown')+'\n'+
+      'Preferred job type: '+(A.pt_type||'unknown');
+  }
   return 'Explorer: '+(A.name||'Explorer')+', age: '+(A.age||'15-25')+'\n'+
     'Situation: '+JSON.stringify(A.study)+'\n'+
     'Goal: wantsNow='+wN+' wantsCareer='+wC+'\n'+
-    'Environments: '+JSON.stringify(A.place)+'\n'+
-    'School subjects enjoyed: '+JSON.stringify(A.subjects)+'\n'+
-    'Enjoys (top 3): '+JSON.stringify(A.enjoys)+'\n'+
+    'Work environments preferred: '+JSON.stringify(A.place)+'\n'+
+    'School subjects enjoyed/confident in: '+JSON.stringify(A.subjects)+'\n'+
+    'Enjoys outside school (top 3): '+JSON.stringify(A.enjoys)+'\n'+
     'Superpower: '+(A.noticed||'')+'\n'+
-    'Challenge: '+(A.challenge||'moderate')+'\n'+
+    'Challenge preference: '+(A.challenge||'moderate')+'\n'+
     'Proud moment: '+(A.proud||'')+'\n'+
     'Time flies when: '+(A.flow||'')+'\n'+
+    'Financial orientation: '+(A.money||'')+'\n'+
     'Vision: '+(A.vision||'')+'\n'+
+    'Conscientiousness: '+(A.conscientious||'')+'\n'+
+    'Adaptability to change: '+(A.adaptable||'')+'\n'+
+    'Social confidence: '+(A.social||'')+'\n'+
     'Group role: '+(A.grouprole||'')+'\n'+
-    'Values: '+JSON.stringify(A.values)+'\n'+
+    'Values (top 3): '+JSON.stringify(A.values)+'\n'+
     'Hard day recovery: '+(A.hardday||'')+'\n'+
-    'Learns by: '+(A.learns||'')+'\n'+
+    'Emotional regulation: '+(A.emotion||'')+'\n'+
+    'Learning style: '+(A.learns||'')+'\n'+
+    'Grit/persistence: '+(A.grit||'')+'\n'+
     'Collab style: '+JSON.stringify(A.collab)+'\n'+
     'Branch (specific interest): '+(A.branch||'')+'\n'+
     'Feedback sensitivity: '+(A.feedback||'')+'\n'+
@@ -631,17 +1015,22 @@ function buildUserMsg(wN,wC){
     'Noise tolerance: '+(A.noise||'')+'\n'+
     'Culture: '+(A.culture||'')+'\n'+
     'Top need: '+(A.need||'')+'\n'+
-    'Dealbreaker: '+(A.dealbreaker||'');
+    'Energy drain: '+(A.drain||'')+'\n'+
+    'Aversion pairs: fc1='+(A.fc1||'?')+' fc2='+(A.fc2||'?')+' fc3='+(A.fc3||'?')+' fc4='+(A.fc4||'?')+' fc5='+(A.fc5||'?')+' fc6='+(A.fc6||'?')+'\n'+
+    'Projective quit: '+(A.quit||'');
 }
 
 function genR(){
   scrollUp();sTh();
-  var wN=Array.isArray(A.goal)&&A.goal.indexOf('now')>=0;
-  var wC=Array.isArray(A.goal)&&A.goal.indexOf('career')>=0;
+  var wN=!IS_PT&&Array.isArray(A.goal)&&A.goal.indexOf('now')>=0;
+  var wC=!IS_PT&&Array.isArray(A.goal)&&A.goal.indexOf('career')>=0;
+  if(IS_PT){wN=true;wC=false;}
   fetch('/api/chat',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1800,system:buildSys(),messages:[{role:'user',content:buildUserMsg(wN,wC)}]})
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1800,
+      system:buildSys(IS_PT),
+      messages:[{role:'user',content:buildUserMsg(wN,wC,IS_PT)}]})
   })
   .then(function(r){if(!r.ok)return r.json().then(function(e){throw new Error((e.error&&e.error.message)||'HTTP '+r.status);});return r.json();})
   .then(function(d){
@@ -652,10 +1041,10 @@ function genR(){
   .catch(function(e){if(TIV)clearInterval(TIV);EM=e.message||'Unknown error';scrollUp();sErr();});
 }
 
-// ── JOB CARD (no variable shadowing - uses 'typ' not 't') ──
+// ── JOB CARD ──
 function jcard(job,rank,typ){
   var p=Math.min(5,Math.max(1,job.matchPips||4));
-  var lb={'strong match':'Strong match','good match':'Good match','worth exploring':'Worth exploring'};
+  var lb={'strong match':'Strong match','good match':'Good match','worth exploring':'Worth exploring','worth trying':'Worth trying'};
   var w=lb[(job.matchLevel||'').toLowerCase()]||job.matchLevel||'Good match';
   var nc=typ==='now'?'snum-n':'snum-c';
   var pc=typ==='now'?'pip-n':'pip-c';
@@ -663,17 +1052,12 @@ function jcard(job,rank,typ){
   var pw='';
   if(job.pathway&&job.pathway.length){
     pw='<div class="pw"><div class="pwl">How to get there</div><div class="pws">';
-    job.pathway.forEach(function(step,i){
-      pw+='<div><span class="snum '+nc+'">'+(i+1)+'</span><span>'+step+'</span></div>';
-    });
+    job.pathway.forEach(function(step,i){pw+='<div><span class="snum '+nc+'">'+(i+1)+'</span><span>'+step+'</span></div>';});
     pw+='</div></div>';
   }
   var tgs='';
-  if(job.tags&&job.tags.length){
-    tgs='<div class="jt">'+job.tags.map(function(tag){return '<span>'+tag+'</span>';}).join('')+'</div>';
-  }
-  var pipsHtml='';
-  for(var i=0;i<5;i++)pipsHtml+='<div class="pip'+(i<p?' '+pc:'')+'"></div>';
+  if(job.tags&&job.tags.length){tgs='<div class="jt">'+job.tags.map(function(tag){return '<span>'+tag+'</span>';}).join('')+'</div>';}
+  var pipsH='';for(var i=0;i<5;i++)pipsH+='<div class="pip'+(i<p?' '+pc:'')+'"></div>';
   return '<div class="jc">'+
     '<span class="jr">'+rank+'</span>'+
     '<h4 class="jh4">'+job.title+'</h4>'+
@@ -681,31 +1065,31 @@ function jcard(job,rank,typ){
     (job.whyYou?'<p class="wy">'+job.whyYou+'</p>':'')+
     (job.envFit?'<div class="ef">&#x1F3E0; '+job.envFit+'</div>':'')+
     pw+tgs+
-    '<div class="mr"><div class="pips">'+pipsHtml+'</div><span class="mw '+wc+'">'+w+'</span></div>'+
+    '<div class="mr"><div class="pips">'+pipsH+'</div><span class="mw '+wc+'">'+w+'</span></div>'+
     (job.thisWeek?'<div class="thiswk"><strong>This week:</strong> '+job.thisWeek+'</div>':'')+
     '</div>';
 }
 
-// ── LOAD MORE (uses 'typ' not 't' to avoid shadowing) ──
+// ── LOAD MORE ──
 function loadMore(typ){
   var btn=g('moreBtn'+typ);
   if(btn){btn.disabled=true;btn.textContent='Finding more matches\u2026';}
-  var isNow=typ==='now';
+  var isNow=(typ==='now');
   var shown=JSON.stringify((isNow?RS.nowJobs:RS.careerJobs)||[]);
   var sysLines=[
     'Career advisor for young Australians 15-25.',
-    'Explorer has already been shown some matches.',
-    'Suggest 2 NEW roles not already shown. Same profile rules apply.',
+    'Explorer has been shown matches. Suggest 2 NEW different roles not already shown.',
     'Return ONLY valid JSON: {"extraJobs":[2 job objects]}',
-    'Job: {"title":"","desc":"2 sentences","whyYou":"You would be great here because","pathway":["Now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"specific Australian action","envFit":"why this environment suits them"}',
+    'Job: {"title":"","desc":"2 sentences","whyYou":"You would be great here because","pathway":["Now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"specific Australian action","envFit":"why environment suits them"}',
     'Already shown: '+shown,
-    'Profile: '+buildSys().substring(0,500)
+    'Same profile sensitivity rules apply. Sensitive profile: '+(A.feedback==='sensitive'||A.noise==='low'?'YES':'NO')
   ];
-  var userLine='Same Explorer profile. Wants '+(isNow?'part-time jobs now':'career paths')+'. Give 2 new different suggestions not already shown.';
   fetch('/api/chat',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:900,system:sysLines.join('\n'),messages:[{role:'user',content:userLine}]})
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:900,
+      system:sysLines.join('\n'),
+      messages:[{role:'user',content:'Explorer profile summary: challenge='+(A.challenge||'moderate')+' branch='+(A.branch||'')+' values='+JSON.stringify(A.values)+' culture='+(A.culture||'')+' Wants '+(isNow?'part-time jobs now':'career paths')+'. Give 2 new different suggestions.'}]})
   })
   .then(function(r){return r.json();})
   .then(function(d){
@@ -719,21 +1103,22 @@ function loadMore(typ){
     }
     if(btn)btn.style.display='none';
   })
-  .catch(function(e){
-    if(btn){btn.disabled=false;btn.textContent='\u21BB Try again';}
-  });
+  .catch(function(){if(btn){btn.disabled=false;btn.textContent='\u21BB Try again';}});
 }
 
 function sendFeedback(v){
-  try{fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:10,system:'Reply: ok',messages:[{role:'user',content:'fb:'+v+' branch:'+(A.branch||'')+' challenge:'+(A.challenge||'')}]})});}catch(e){}
+  try{fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:10,system:'Reply: ok',
+      messages:[{role:'user',content:'fb:'+v+' branch:'+(A.branch||'')+' challenge:'+(A.challenge||'')+' pt:'+IS_PT}]})});}catch(e){}
   var fb=g('fbrow');if(fb)fb.innerHTML='<span style="font-size:12px;color:var(--gr)">&#x2713; Thanks &mdash; this helps us improve.</span>';
 }
 
+// ── RESULTS ──
 function sRes(){
   PH='results';sp(100,'Your results','');
   var R=RS,nm=A.name||'';
   var h='<div class="rh"><h2 class="rh2">Your matches'+(nm?', '+nm:'')+' &#x1F389;</h2><p class="rp">'+(R.summary||'')+'</p></div>';
-  if(R.encouragement)h+='<div class="enc"><span style="font-size:16px;flex-shrink:0;margin-top:2px">&#x1F49B;</span><p class="encp">'+R.encouragement+'</p></div>';
+  if(R.encouragement)h+='<div class="enc"><span style="font-size:17px;flex-shrink:0;margin-top:2px">&#x1F49B;</span><p class="encp">'+R.encouragement+'</p></div>';
   if(R.wN&&R.nowJobs&&R.nowJobs.length){
     h+='<div class="sh"><span>&#x1F4B5;</span><h3 class="sh3">Jobs you can start now</h3><span class="sbdg sbn">Start now</span></div>';
     R.nowJobs.forEach(function(job,i){h+=jcard(job,i+1,'now');});
@@ -751,18 +1136,18 @@ function sRes(){
     R.tips.forEach(function(tip){h+='<div class="nsli">'+tip+'</div>';});
     h+='</div>';
   }
-  h+='<div class="p4"><div class="p4t"><span style="font-size:19px">&#x2728;</span><strong>Coming soon &mdash; Phase 4: Your Roadmap</strong></div>'+
-    '<p class="p4p">CV Builder, job application templates, interview prep, and a personalised action plan &mdash; all built from your Explorer profile.</p></div>';
-  h+='<div class="cvb"><span style="font-size:21px">&#x1F5C2;&#xFE0F;</span><div><strong>Coming soon &mdash; CV Builder</strong>'+
-    '<p>We&rsquo;ll use your Explorer profile to draft a CV and cover letter, ready to send.</p></div></div>';
+  h+='<div class="p4"><div class="p4t"><span style="font-size:20px">&#x2728;</span><strong>Coming soon &mdash; Phase 4: Your Roadmap</strong></div>'+
+    '<p class="p4p">CV Builder, job templates, interview prep and a personalised action plan &mdash; all from your Explorer profile.</p></div>';
+  h+='<div class="cvb"><span style="font-size:22px">&#x1F5C2;&#xFE0F;</span><div><strong>Coming soon &mdash; CV Builder</strong>'+
+    '<p>Your Explorer profile becomes a personalised CV and cover letter, ready to send.</p></div></div>';
   h+='<div class="fb-row" id="fbrow">Was this helpful? '+
     '<button class="thumb" onclick="sendFeedback(1)">&#x1F44D; Yes</button> '+
     '<button class="thumb" onclick="sendFeedback(0)">&#x1F44E; Not quite</button></div>';
   h+='<button class="brs" onclick="rst()">&#x21BA; Start again</button>';
   h+='<div class="leg">'+
     '<p class="lp">&#x26A0; <strong>For guidance only.</strong> Not a substitute for professional career counselling.</p>'+
-    '<p class="lp">&#x1F512; <strong>Privacy:</strong> Answers not stored after your session. Anonymised feedback may improve results over time.</p>'+
-    '<p class="lp">&#x1F464; <strong>Under 15?</strong> Please let a parent or guardian know you&rsquo;re using this tool.</p></div>';
+    '<p class="lp">&#x1F512; <strong>Privacy:</strong> Answers not stored. Anonymised feedback may improve results.</p>'+
+    '<p class="lp">&#x1F464; <strong>Under 15?</strong> Please let a parent or guardian know.</p></div>';
   sc().innerHTML=h;
 }
 
@@ -772,12 +1157,12 @@ function sErr(){
     '<h3 class="eh3">Something didn&rsquo;t quite work</h3>'+
     '<p class="ep">The AI hit a hiccup. Usually temporary &mdash; try again.</p>'+
     (EM?'<div class="ed">'+EM+'</div>':'')+
-    '<div class="br" style="justify-content:center;margin-bottom:9px">'+
-    '<button class="bnx" style="opacity:1" onclick="genR()">Try again &#x2192;</button></div>'+
-    '<button class="brs" onclick="rst()">&#x21BA; Start over</button></div>';
+    '<div class="br" style="justify-content:center;margin-bottom:10px">'+
+    '<button class="bnx" style="opacity:1" onclick="genR()">Try again \u2192</button></div>'+
+    '<button class="brs" onclick="rst()">\u21BA Start over</button></div>';
 }
 
-function rst(){A={};QL=buildQL([],null,null,'15_17',[]);QI=0;RS=null;EM='';ri();scrollUp();sSf();}
+function rst(){A={};IS_PT=false;QL=buildQL([],null,null,'15_17',[]);QI=0;RS=null;EM='';ri();scrollUp();sSf();}
 
 sSf();
 </script>
