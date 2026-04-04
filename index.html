@@ -610,7 +610,8 @@ function sSf(){
     '<div class="pprev">'+PHS.map(function(p,i){return '<div class="ppip"><div class="ppip-i">'+p.em+'</div><div class="ppip-n">Phase '+(i+1)+'</div><div class="ppip-l">'+p.lbl+'</div></div>';}).join('')+'</div>'+
     [['&#x2705;','No right or wrong answers','We&rsquo;re not testing you &mdash; just getting to know you.'],['&#x23F1;&#xFE0F;','Take as long as you need','No timer. No pressure. Your pace.'],['&#x1F49B;','Not knowing is completely normal','Most Explorers your age haven&rsquo;t figured it out yet.'],['&#x1F512;','Your answers are private','Only used to find your matches. Never stored.']
     ].map(function(r){return '<div class="spill"><span class="spi">'+r[0]+'</span><div><span class="sps">'+r[1]+'</span><span class="spt">'+r[2]+'</span></div></div>';}).join('')+
-    '<button class="bstart" onclick="stQ()">Begin Phase 1 \u2192</button>';
+    '<button class="bstart" onclick="stQ()">Begin Phase 1 \u2192</button>'+
+    '<button class="cv-btn-sec" onclick="sCVBuilder(false)">&#x1F4C4; Already know the role? Build your CV \u2192</button>';
 }
 
 function stQ(){A={};IS_PT=false;QL=buildQL([],null,null,'15_17',[],[]);QI=0;ri();PH='questions';scrollUp();sQ();}
