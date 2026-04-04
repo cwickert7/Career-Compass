@@ -201,6 +201,34 @@ footer{width:100%;max-width:860px;padding:0 24px 40px}
 @media(max-width:480px){.card{padding:20px 16px}.og.two{grid-template-columns:1fr}.pprev{gap:4px}.fc-wrap{grid-template-columns:1fr 1fr}.qt{font-size:20px}}
 @media(min-width:481px) and (max-width:900px){.card{padding:26px 30px}.og.two{grid-template-columns:1fr 1fr}}
 @media(min-width:901px){.card{padding:36px 44px;border-radius:24px}.wrap{padding:0 32px 60px}.qt{font-size:clamp(24px,2.2vw,32px)}.ob{padding:16px 18px;min-height:72px}.ol{font-size:18px}.od{font-size:15px}.oe{font-size:28px}.og{gap:10px}.og.two{grid-template-columns:1fr 1fr}.bnx{padding:16px 40px;font-size:17px;min-height:58px}.bstart{padding:18px 40px;font-size:17px;max-width:340px}.ti{font-size:18px;height:62px;padding:14px 18px}.fc-opt{min-height:110px;padding:20px 16px}.fc-icon{font-size:32px}.fc-label{font-size:16px}.jh4{font-size:22px}.jd{font-size:16px}.wy{font-size:15px;padding:10px 14px}.ef{font-size:15px;padding:10px 14px}.pws div{font-size:15px}.thiswk{font-size:15px}.nsli{font-size:16px}.rh2{font-size:28px}.encp{font-size:15px}.enc{padding:16px 20px}.jc{padding:18px 22px;margin-bottom:14px}.pprev{gap:12px}.ppip{padding:12px 10px}.ppip-i{font-size:24px}.ppip-l{font-size:13px}.spill{padding:11px 15px;margin-bottom:9px}.sps{font-size:16px}.spt{font-size:14px}}
+
+.cv-btn{display:inline-flex;align-items:center;gap:7px;background:none;border:1.5px solid var(--tc);border-radius:50px;padding:11px 24px;font-size:14px;font-weight:600;color:var(--tc);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;margin-top:10px}
+.cv-btn:hover{background:var(--tc);color:#fff}
+.cv-btn-sec{display:inline-flex;align-items:center;gap:7px;background:none;border:1.5px solid var(--sand);border-radius:50px;padding:10px 22px;font-size:13px;font-weight:500;color:var(--mid);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;margin-top:8px;width:100%;justify-content:center}
+.cv-btn-sec:hover{border-color:var(--tc);color:var(--tc)}
+.cv-fork{display:grid;gap:9px;margin-bottom:16px}
+.cv-fork-opt{background:var(--warm);border:2px solid var(--sand);border-radius:13px;padding:14px 15px;text-align:left;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;position:relative}
+.cv-fork-opt:hover{border-color:var(--tcl);background:#FEF8F4}
+.cv-fork-opt.sel{border-color:var(--tc);background:#FEF3EC;box-shadow:0 0 0 2px rgba(196,113,74,.15)}
+.cv-fork-opt.sel::after{content:'\2713';position:absolute;top:10px;right:11px;width:18px;height:18px;background:var(--tc);color:#fff;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:18px;text-align:center}
+.cv-fork-icon{font-size:22px;margin-bottom:4px;display:block}
+.cv-fork-title{font-size:15px;font-weight:600;color:var(--ch);display:block;margin-bottom:2px}
+.cv-fork-desc{font-size:12px;color:var(--lt);line-height:1.5;display:block}
+.cv-step-wrap{margin-bottom:16px}
+.cv-step-lbl{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--lt);margin-bottom:6px}
+.cv-ta{width:100%;background:var(--warm);border:2px solid var(--sand);border-radius:13px;padding:13px 16px;font-size:15px;color:var(--ch);outline:none;font-family:'DM Sans',sans-serif;resize:vertical;min-height:80px;transition:border-color .2s;line-height:1.6}
+.cv-ta:focus{border-color:var(--tc);background:#FEF8F4}
+.cv-jd-wrap{background:var(--warm);border:1.5px dashed var(--sand);border-radius:13px;padding:14px 16px;margin-bottom:14px}
+.cv-jd-lbl{font-size:13px;font-weight:600;color:var(--mid);margin-bottom:4px}
+.cv-jd-sub{font-size:12px;color:var(--lt);margin-bottom:9px;line-height:1.5}
+.cv-out-wrap{background:var(--warm);border:1.5px solid var(--sand);border-radius:13px;padding:16px 18px;margin-bottom:12px;white-space:pre-wrap;font-size:14px;color:var(--ch);line-height:1.8;font-family:'DM Sans',sans-serif}
+.cv-out-wrap.grad{font-family:Georgia,serif;font-size:13px;line-height:1.75}
+.cv-out-actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.cv-out-btn{flex:1;min-width:120px;display:flex;align-items:center;justify-content:center;gap:6px;border:1.5px solid var(--sand);border-radius:50px;padding:10px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;background:none;color:var(--mid)}
+.cv-out-btn:hover{border-color:var(--tc);color:var(--tc)}
+.cv-out-btn.primary{background:var(--gr);color:#fff;border-color:var(--gr)}
+.cv-out-btn.primary:hover{background:var(--grl)}
+.cv-disclaimer{font-size:11px;color:var(--lt);line-height:1.6;background:var(--warm);border:1px solid var(--sand);border-radius:8px;padding:9px 12px;margin-top:8px}
 </style>
 </head>
 <body>
@@ -260,7 +288,7 @@ var P1=[
   {id:'name',ph:'p1',type:'text',lbl:"Let's begin",q:"What&rsquo;s your first name?",hint:"We&rsquo;ll use it throughout &mdash; this is your journey.",pl:'Type your name here\u2026'},
   {id:'age',ph:'p1',type:'opts',cols:2,lbl:'About you',q:'How old are you?',
    os:[{v:'15_17',e:'&#x1F392;',l:'15&ndash;17',d:'Still at school'},{v:'18_20',e:'&#x1F331;',l:'18&ndash;20',d:'Just finished or figuring it out'},{v:'21_25',e:'&#x1F680;',l:'21&ndash;25',d:'Early days of work or study'}]},
-  {id:'study',ph:'p1',type:'multi',cols:1,lbl:'Right now',q:'What are you doing at the moment?',hint:'Pick all that apply.',
+  {id:'study',ph:'p1',type:'multi',cols:1,lbl:'Right now',q:'What are you doing at the moment?',
    os:[{v:'highschool',e:'&#x1F392;',l:'High school',d:'VCE, VCE VM, VCAL or similar'},{v:'tafe',e:'&#x1F527;',l:'TAFE or vocational training',d:'Certificate, diploma or trade'},{v:'uni',e:'&#x1F4DA;',l:'University',d:'Degree or diploma'},{v:'working',e:'&#x1F4BC;',l:'I already have a job',d:'Part-time, casual or full-time'},{v:'gap',e:'&#x1F30F;',l:'Gap year or taking a break',d:'Travelling or time out'},{v:'none',e:'&#x1F50D;',l:'Not studying or working yet',d:'Looking for my next step'}]},
   {id:'goal',ph:'p1',type:'path',lbl:'Your goal',q:'What do you want help with today?',hint:'You can pick more than one.'},
   {id:'place',ph:'p1',type:'multi',cols:2,lbl:'Your ideal workplace',q:'Where would you enjoy spending most of your day?',hint:'Pick all that feel right.',
@@ -309,7 +337,7 @@ var P2B=[
    os:[{v:'watch',e:'&#x1F440;',l:'Watch first, then try',d:'See it before I attempt it'},{v:'do',e:'&#x1F528;',l:'Jump in and figure it out',d:'Trial and error &mdash; learning by doing'},{v:'read',e:'&#x1F4D6;',l:'Read or watch videos first',d:'Study before I try'},{v:'ask',e:'&#x1F4AC;',l:'Patient step-by-step explanation',d:'Questions and conversation help most'},{v:'list',e:'&#x1F4CB;',l:'Follow a clear checklist',d:'Written steps I can refer back to'}]},
   {id:'grit',ph:'p2',type:'opts',cols:1,lbl:'When things get hard',q:'When something you&rsquo;re working on gets really difficult &mdash; what do you usually do?',
    os:[{v:'persist',e:'&#x1F4AA;',l:'Keep going &mdash; I don&rsquo;t like giving up',d:'Persistence is a strength of mine'},{v:'break',e:'&#x1F504;',l:'Take a break and come back to it',d:'Step away then return refreshed'},{v:'help_g',e:'&#x1F4AC;',l:'Ask someone for help',d:'I know when to reach out'},{v:'chunks',e:'&#x1F4CB;',l:'Break it into smaller pieces',d:'Tackle one step at a time'},{v:'beaten',e:'&#x1F614;',l:'Struggle to continue &mdash; hard things often beat me',d:'I need extra support to push through'},{v:'depends',e:'&#x1F937;',l:'Depends how much I care about what I&rsquo;m doing',d:'Motivation determines my persistence'}]},
-  {id:'collab',ph:'p2',type:'multi',cols:2,lbl:'Working with others',q:'How do you work best with others?',hint:'Pick all that feel natural.',
+  {id:'collab',ph:'p2',type:'multi',cols:2,lbl:'Working with others',q:'How do you work best with others?',
    os:[{v:'solo',e:'&#x1F3A7;',l:'Mostly on my own',d:'Focus better with space'},{v:'team',e:'&#x1F91D;',l:'In a team',d:'Like having people around'},{v:'lead_c',e:'&#x1F9ED;',l:'Leading or organising',d:'Like pulling things together'},{v:'help_c',e:'&#x1F4AC;',l:'Helping people one-on-one',d:'Direct personal contact'}]}
 ];
 
@@ -381,7 +409,7 @@ var QUIT_Q={id:'quit',ph:'p3',type:'opts',cols:1,lbl:'Imagine quitting',q:'Imagi
 var PT_QS=[
   {id:'pt_firstjob',ph:'pt',type:'opts',cols:1,lbl:'Your experience',q:'Have you had a paid job before?',os:[{v:'first',e:'&#x1F331;',l:'No &mdash; this would be my first job ever',d:'Brand new to paid work'},{v:'some',e:'&#x1F4BC;',l:'Yes &mdash; I&rsquo;ve had casual or part-time work before',d:'Some experience already'},{v:'volunteer',e:'&#x1F91D;',l:'Volunteer work or work experience, but not paid',d:'Unpaid experience counts too'}]},
   {id:'pt_hours',ph:'pt',type:'opts',cols:1,lbl:'Availability',q:'How many hours a week are you realistically available?',os:[{v:'few',e:'&#x1F4C5;',l:'Up to 8 hours',d:'One day or a few evenings'},{v:'part',e:'&#x1F4C5;',l:'8&ndash;15 hours',d:'Two days or evenings and weekends'},{v:'more',e:'&#x1F4C5;',l:'15&ndash;25 hours',d:'Three or more days &mdash; flexible'},{v:'full',e:'&#x1F4C5;',l:'Full-time or close to it',d:'Ready to work most of the week'}]},
-  {id:'pt_days',ph:'pt',type:'multi',cols:2,lbl:'Days available',q:'Which days are you generally available to work?',hint:'Pick all that apply.',os:[{v:'wkday_am',e:'&#x1F305;',l:'Weekday mornings',d:'Monday to Friday, mornings'},{v:'wkday_pm',e:'&#x1F31E;',l:'Weekday afternoons',d:'Monday to Friday, afternoons'},{v:'wkday_eve',e:'&#x1F319;',l:'Weekday evenings',d:'Monday to Friday, evenings'},{v:'saturday',e:'&#x1F4C5;',l:'Saturdays',d:'Available Saturdays'},{v:'sunday',e:'&#x1F4C5;',l:'Sundays',d:'Available Sundays'},{v:'pubhol',e:'&#x1F386;',l:'Public holidays',d:'For penalty rates'},{v:'schol',e:'&#x1F3EB;',l:'School holidays only',d:'Not available during school term'}]},
+  {id:'pt_days',ph:'pt',type:'multi',cols:2,lbl:'Days available',q:'Which days are you generally available to work?',os:[{v:'wkday_am',e:'&#x1F305;',l:'Weekday mornings',d:'Monday to Friday, mornings'},{v:'wkday_pm',e:'&#x1F31E;',l:'Weekday afternoons',d:'Monday to Friday, afternoons'},{v:'wkday_eve',e:'&#x1F319;',l:'Weekday evenings',d:'Monday to Friday, evenings'},{v:'saturday',e:'&#x1F4C5;',l:'Saturdays',d:'Available Saturdays'},{v:'sunday',e:'&#x1F4C5;',l:'Sundays',d:'Available Sundays'},{v:'pubhol',e:'&#x1F386;',l:'Public holidays',d:'For penalty rates'},{v:'schol',e:'&#x1F3EB;',l:'School holidays only',d:'Not available during school term'}]},
   {id:'pt_transport',ph:'pt',type:'multi',cols:2,max:2,lbl:'Getting there',q:'How would you get to work?',hint:'Pick up to 2.',os:[{v:'public',e:'&#x1F68C;',l:'Public transport',d:'Bus, train or tram'},{v:'driven',e:'&#x1F697;',l:'Someone would drive me',d:'Parent, friend or family'},{v:'walk',e:'&#x1F6B6;',l:'Walk, ride or scoot',d:'Close enough to my own power'},{v:'self_drive',e:'&#x1F697;',l:'I can drive myself',d:'Own licence and car'},{v:'near_home',e:'&#x1F3E1;',l:'Needs to be close to home',d:'Limited travel options'}]},
   {id:'pt_env',ph:'pt',type:'multi',cols:1,max:2,lbl:'Environment readiness',q:'Which of these environments could you handle on a busy day &mdash; right now?',hint:'Pick up to 2. Be honest &mdash; not what sounds good, what&rsquo;s true for you right now.',os:[{v:'retail_pt',e:'&#x1F6D2;',l:'A busy retail shop or supermarket',d:'Serving customers, registers, busy floor'},{v:'food_pt',e:'&#x1F355;',l:'A caf\u00e9, bakery or food place',d:'Food service, counter, kitchen hand'},{v:'physical_pt',e:'&#x1F4E6;',l:'A warehouse, stockroom or physical role',d:'Labouring, packing, delivery'},{v:'cleaning_pt',e:'&#x1F9F9;',l:'Cleaning, maintenance or outdoor duties',d:'Trolleys, grounds, car wash, cleaning'},{v:'outdoor_pt',e:'&#x1F33F;',l:'An outdoor or physical role',d:'Gardens, markets, sport events'},{v:'animals_pt',e:'&#x1F43E;',l:'An animal shelter, vet clinic or pet shop',d:'Animal care, assisting, feeding'},{v:'quiet_pt',e:'&#x1F3E2;',l:'A small quiet office or reception',d:'Admin, phones, front desk'},{v:'care_pt',e:'&#x1F91D;',l:'A care environment',d:'Childcare assistant, aged care, disability support'},{v:'notready_pt',e:'&#x1F60C;',l:'Something low-contact and calm &mdash; I&rsquo;m not ready for busy yet',d:'I need a gentle start'}]},
   {id:'pt_social',ph:'pt',type:'opts',cols:1,lbl:'Social readiness',q:'How comfortable are you talking to customers or strangers right now?',os:[{v:'comfortable',e:'&#x1F604;',l:'Comfortable &mdash; I&rsquo;m happy talking to almost anyone',d:'Customer-facing roles are fine'},{v:'manages',e:'&#x1F610;',l:'I can manage it but it takes energy',d:'Fine but it&rsquo;s not effortless'},{v:'limited',e:'&#x1F615;',l:'I find it hard &mdash; I&rsquo;d prefer limited customer contact',d:'Behind-the-scenes suits me better'},{v:'struggles',e:'&#x1F630;',l:'I really struggle &mdash; I need a behind-the-scenes role',d:'Direct customer contact is too much right now'}]},
@@ -542,6 +570,8 @@ function GV(q){
 }
 
 function GN(){
+  if(PH==='cv_step'){cvNext();return;}
+  if(PH==='cv_jd'){genCV();return;}
   if(PH==='aversion_intro'){avGo();return;}
   if(PH==='ips_intro'){ipsGo();return;}
   var q=QL[QI],v=GV(q);
@@ -561,6 +591,9 @@ function GN(){
 }
 
 function GB(){
+  if(PH==='cv_step'){cvBack();return;}
+  if(PH==='cv_jd'){cvBack();return;}
+  if(PH==='cv_fork'){sSf();return;}
   if(PH==='aversion_intro'){PH='questions';scrollUp();sQ();return;}
   if(PH==='ips_intro'){A._ipsIntroShown=false;PH='questions';scrollUp();sQ();return;}
   if(PH==='celebration'){ri();QI--;PH='questions';scrollUp();sQ();return;}
@@ -731,12 +764,12 @@ function exploreRole(jobTitle,cardId,explorerName){
   if(!panel)return;
   if(panel.classList.contains('open')){
     panel.classList.remove('open');
-    if(btn)btn.textContent='&#x1F50D; Tell me more about this role';
+    if(btn)btn.innerHTML='&#x1F50D; Tell me more about this role';
     return;
   }
   panel.classList.add('open');
   panel.innerHTML='<div class="occ-loading">Finding out more about '+jobTitle+'&#x2026;</div>';
-  if(btn){btn.disabled=true;btn.textContent='Loading&#x2026;';}
+  if(btn){btn.disabled=true;btn.innerHTML='Loading&#x2026;';}
   var sysMsg=[
     'You are a warm, knowledgeable Australian career advisor.',
     'Generate a personalised deep-dive on a specific occupation for a young Australian Explorer aged 15-25.',
@@ -966,6 +999,11 @@ function sRes(){
   if(R.wC&&R.careerJobs&&R.careerJobs.length){
     h+='<div style="background:var(--bll);border:1.5px solid #C8D7F5;border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:13px;color:#4A6CB8;line-height:1.6;">&#x1F4A1; <strong>Some of these might surprise you &mdash; that&rsquo;s deliberate.</strong> We looked at your whole profile, not just one answer. Your path is yours to shape.</div>';
   }
+  h+='<div style="background:linear-gradient(135deg,#FAF7F2,#F0F7F3);border:1.5px solid var(--sand);border-radius:13px;padding:16px 18px;margin:14px 0">';
+  h+='<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><span style="font-size:24px">&#x1F4C4;</span><div>';
+  h+='<strong style="font-size:14px;color:var(--ch);display:block;margin-bottom:2px">Build your CV — tailored to these matches</strong>';
+  h+='<span style="font-size:13px;color:var(--mid)">We\'ll pre-fill what we already know about you and write it around your results.</span></div></div>';
+  h+='<button class="cv-btn" style="width:100%;justify-content:center" onclick="sCVBuilder(true)">&#x2728; Build my personalised CV →</button></div>';
   if(R.tips&&R.tips.length){h+='<div class="ns"><h4 class="nsh4">&#x2726; Your next steps</h4>';R.tips.forEach(function(tip){h+='<div class="nsli">'+tip+'</div>';});h+='</div>';}
   h+='<div class="p4"><div class="p4t"><span style="font-size:20px">&#x2728;</span><strong>Coming soon &mdash; Phase 4: Your Roadmap</strong></div><p class="p4p">CV Builder, job templates, interview prep and a personalised action plan &mdash; all from your Explorer profile.</p></div>';
   h+='<div class="cvb"><span style="font-size:22px">&#x1F5C2;&#xFE0F;</span><div><strong>Coming soon &mdash; CV Builder</strong><p>Your Explorer profile becomes a personalised CV and cover letter, ready to send.</p></div></div>';
@@ -986,6 +1024,273 @@ function sErr(){
   sc().innerHTML='<div class="eb"><div class="ei">&#x1F527;</div><h3 class="eh3">Something didn&rsquo;t quite work</h3><p class="ep">The AI hit a hiccup. Usually temporary &mdash; try again.</p>'+(EM?'<div class="ed">'+EM+'</div>':'')+
     '<div class="br" style="justify-content:center;margin-bottom:10px"><button class="bnx" style="opacity:1" onclick="genR()">Try again \u2192</button></div><button class="brs" onclick="rst()">\u21BA Start over</button></div>';
 }
+
+
+// ── CV BUILDER ──
+var CV={type:null,answers:{},jd:'',fromAssessment:false};
+
+var CV_FORKS=[
+  {v:'firstjob',icon:'&#x1F331;',title:'First job',desc:'Never worked before — I need a simple CV for a part-time or casual role'},
+  {v:'some_exp',icon:'&#x1F4BC;',title:'Some experience',desc:'Had a job or two — I want to update or improve my CV for a new role'},
+  {v:'school_leaver',icon:'&#x1F393;',title:'School leaver',desc:'Just finished Year 12 — applying for full-time work or an apprenticeship'},
+  {v:'graduate',icon:'&#x1F4DA;',title:'Graduate',desc:'Completed a degree or diploma — entering my professional career'},
+  {v:'career_changer',icon:'&#x1F504;',title:'Career changer',desc:'Already working but looking to move into something new'}
+];
+
+var CV_STEPS_JUNIOR=[
+  {id:'cv_name',lbl:'Your name',q:'What’s your full name?',type:'text',pl:'e.g. Jordan Smith'},
+  {id:'cv_contact',lbl:'Contact details',q:'What’s your phone number and email address?',type:'text',pl:'e.g. 0412 345 678 — jordan@email.com'},
+  {id:'cv_location',lbl:'Where you’re based',q:'What suburb and state are you in?',type:'text',pl:'e.g. Frankston, VIC'},
+  {id:'cv_study',lbl:'Your education',q:'Where are you studying or where did you study? What year are you in or when did you finish?',type:'textarea',pl:'e.g. Frankston High School, currently Year 11'},
+  {id:'cv_life_skills',lbl:'Skills from life',q:'Have you ever helped someone regularly, looked after siblings or family, played sport, volunteered, done odd jobs, managed social media, or organised anything? Tell us in your own words — nothing is too small.',type:'textarea',pl:'e.g. I help my mum with her cleaning business on Saturdays, and I coach the under-10s soccer team on weekends'},
+  {id:'cv_work',lbl:'Any work or volunteer experience',q:'Have you had any paid work, volunteer work, or work experience placements? If none, just say so — that’s completely fine.',type:'textarea',pl:'e.g. No paid work yet. I did two weeks work experience at a vet clinic in Year 10.'},
+  {id:'cv_proud',lbl:'Something you’re proud of',q:'Tell us one thing you’ve done that you feel good about — at school, at home, in sport, anywhere.',type:'textarea',pl:'e.g. I organised a fundraiser at school and we raised $800 for the bushfire appeal'},
+  {id:'cv_role',lbl:'The role you’re applying for',q:'What kind of job are you applying for? If you know the specific role or business, tell us.',type:'text',pl:'e.g. Retail assistant at Woolworths, or general café work'}
+];
+
+var CV_STEPS_SENIOR=[
+  {id:'cv_name',lbl:'Your name',q:'What’s your full name?',type:'text',pl:'e.g. Jordan Smith'},
+  {id:'cv_contact',lbl:'Contact details',q:'Phone number, email address and LinkedIn URL if you have one.',type:'text',pl:'e.g. 0412 345 678 — jordan@email.com — linkedin.com/in/jordansmith'},
+  {id:'cv_location',lbl:'Where you’re based',q:'What suburb and state are you in?',type:'text',pl:'e.g. Melbourne, VIC'},
+  {id:'cv_role',lbl:'Target role',q:'What role or type of role are you applying for?',type:'text',pl:'e.g. Marketing Coordinator, or Graduate Engineer roles generally'},
+  {id:'cv_summary_inputs',lbl:'About you',q:'In a few sentences — who are you professionally? What are your key strengths and what kind of work do you do best?',type:'textarea',pl:'e.g. I’m a recent commerce graduate with a focus on marketing and brand. I’m strongest at creative problem solving and building relationships.'},
+  {id:'cv_education',lbl:'Education',q:'List your qualifications — degree, institution, year completed. Include any relevant certifications or awards.',type:'textarea',pl:'e.g. Bachelor of Commerce (Marketing), Monash University, 2024. Dean’s List 2023.'},
+  {id:'cv_experience',lbl:'Work experience',q:'List your work experience — job title, employer, dates, and 2–3 things you did or achieved in each role. Include part-time, casual and internships.',type:'textarea',pl:'e.g. Marketing Intern, Acme Agency, Jan–June 2024. Managed social media accounts, wrote weekly blog posts, assisted with client campaign briefs.'},
+  {id:'cv_skills',lbl:'Skills',q:'What are your key skills? Include both hard skills (software, tools, languages) and soft skills.',type:'textarea',pl:'e.g. Adobe Creative Suite, Google Analytics, copywriting, stakeholder communication, bilingual English\/Mandarin'},
+  {id:'cv_achievements',lbl:'Achievements',q:'List 2–3 achievements you’re proud of — professional, academic or personal. Be specific where you can.',type:'textarea',pl:'e.g. Grew Instagram following by 40% in 3 months during internship. Captain of university debating team 2023.'},
+  {id:'cv_referees',lbl:'Referees',q:'Do you have referees to include? If yes, list their name, title and contact. If not, we’ll add “Available on request”.',type:'textarea',pl:'e.g. Dr Sarah Lee, Monash University, sarah.lee@monash.edu — or just leave blank for “Available on request”'}
+];
+
+function isJuniorCV(type){
+  return type==='firstjob'||type==='some_exp'||type==='school_leaver';
+}
+
+function getCVSteps(){
+  return isJuniorCV(CV.type)?CV_STEPS_JUNIOR:CV_STEPS_SENIOR;
+}
+
+function sCVBuilder(fromAssessment){
+  CV={type:null,answers:{},jd:'',fromAssessment:!!fromAssessment};
+  PH='cv_fork';
+  sp(0,'CV Builder','');
+  var h='<p class="qt" style="margin-bottom:6px">Let\'s build your CV. Where are you at right now?</p>';
+  h+='<p class="qh">We\'ll ask you a few quick questions and write your CV for you.</p>';
+  h+='<div class="cv-fork">';
+  CV_FORKS.forEach(function(f){
+    h+='<div class="cv-fork-opt" data-v="'+f.v+'" onclick="selCVFork(this,\''+f.v+'\')">'+
+      '<span class="cv-fork-icon">'+f.icon+'</span>'+
+      '<span class="cv-fork-title">'+f.title+'</span>'+
+      '<span class="cv-fork-desc">'+f.desc+'</span></div>';
+  });
+  h+='</div>';
+  h+=brow(true);
+  sc().innerHTML=h;
+  en(false);
+  scrollUp();
+}
+
+function selCVFork(el,val){
+  document.querySelectorAll('.cv-fork-opt').forEach(function(o){o.classList.remove('sel');});
+  el.classList.add('sel');
+  CV.type=val;
+  en(true);
+  // Auto-advance after brief delay
+  setTimeout(function(){startCVSteps();},300);
+}
+
+var CV_STEP_IDX=0;
+
+function startCVSteps(){
+  CV_STEP_IDX=0;
+  sCVStep();
+}
+
+function sCVStep(){
+  var steps=getCVSteps();
+  var totalSteps=steps.length+1; // +1 for JD step
+  var step=steps[CV_STEP_IDX];
+  PH='cv_step';
+  var pct=Math.round(((CV_STEP_IDX+1)/totalSteps)*85);
+  sp(pct,'CV Builder',(CV_STEP_IDX+1)+' of '+totalSteps);
+  var saved=CV.answers[step.id]||'';
+  var h='<div class="ptag">&#x1F4C4; CV Builder</div>';
+  h+='<p class="qt">'+step.q+'</p>';
+  h+='<div class="cv-step-wrap">';
+  if(step.type==='textarea'){
+    h+='<textarea class="cv-ta" id="CVTA" placeholder="'+step.pl+'" oninput="cvTA(this)">'+saved+'</textarea>';
+  } else {
+    h+='<input type="text" class="ti" id="CVTI" placeholder="'+step.pl+'" value="'+saved+'" oninput="cvTI(this)" onkeydown="cvTK(event)">';
+  }
+  h+='</div>';
+  h+=brow(true);
+  sc().innerHTML=h;
+  en(!!(saved.trim()));
+  var inp=document.getElementById('CVTA')||document.getElementById('CVTI');
+  if(inp)setTimeout(function(){inp.focus();},50);
+  scrollUp();
+}
+
+function cvTA(el){CV.answers[getCVSteps()[CV_STEP_IDX].id]=el.value;en(!!(el.value.trim()));}
+function cvTI(el){CV.answers[getCVSteps()[CV_STEP_IDX].id]=el.value;en(!!(el.value.trim()));}
+function cvTK(e){if(e.key==='Enter'){var b=g('BN');if(b&&!b.disabled)cvNext();}}
+
+function cvNext(){
+  var steps=getCVSteps();
+  var step=steps[CV_STEP_IDX];
+  var inp=document.getElementById('CVTA')||document.getElementById('CVTI');
+  if(inp)CV.answers[step.id]=inp.value;
+  if(CV_STEP_IDX<steps.length-1){
+    CV_STEP_IDX++;
+    sCVStep();
+  } else {
+    sCVJD();
+  }
+}
+
+function cvBack(){
+  if(CV_STEP_IDX>0){CV_STEP_IDX--;sCVStep();}
+  else{sCVBuilder(CV.fromAssessment);}
+}
+
+function sCVJD(){
+  PH='cv_jd';
+  var steps=getCVSteps();
+  sp(90,'CV Builder',(steps.length+1)+' of '+(steps.length+1));
+  var h='<div class="ptag">&#x1F4C4; CV Builder</div>';
+  h+='<p class="qt">One last thing — do you have a specific job in mind?</p>';
+  h+='<p class="qh">Paste the job description below and we\'ll tailor your CV to it. Or skip this and we\'ll keep it general.</p>';
+  h+='<div class="cv-jd-wrap">';
+  h+='<div class="cv-jd-lbl">Job description (optional)</div>';
+  h+='<div class="cv-jd-sub">Copy and paste the full job ad here — the more detail the better.</div>';
+  h+='<textarea class="cv-ta" id="CVJD" placeholder="Paste job description here…" style="min-height:120px" oninput="CV.jd=this.value">'+CV.jd+'</textarea>';
+  h+='</div>';
+  h+='<div class="br"><button class="bbk" onclick="cvBack()">← Back</button>';
+  h+='<button class="bbk" onclick="genCV()" style="color:var(--lt)">Skip →</button>';
+  h+='<button class="bnx" onclick="genCV()">Build my CV →</button></div>';
+  sc().innerHTML=h;
+  scrollUp();
+}
+
+function genCV(){
+  var jdEl=document.getElementById('CVJD');
+  if(jdEl)CV.jd=jdEl.value;
+  PH='cv_generating';
+  sp(95,'Building your CV…','');
+  sc().innerHTML='<div class="tw"><div class="ds"><div class="d d1"></div><div class="d d2"></div><div class="d d3"></div></div>'+
+    '<p class="tp">Writing your CV…</p><small class="tsm">Tailoring every word to you.</small></div>';
+  scrollUp();
+
+  var isJunior=isJuniorCV(CV.type);
+  var forkLabel=CV_FORKS.find(function(f){return f.v===CV.type;});
+  forkLabel=forkLabel?forkLabel.title:CV.type;
+
+  var sysMsg=isJunior?
+    'You are a warm, expert Australian CV writer helping a young person write their very first or early CV. '+
+    'Your job is to take their casual answers and transform them into professional, honest, well-worded CV content. '+
+    'NEVER invent experience or qualifications they have not mentioned. Reframe real experiences accurately and positively. '+
+    'Format: clean plain text, easy to copy into Word or any document. '+
+    'Structure: NAME (large, centred) | Contact details | Objective (2 sentences, AI-written, warm and specific) | Education | Skills (bullet points, translated from their life experiences) | Experience (if any) | Achievements | References Available on Request. '+
+    'Tone: professional but warm. Appropriate for a young Australian applying for retail, hospitality, childcare or similar entry-level roles. '+
+    'Use Australian English. No fabrication. Output plain text CV only — no explanation, no preamble.'
+    :
+    'You are an expert Australian CV writer helping a job seeker write a polished, professional CV. '+
+    'Transform their answers into sharp, impactful, well-structured CV content. '+
+    'NEVER invent experience or qualifications. Present real experience with strong action verbs and specific detail. '+
+    'Format: clean plain text, professional, easy to copy into Word, PowerPoint or any document. '+
+    'Structure: NAME | Contact details | Professional Summary (3–4 sentences) | Education | Work Experience (reverse chronological, achievement-focused bullet points) | Skills | Achievements | Referees. '+
+    'Use Australian English. Output plain text CV only — no explanation, no preamble, no markdown headers with #.';
+
+  var userParts=['CV type: '+forkLabel];
+  Object.keys(CV.answers).forEach(function(k){
+    var step=[].concat(CV_STEPS_JUNIOR,CV_STEPS_SENIOR).find(function(s){return s.id===k;});
+    userParts.push((step?step.lbl:k)+': '+CV.answers[k]);
+  });
+  if(CV.jd)userParts.push('Job description to tailor toward:\n'+CV.jd);
+  if(CV.fromAssessment&&A&&A.name){
+    userParts.push('Career matches from assessment: '+(RS&&RS.nowJobs?RS.nowJobs.map(function(j){return j.title;}).join(', '):''));
+    userParts.push('Explorer profile: noticed='+A.noticed+' values='+JSON.stringify(A.values||[])+' challenge='+A.challenge);
+  }
+
+  fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1800,system:sysMsg,
+      messages:[{role:'user',content:userParts.join('\n')}]})
+  })
+  .then(function(r){return r.json();})
+  .then(function(d){
+    var text=d.content.map(function(b){return b.text||'';}).join('');
+    sCVResult(text,isJunior);
+  })
+  .catch(function(){
+    sc().innerHTML='<div class="eb"><div class="ei">&#x1F527;</div><h3 class="eh3">Something went wrong</h3>'+
+      '<p class="ep">CV generation hit a hiccup. Try again.</p>'+
+      '<div class="br" style="justify-content:center"><button class="bnx" onclick="genCV()">Try again →</button></div>'+
+      '<button class="brs" onclick="sCVBuilder(false)">↺ Start over</button></div>';
+  });
+}
+
+function sCVResult(text,isJunior){
+  PH='cv_result';
+  sp(100,'Your CV is ready','');
+  var h='<div class="rh"><h2 class="rh2">Your CV is ready &#x1F389;</h2>';
+  h+='<p class="rp">Copy the text below into Word, Google Docs, PowerPoint — wherever you\'d like to build it out.</p></div>';
+  h+='<div class="cv-out-actions">';
+  h+='<button class="cv-out-btn primary" onclick="copyCVText()">&#x1F4CB; Copy to clipboard</button>';
+  h+='<button class="cv-out-btn" onclick="exportCVPDF()">&#x1F4C4; Save as PDF</button>';
+  h+='</div>';
+  h+='<div class="cv-out-wrap'+(isJunior?'':' grad')+'" id="CVOUT">'+escHTML(text)+'</div>';
+  h+='<div class="cv-out-actions" style="margin-top:4px">';
+  h+='<button class="cv-out-btn primary" onclick="copyCVText()">&#x1F4CB; Copy to clipboard</button>';
+  h+='<button class="cv-out-btn" onclick="exportCVPDF()">&#x1F4C4; Save as PDF</button>';
+  h+='</div>';
+  h+='<div class="cv-disclaimer">&#x26A0;&#xFE0F; <strong>Important:</strong> This CV was AI-generated from the information you provided. Please review it carefully before sending. Career Compass does not fabricate experience or qualifications — always ensure the content accurately reflects you.</div>';
+  h+='<button class="brs" onclick="sCVBuilder(false)">↺ Build another CV</button>';
+  if(CV.fromAssessment)h+='<button class="brs" style="margin-top:6px" onclick="sRes()">← Back to my results</button>';
+  sc().innerHTML=h;
+  // Store for PDF
+  window._cvText=text;
+  window._cvIsJunior=isJunior;
+  scrollUp();
+}
+
+function escHTML(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function copyCVText(){
+  var el=document.getElementById('CVOUT');
+  if(!el)return;
+  var text=el.innerText||el.textContent;
+  navigator.clipboard.writeText(text).then(function(){
+    var btns=document.querySelectorAll('.cv-out-btn.primary');
+    btns.forEach(function(b){b.textContent='&#x2713; Copied!';b.innerHTML='&#x2713; Copied!';});
+    setTimeout(function(){btns.forEach(function(b){b.innerHTML='&#x1F4CB; Copy to clipboard';});},2500);
+  }).catch(function(){
+    var range=document.createRange();range.selectNode(el);
+    window.getSelection().removeAllRanges();window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+  });
+}
+
+function exportCVPDF(){
+  var btn=event.target;if(btn){btn.disabled=true;btn.textContent='Generating...';}
+  var name=CV.answers.cv_name||'Explorer';
+  var isJunior=window._cvIsJunior;
+  var html='<!DOCTYPE html><html><head><meta charset="UTF-8"><style>'+
+    'body{font-family:'+(isJunior?'Arial,sans-serif':'Georgia,serif')+';color:#2C2C2C;padding:28px 36px;max-width:720px;margin:0 auto;font-size:'+(isJunior?'12px':'11.5px')+';line-height:1.7}'+
+    'pre{white-space:pre-wrap;font-family:inherit;font-size:inherit;line-height:inherit}'+
+    '</style></head><body><pre>'+(window._cvText||'').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</pre></body></html>';
+  fetch('/api/pdf',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({html:html,name:name+'-CV'})})
+  .then(function(r){if(!r.ok)throw new Error('PDF failed');return r.blob();})
+  .then(function(blob){
+    var url=URL.createObjectURL(blob);var a=document.createElement('a');
+    a.href=url;a.download='CareerCompass-'+name.replace(/[^a-zA-Z0-9]/g,'')+'-CV.pdf';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);
+    if(btn){btn.disabled=false;btn.innerHTML='&#x1F4C4; Save as PDF';}
+  })
+  .catch(function(){if(btn){btn.disabled=false;btn.innerHTML='&#x1F4C4; Save as PDF';}window.print();});
+}
+
 
 function rst(){A={};IS_PT=false;QL=buildQL([],null,null,'15_17',[],[]);QI=0;RS=null;EM='';ri();scrollUp();sSf();}
 
