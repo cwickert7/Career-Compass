@@ -206,27 +206,59 @@ footer{width:100%;max-width:860px;padding:0 24px 40px}
 .cv-btn:hover{background:var(--tc);color:#fff}
 .cv-btn-sec{display:inline-flex;align-items:center;gap:7px;background:none;border:1.5px solid var(--sand);border-radius:50px;padding:10px 22px;font-size:13px;font-weight:500;color:var(--mid);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .2s;margin-top:8px;width:100%;justify-content:center}
 .cv-btn-sec:hover{border-color:var(--tc);color:var(--tc)}
-
 /* ── Landing page redesign ── */
 .pprev-new{display:flex;align-items:flex-start;margin-bottom:22px;padding:16px 14px;background:var(--warm);border:1.5px solid var(--sand);border-radius:14px}
 .ppip-new{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center}
-.pprev-arrow{flex:0 0 24px;height:50px;display:flex;align-items:center;padding-bottom:26px}
-.pprev-line{width:100%;height:2px;background:var(--tc);position:relative;border-radius:2px}
-.pprev-arrowhead{position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:0;height:0;border-left:6px solid var(--tc);border-top:4px solid transparent;border-bottom:4px solid transparent}
-.ppip-i-new{width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid var(--tc);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:7px;box-shadow:0 1px 6px rgba(196,113,74,.12)}
+.pprev-arrow{flex:0 0 32px;display:flex;align-items:center;justify-content:center}
+.ppip-i-new{width:48px;height:48px;border-radius:50%;background:#fff;border:2px solid var(--tc);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:7px;box-shadow:0 1px 6px rgba(196,113,74,.1)}
 .ppip-n-new{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tc);margin-bottom:3px}
 .ppip-l-new{font-size:11px;color:var(--lt);line-height:1.3}
-.cta-panel-new{background:var(--warm);border:1.5px solid var(--sand);border-radius:16px;padding:22px 20px 22px;text-align:center;margin-top:22px}
-.cta-label-new{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--tc);margin-bottom:7px}
-.cta-hint-new{font-size:14px;color:var(--mid);margin-bottom:20px;line-height:1.6}
+.spill-new{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--sand)}
+.spill-new:last-child{border-bottom:none}
+.spi-new{font-size:16px;flex-shrink:0;margin-top:2px}
+.sps-new{display:block;font-size:14px;font-weight:600;color:var(--ch);margin-bottom:3px}
+.spt-new{display:block;font-size:13px;color:var(--mid);line-height:1.5}
+.cta-panel-new{background:var(--warm);border-top:1.5px solid var(--sand);padding:22px 0 0;text-align:center;margin-top:22px}
+.cta-lbl-new{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--tc);margin-bottom:6px}
+.cta-hint-new{font-size:14px;color:var(--mid);margin-bottom:18px;line-height:1.6}
 .bstart-new{display:block;width:100%;background:var(--tc);color:#fff;border:none;border-radius:50px;padding:17px 28px;font-size:16px;font-weight:600;text-align:center;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.01em;margin-bottom:14px;transition:background .2s}
 .bstart-new:hover{background:var(--tcl)}
-.cta-divider{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.cta-divider-new{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .cta-divider-line{flex:1;height:1px;background:var(--sand)}
-.cta-divider-text{font-size:11px;color:var(--lt);letter-spacing:.06em;text-transform:uppercase;flex-shrink:0}
-.cv-btn-new{display:block;width:100%;background:#fff;color:var(--mid);border:1.5px solid var(--sand);border-radius:50px;padding:14px 28px;font-size:14px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.01em;transition:border-color .2s,color .2s}
+.cta-divider-txt{font-size:10px;color:var(--lt);letter-spacing:.07em;text-transform:uppercase}
+.cv-btn-new{display:block;width:100%;background:#fff;color:var(--mid);border:1.5px solid var(--sand);border-radius:50px;padding:13px 28px;font-size:14px;font-weight:500;text-align:center;cursor:pointer;font-family:'DM Sans',sans-serif;transition:border-color .2s,color .2s}
 .cv-btn-new:hover{border-color:var(--tc);color:var(--tc)}
-@media(min-width:901px){.pprev-new{padding:18px 20px}.ppip-i-new{width:52px;height:52px;font-size:24px}.ppip-n-new{font-size:10px}.ppip-l-new{font-size:13px}.cta-panel-new{padding:26px 28px}.cta-hint-new{font-size:15px}.bstart-new{font-size:18px;padding:19px 32px}.cv-btn-new{font-size:15px;padding:15px 32px}.spill{padding:12px 16px;margin-bottom:8px}.sps{font-size:16px}.spt{font-size:14px}}
+/* ── Salary stat row on job cards ── */
+.sal-row{display:flex;border:1px solid var(--sand);border-radius:10px;overflow:hidden;margin-bottom:10px;background:#fff}
+.sal-cell{flex:1;padding:8px 10px;text-align:center;border-right:1px solid var(--sand)}
+.sal-cell:last-child{border-right:none}
+.sal-lbl{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lt);margin-bottom:4px}
+.sal-val{font-family:'Fraunces',serif;font-size:15px;font-weight:400;color:var(--ch)}
+.sal-pill{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px}
+.sal-pill-grow{background:#EFF7F2;color:var(--gr)}
+.sal-pill-stable{background:var(--bll);color:var(--bl)}
+.sal-pill-decline{background:#FEF3EC;color:var(--tc)}
+/* ── Salary range bar ── */
+.sal-bar-section{margin-bottom:11px}
+.sal-bar-hdr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.sal-bar-lbl{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lt)}
+.sal-bar-range{font-size:11px;color:var(--mid);font-weight:500}
+.sal-bar-outer{position:relative;height:9px;background:var(--sand);border-radius:9px}
+.sal-bar-fill{position:absolute;height:100%;background:linear-gradient(90deg,var(--gr),var(--grl));border-radius:9px}
+.sal-avg-mk{position:absolute;top:-4px;width:2px;height:17px;background:var(--tc);border-radius:2px;transform:translateX(-50%)}
+.sal-avg-mk::after{content:'Avg all jobs';position:absolute;top:19px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:700;color:var(--tc);white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+.sal-bar-ends{display:flex;justify-content:space-between;margin-top:26px;font-size:10px;color:var(--mid);font-weight:500}
+.sal-note{font-size:10px;color:var(--lt);font-style:italic;margin-top:5px}
+/* ── Match bar replaces pip dots ── */
+.match-bar{margin:8px 0 7px}
+.match-bar-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.match-bar-lbl{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lt)}
+.match-bar-val{font-size:12px;font-weight:700}
+.match-bar-val.mn{color:var(--gr)}.match-bar-val.mc{color:var(--tc)}
+.match-track{height:7px;background:var(--sand);border-radius:7px}
+.match-fill{height:100%;border-radius:7px}
+.match-fill.mn{background:var(--gr)}.match-fill.mc{background:var(--tc)}
+@media(min-width:901px){.ppip-i-new{width:56px;height:56px;font-size:26px}.ppip-n-new{font-size:10px}.ppip-l-new{font-size:13px}.spill-new{padding:13px 0}.sps-new{font-size:15px}.spt-new{font-size:14px}.bstart-new{font-size:18px;padding:19px 32px}.cv-btn-new{font-size:15px;padding:15px 32px}}
 .cv-fork{display:grid;gap:9px;margin-bottom:16px}
 .cv-fork-opt{background:var(--warm);border:2px solid var(--sand);border-radius:13px;padding:14px 15px;text-align:left;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s;position:relative}
 .cv-fork-opt:hover{border-color:var(--tcl);background:#FEF8F4}
@@ -255,8 +287,8 @@ footer{width:100%;max-width:860px;padding:0 24px 40px}
 <body>
 <header>
   <div class="logo"><div class="ring">&#9672;</div><span class="lname">Career Compass</span></div>
-  <h1>Find work that <em>actually fits you.</em></h1>
-  <p class="sub">Most people your age haven&rsquo;t figured this out yet. That&rsquo;s not a problem &mdash; it&rsquo;s exactly what Career Compass is for.</p>
+  <h1>Find your <em>path</em></h1>
+  <p class="sub">Most career tools ask what you&rsquo;re qualified for. We ask who you are.</p>
 </header>
 <div class="wrap">
   <div class="card">
@@ -626,23 +658,27 @@ function GB(){
 
 function sSf(){
   PH='safe';sp(0,'Welcome','');
-  sc().innerHTML=
-    '<div class="pprev-new">'+PHS.map(function(p,i){
-      return (i>0?'<div class="pprev-arrow"><div class="pprev-line"><div class="pprev-arrowhead"></div></div></div>':'')+
-      '<div class="ppip-new"><div class="ppip-i-new">'+p.em+'</div><div class="ppip-n-new">Phase '+(i+1)+'</div><div class="ppip-l-new">'+p.lbl+'</div></div>';
-    }).join('')+'</div>'+
-    [['&#x2705;','No right or wrong answers','We&rsquo;re not testing you &mdash; there&rsquo;s nothing to get wrong here.'],
-     ['&#x23F1;&#xFE0F;','Go at your own pace','No timer. No pressure. Take as long as you need.'],
-     ['&#x1F49B;','Not knowing is completely normal','Most young people haven&rsquo;t figured this out yet. You&rsquo;re not behind.'],
-     ['&#x1F512;','Your answers are private','Only used to find your matches. Never stored.']
-    ].map(function(r){return '<div class="spill"><span class="spi">'+r[0]+'</span><div><span class="sps">'+r[1]+'</span><span class="spt">'+r[2]+'</span></div></div>';}).join('')+
-    '<div class="cta-panel-new">'+
-      '<div class="cta-label-new">Ready when you are</div>'+
-      '<p class="cta-hint-new">Answer honestly and we&rsquo;ll find something that genuinely fits &mdash; not just what sounds good.</p>'+
-      '<button class="bstart-new" onclick="stQ()">Begin your career discovery \u2192</button>'+
-      '<div class="cta-divider"><div class="cta-divider-line"></div><span class="cta-divider-text">or</span><div class="cta-divider-line"></div></div>'+
-      '<button class="cv-btn-new" onclick="sCVBuilder(false)">Already know the role? Build your CV</button>'+
+  var arrowSVG='<svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="24" x2="22" y2="24" stroke="#D9A882" stroke-width="1.5" stroke-linecap="round"/><polyline points="16,18 24,24 16,30" stroke="#C4714A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var phases='<div class="pprev-new">';
+  PHS.forEach(function(p,i){
+    phases+='<div class="ppip-new"><div class="ppip-i-new">'+p.em+'</div><div class="ppip-n-new">Phase '+(i+1)+'</div><div class="ppip-l-new">'+p.lbl+'</div></div>';
+    if(i<PHS.length-1)phases+='<div class="pprev-arrow">'+arrowSVG+'</div>';
+  });
+  phases+='</div>';
+  var trust=[
+    ['&#x2705;','No right or wrong answers','We&rsquo;re not testing you &mdash; there&rsquo;s nothing to get wrong here.'],
+    ['&#x23F1;&#xFE0F;','Go at your own pace','No timer. No pressure. Take as long as you need.'],
+    ['&#x1F49B;','Not knowing is completely normal','Most young people haven&rsquo;t figured this out yet. You&rsquo;re not behind.'],
+    ['&#x1F512;','Your answers are private','Only used to find your matches. Never stored.']
+  ].map(function(r){return '<div class="spill-new"><span class="spi-new">'+r[0]+'</span><div><span class="sps-new">'+r[1]+'</span><span class="spt-new">'+r[2]+'</span></div></div>';}).join('');
+  var cta='<div class="cta-panel-new">'+
+    '<div class="cta-lbl-new">Ready when you are</div>'+
+    '<p class="cta-hint-new">Answer honestly and we&rsquo;ll find something that genuinely fits &mdash; not just what sounds good.</p>'+
+    '<button class="bstart-new" onclick="stQ()">Begin your career discovery \u2192</button>'+
+    '<div class="cta-divider-new"><div class="cta-divider-line"></div><span class="cta-divider-txt">or</span><div class="cta-divider-line"></div></div>'+
+    '<button class="cv-btn-new" onclick="sCVBuilder(false)">Already know the role? Build your CV</button>'+
     '</div>';
+  sc().innerHTML=phases+trust+cta;
 }
 
 function stQ(){A={};IS_PT=false;QL=buildQL([],null,null,'15_17',[],[]);QI=0;ri();PH='questions';scrollUp();sQ();}
@@ -697,7 +733,7 @@ function buildSys(isPT){
       (isSensitive?'SENSITIVE: ONLY calm, supportive, low-pressure roles. Never loud worksites, competitive environments.\n':'')+
       'Return ONLY valid JSON:\n'+
       '{"encouragement":"2 warm sentences.","summary":"1 sentence with their name.","nowJobs":[2 job objects],"tips":["tip1","tip2"]}\n'+
-      'Job: {"title":"","desc":"2 sentences","whyYou":"You\'d be great here because","pathway":["Apply this week","First week","After a month"],"tags":["",""],"matchLevel":"strong match|good match|worth trying","matchPips":3-5,"thisWeek":"specific Australian action naming seek.com.au or similar","envFit":"why this suits their readiness right now"}\n'+
+      'Job: {"title":"","desc":"2 sentences","whyYou":"You\'d be great here because","pathway":["Apply this week","First week","After a month"],"tags":["",""],"matchLevel":"strong match|good match|worth trying","matchPips":3-5,"thisWeek":"specific Australian action naming seek.com.au or similar","envFit":"why this suits their readiness right now","salaryEntry":"e.g. $22 - $26/hr or $45,000 - $52,000","salaryExperienced":"e.g. $28 - $32/hr or $55,000 - $62,000","outlook":"growing|stable|declining"}\n'+
       'Include nowJobs only (2 jobs). No careerJobs.';
   }
   return 'You are a warm, empathetic career advisor for young Australians 15-25. Call them Explorers. Philosophy: Honest Hope - realistic AND genuinely encouraging.\n\n'+
@@ -715,7 +751,7 @@ function buildSys(isPT){
     'BRANCH WEIGHTING: branch answer is ONE signal. Max 1 result directly in named field. Second result must draw from adjacent fields via broader profile.\n\n'+
     'Return ONLY valid JSON, zero markdown:\n'+
     '{"encouragement":"2 warm sentences referencing something specific they told us.","summary":"1 sentence starting with their name.","nowJobs":[2 job objects],"careerJobs":[2 job objects],"tips":["tip1","tip2","tip3"]}\n'+
-    'Job: {"title":"","desc":"2 sentences","whyYou":"You would be great here because - link to specific answer","pathway":["Do now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"one specific action naming a real Australian website or organisation","envFit":"why this environment suits their specific needs and aversions"}\n'+
+    'Job: {"title":"","desc":"2 sentences","whyYou":"You would be great here because - link to specific answer","pathway":["Do now","3 months","1 year","3-5 years"],"tags":["","",""],"matchLevel":"strong match|good match|worth exploring","matchPips":3-5,"thisWeek":"one specific action naming a real Australian website or organisation","envFit":"why this environment suits their specific needs and aversions","salaryEntry":"e.g. $45,000 - $55,000","salaryExperienced":"e.g. $70,000 - $85,000","outlook":"growing|stable|declining"}\n'+
     'Include nowJobs only if wantsNow=true. Include careerJobs only if wantsCareer=true.';
 }
 
@@ -959,22 +995,56 @@ function toggleVoiceSel(){var sel=g('voiceSel');if(sel)sel.classList.toggle('ope
 
 // ── JOB CARD ──
 function jcard(job,rank,typ,cardId){
-  var p=Math.min(5,Math.max(1,job.matchPips||4));
   var lb={'strong match':'Strong match','good match':'Good match','worth exploring':'Worth exploring','worth trying':'Worth trying'};
   var w=lb[(job.matchLevel||'').toLowerCase()]||job.matchLevel||'Good match';
-  var nc=typ==='now'?'snum-n':'snum-c';var pc=typ==='now'?'pip-n':'pip-c';var wc=typ==='now'?'mw-n':'mw-c';
+  var nc=typ==='now'?'snum-n':'snum-c';
+  var isNow=typ==='now';
+  var mc=isNow?'mn':'mc';
+  var pips=Math.min(5,Math.max(1,job.matchPips||4));
+  var matchPct=Math.round((pips/5)*100)+'%';
   var pw='';
   if(job.pathway&&job.pathway.length){pw='<div class="pw"><div class="pwl">How to get there</div><div class="pws">';job.pathway.forEach(function(step,i){pw+='<div><span class="snum '+nc+'">'+(i+1)+'</span><span>'+step+'</span></div>';});pw+='</div></div>';}
   var tgs='';if(job.tags&&job.tags.length)tgs='<div class="jt">'+job.tags.map(function(tag){return '<span>'+tag+'</span>';}).join('')+'</div>';
-  var pipsH='';for(var i=0;i<5;i++)pipsH+='<div class="pip'+(i<p?' '+pc:'')+'"></div>';
   var cid=cardId||typ+rank;
+  /* Salary visuals */
+  var salHTML='';
+  if(job.salaryEntry||job.salaryExperienced){
+    var outlookCls=job.outlook==='growing'?'sal-pill-grow':job.outlook==='declining'?'sal-pill-decline':'sal-pill-stable';
+    var outlookIcon=job.outlook==='growing'?'\u2197':job.outlook==='declining'?'\u2198':'\u2192';
+    var outlookLbl=job.outlook?job.outlook.charAt(0).toUpperCase()+job.outlook.slice(1):'Stable';
+    salHTML+='<div class="sal-row">';
+    if(job.salaryEntry)salHTML+='<div class="sal-cell"><div class="sal-lbl">Starting salary</div><div class="sal-val">'+job.salaryEntry+'</div></div>';
+    if(job.salaryExperienced)salHTML+='<div class="sal-cell"><div class="sal-lbl">Experienced</div><div class="sal-val">'+job.salaryExperienced+'</div></div>';
+    salHTML+='<div class="sal-cell"><div class="sal-lbl">Outlook</div><div style="margin-top:3px"><span class="sal-pill '+outlookCls+'">'+outlookIcon+' '+outlookLbl+'</span></div></div>';
+    salHTML+='</div>';
+    /* Salary bar — map range onto $30k–$150k spectrum */
+    if(job.salaryEntry&&job.salaryExperienced){
+      var parseK=function(s){var m=s.match(/\$?([\d,]+)/);return m?parseInt(m[1].replace(/,/g,''),10):0;};
+      var eMin=parseK(job.salaryEntry),eMax=parseK(job.salaryExperienced);
+      var AVG=65,SCALE_MIN=30,SCALE_MAX=150,SPAN=SCALE_MAX-SCALE_MIN;
+      var leftPct=Math.max(0,Math.min(95,(eMin-SCALE_MIN)/SPAN*100));
+      var widthPct=Math.max(5,Math.min(95-leftPct,(eMax-eMin)/SPAN*100));
+      var avgPct=Math.max(2,Math.min(97,(AVG-SCALE_MIN)/SPAN*100));
+      salHTML+='<div class="sal-bar-section">';
+      salHTML+='<div class="sal-bar-hdr"><span class="sal-bar-lbl">Pay range</span><span class="sal-bar-range">'+job.salaryEntry+' \u2014 '+job.salaryExperienced+'</span></div>';
+      salHTML+='<div class="sal-bar-outer">';
+      salHTML+='<div class="sal-bar-fill" style="left:'+leftPct+'%;width:'+widthPct+'%"></div>';
+      salHTML+='<div class="sal-avg-mk" style="left:'+avgPct+'%"></div>';
+      salHTML+='</div>';
+      salHTML+='<div class="sal-bar-ends"><span>'+job.salaryEntry+' entry</span><span>'+job.salaryExperienced+' exp.</span></div>';
+      salHTML+='<div class="sal-note">Indicative estimates \u2014 Australian market.</div>';
+      salHTML+='</div>';
+    }
+  }
+  /* Match bar */
+  var matchBar='<div class="match-bar"><div class="match-bar-hdr"><span class="match-bar-lbl">Your match</span><span class="match-bar-val '+mc+'">'+w+'</span></div><div class="match-track"><div class="match-fill '+mc+'" style="width:'+matchPct+'"></div></div></div>';
   return '<div class="jc"><span class="jr">'+rank+'</span>'+
     '<h4 class="jh4">'+job.title+'</h4>'+
     '<p class="jd">'+job.desc+'</p>'+
+    salHTML+
     (job.whyYou?'<p class="wy">'+job.whyYou+'</p>':'')+
     (job.envFit?'<div class="ef">&#x1F3E0; '+job.envFit+'</div>':'')+
-    pw+tgs+
-    '<div class="mr"><div class="pips">'+pipsH+'</div><span class="mw '+wc+'">'+w+'</span></div>'+
+    pw+tgs+matchBar+
     (job.thisWeek?'<div class="thiswk"><strong>This week:</strong> '+job.thisWeek+'</div>':'')+
     '<button class="occ-btn" id="occBtn'+cid+'" onclick="exploreRole(\''+job.title.replace(/'/g,'\\\'')+'\'  ,\''+cid+'\',\''+(A&&A.name||'')+'\'  )">&#x1F50D; Tell me more about this role</button>'+
     '<div class="occ-panel" id="occPanel'+cid+'"></div>'+
@@ -1037,8 +1107,6 @@ function sRes(){
   h+='<span style="font-size:13px;color:var(--mid)">We\'ll pre-fill what we already know about you and write it around your results.</span></div></div>';
   h+='<button class="cv-btn" style="width:100%;justify-content:center" onclick="sCVBuilder(true)">&#x2728; Build my personalised CV →</button></div>';
   if(R.tips&&R.tips.length){h+='<div class="ns"><h4 class="nsh4">&#x2726; Your next steps</h4>';R.tips.forEach(function(tip){h+='<div class="nsli">'+tip+'</div>';});h+='</div>';}
-  h+='<div class="p4"><div class="p4t"><span style="font-size:20px">&#x2728;</span><strong>Coming soon &mdash; Phase 4: Your Roadmap</strong></div><p class="p4p">CV Builder, job templates, interview prep and a personalised action plan &mdash; all from your Explorer profile.</p></div>';
-  h+='<div class="cvb"><span style="font-size:22px">&#x1F5C2;&#xFE0F;</span><div><strong>Coming soon &mdash; CV Builder</strong><p>Your Explorer profile becomes a personalised CV and cover letter, ready to send.</p></div></div>';
   h+='<div class="pdf-btn-wrap"><button class="pdf-btn" id="pdfBtn" onclick="exportPDF()">&#x1F4C4; Save as PDF</button></div>';
   h+='<div class="voice-btn-wrap"><button class="voice-btn" onclick="toggleVoiceSel()">&#x1F50A; Hear your results</button>';
   h+='<div class="voice-sel" id="voiceSel"><p>Choose a voice:</p><div class="voice-opts">';
